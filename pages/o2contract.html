@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block content %}
+		<h1 class="ui header">Online Ordering Contract and Merchant Details
+		<div class="sub header">Review and edit your contract details</div>
+		</h1>	
+		<!--NOTE-->
+		
+		<div class="ui info message"><h5>Note</h5>These details are yet to be approved</div>
+		<!--NOTE-->
+		<!--CONTACT DETAILS-->
+
+		<h3 class="ui dividing header">Contact Details</h3>
+		<form class="ui form">
+			<div class="ui fields">
+			  <div class="field">
+			    <label>Contact Name</label>
+			    <input type="text" name="first-name" placeholder="First Name">
+			  </div>
+			  <div class="field">
+			    <label>Contact Number</label>
+			    <input type="text" name="last-name" placeholder="Last Name">
+			  </div>
+			  <div class="field">
+			    <label>Email Address</label>
+			    <input type="text" name="last-name" placeholder="Last Name">
+			  </div>
+			</div>
+			<div class="field">
+				<label>Zomato Contact Person Email</label>
+				<input type="text" name="last-name" placeholder="Last Name">
+			</div>		  
+		</form>
+
+		<!--CONTACT DETAILS END-->
+
+			<h3 class="ui dividing header">Bank Details</h3>
+			<div class="ui form">
+			  <div class="fields">
+			    <div class="field">
+			      <label>Bank Name</label>
+			      <input type="text" placeholder="First Name">
+			    </div>
+			    <div class="field">
+			      <label>IFSC/SWIFT Code</label>
+			      <input type="text" placeholder="Middle Name">
+			    </div>
+			  </div>
+			  <div class="fields">
+			    <div class="field">
+			      <label>Beneficiary Name</label>
+			      <input type="text" placeholder="First Name">
+			    </div>
+			    <div class="field">
+			      <label>Account Number</label>
+			      <input type="text" placeholder="Middle Name">
+			    </div>
+			    <div class="field">
+			      <label>Account Type</label>
+			      <div class="ui selection dropdown">
+			          <input type="hidden" name="gender">
+			          <i class="dropdown icon"></i>
+			          <div class="default text">Current</div>
+			          <div class="menu">
+			              <div class="item" data-value="1">Current</div>
+			              <div class="item" data-value="0">Savings</div>
+			          </div>
+			      </div>
+			    </div>
+			  </div>		  
+			</div>
+
+		<!--CONTACT DETAILS END-->
+		<h3>Commission and Tax Details</h3>	
+		<form class="ui form">
+			<div class="ui fields">
+			  <div class="field">
+			    <label>Commission Collection Start Date</label>
+			    <input type="text" name="first-name" placeholder="First Name">
+			  </div>
+			  <div class="field">
+			    <div class="ui checkbox">
+			      <input type="checkbox" tabindex="0" class="hidden">
+			      <label>TDS Deducted</label>
+			    </div>
+			  </div>
+			  <div class="field">
+			    <label>Merchant TAN Details</label>
+			    <input type="text" name="last-name" placeholder="Last Name">
+			  </div>
+			  <div class="field">
+			    <label>TAN Number</label>
+			    <input type="text" name="last-name" placeholder="Last Name">
+			  </div>
+			</div>
+			<div class="fields">
+			  <div class="field">
+			    <label>Comission Slab 1</label>
+			    <input type="text" name="last-name" placeholder="Last Name">
+			  </div>
+			  <div class="field">
+			    <label>Comission Slab 2</label>
+			    <input type="text" name="last-name" placeholder="Last Name">
+			  </div>
+			  <div class="field">
+			    <label>Comission Slab 3</label>
+			    <input type="text" name="last-name" placeholder="Last Name">
+			  </div>
+
+			</div>			
+			<div class="field">
+				<label>PAN Number</label>
+				<input type="text" name="last-name" placeholder="Last Name">
+			</div>		  
+		</form>
+
+
+
+		<!--CONTACT DETAILS END-->
+		<h3>Documents</h3>		
+{% endblock content%}

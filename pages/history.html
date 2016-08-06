@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block content %}
+<!--<div class="ui small modal active scrolling">
+	  <i class="close icon"></i>
+	  <div class="header">
+	   Order Details
+	  </div>
+	<div class="content">
+      <table class="ui  striped table">
+      	<tr>
+      		<td>Hot Bihari Sauce<br/>1 x ₹ 20</td>
+      		<td>₹ 20</td>
+      	</tr>
+      	<tr>
+      		<td>White Guy Chicken Burger<br/>
+Option : Make a Combo [Fries+Beverage]<br/>
+Beverage : Fizzy<br/>
+Fries : French Fries<br/>
+<br/>1 x ₹ 20
+</td>
+      		<td>₹ 298
+</td>
+
+      	</tr>
+       	<tr>
+      		<td>Subtotal</td>
+      		<td>₹ 318</td>
+      	</tr>
+       	<tr>
+      		<td>S.B. Cess</td>
+      		<td>₹ 0.63</td>
+      	</tr>
+       	<tr>
+      		<td>Krishi Kalyan Cess</td>
+      		<td>₹ 0.62</td>
+      	</tr>
+       	<tr>
+      		<td>Service Tax</td>
+      		<td>₹ 17.80</td>
+      	</tr>
+       	<tr>
+      		<td>VAT</td>
+      		<td>₹ 39.75</td>
+      	</tr>
+       	<tr>
+      		<td>Delivery Charge</td>
+      		<td>₹ 40</td>
+      	</tr>
+        <tr>
+      		<td>Surcharge on VAT</td>
+      		<td>₹ 2</td>
+      	</tr>       	    	     	
+      </table>
+	</div>
+
+  <div class="actions">
+    <div class="ui black deny button">
+      Nope
+    </div>
+    <div class="ui positive right labeled icon button">
+      Yep, that's me
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>-->
+
+  <div class="ui segments">
+    <div class="ui segment attached">
+      <h1 class="ui header">Online Ordering History
+        <div class="sub header">View all orders placed using Zomato online ordering</div>
+      </h1>
+    </div>
+    <table class="ui celled striped table attached">
+      <thead>
+        <tr>
+          <th>Hash ID</th>
+          <th>Time</th>
+          <th>Delivery Status</th>
+          <th>Payment Method</th>
+          <th>Source</th>
+          <th>Amount</th>
+          <th>Rejection Reason</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#">5937070</a></td>
+          <td>01:23 PM, July 30 2016</td>
+          <td>Delivered</td>
+          <td>COD</td>
+          <td>Zomato</td>
+          <td>₹ 418.81</td>
+          <td>-</td>
+          <td><a class="ui basic mini red button">Report</a></td>
+        </tr>   
+      <tr>
+          <td><a href="#">5937070</a></td>
+          <td>01:23 PM, July 30 2016</td>
+          <td><span class="red">Rejected</span></td>
+          <td>COD</td>
+          <td>Zomato</td>
+          <td>₹ 418.81</td>
+          <td>No delivery boys available</td>
+          <td><a class="ui basic mini red button">Report</a></td>
+        </tr>               
+      </tbody>
+    </table>
+    <div class="ui center aligned segment attached"><a class="ui green basic button">Load More</a></div>
+  </div>
+  
+
+
+
+		
+
+
+
+{% endblock content%}
