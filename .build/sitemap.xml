@@ -36,6 +36,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/performance.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/soa.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>

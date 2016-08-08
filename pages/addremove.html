@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-		<h2>User Management</h2>
-		<table class="ui celled striped table">
+
+<div class="ui segments">
+	<div class="ui segment attached">
+		<h1 class="ui header">User Management
+			<div class="sub header">Add and remove members of your team from the dashboard.</div>
+		</h1>
+	</div>	
+		<table class="ui celled striped table bottom attached">
 		  <thead>
 		    <tr>
 		    	<th>Name</th>
@@ -15,10 +21,23 @@
 		    	<td>Aiswarya Kolisetty</td>
 		    	<td>ais@z.com</td>
 		    	<td>Restaurant Manager</td>
-		    	<td><a class="ui button">Remove</a></td>
-		    </tr>		    
+		    	<td><a class="ui basic mini red button">Remove</a></td>
+		    </tr>		 
+		    <tr>
+		    	<td>Archit Garg</td>
+		    	<td>archit@z.com</td>
+		    	<td>Restaurant Secondary Manager</td>
+		    	<td><a class="ui basic mini red button">Remove</a></td>
+		    </tr>
+		    <tr>
+		    	<td>Ashish Goel</td>
+		    	<td>ashish@z.com</td>
+		    	<td>Staff Member</td>
+		    	<td><a class="ui basic mini red button">Remove</a></td>
+		    </tr>   
 		  </tbody>
 		</table>
+	</div>
 
 
 

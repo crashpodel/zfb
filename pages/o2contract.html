@@ -1,14 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
+
+<div class = "ui segments">
+	<div class = "ui segment attached">
 		<h1 class="ui header">Online Ordering Contract and Merchant Details
 		<div class="sub header">Review and edit your contract details</div>
-		</h1>	
+		</h1>
+	</div>
+
+	<div class = "ui segment bottom attached">
 		<!--NOTE-->
-		
 		<div class="ui info message"><h5>Note</h5>These details are yet to be approved</div>
 		<!--NOTE-->
-		<!--CONTACT DETAILS-->
+	</div>
 
+	
+		<!--CONTACT DETAILS-->
+	<div class = "ui segment bottom attached">	
 		<h3 class="ui dividing header">Contact Details</h3>
 		<form class="ui form">
 			<div class="ui fields">
@@ -30,11 +38,14 @@
 				<input type="text" name="last-name" placeholder="Last Name">
 			</div>		  
 		</form>
-
+	</div>	
 		<!--CONTACT DETAILS END-->
 
+		<!-- BANK DETAILS-->
+
+	<div class = "ui segment bottom attached">		
 			<h3 class="ui dividing header">Bank Details</h3>
-			<div class="ui form">
+			<form class="ui form">
 			  <div class="fields">
 			    <div class="field">
 			      <label>Bank Name</label>
@@ -66,10 +77,13 @@
 			          </div>
 			      </div>
 			    </div>
-			  </div>		  
-			</div>
+			  </div>	
+		  </form>	  
+	</div>
+		<!--BANK DETAILS END-->
 
-		<!--CONTACT DETAILS END-->
+		<!--COMMISSION AND TAX DETAILS-->
+<div class = "ui segment bottom attached">	
 		<h3>Commission and Tax Details</h3>	
 		<form class="ui form">
 			<div class="ui fields">
@@ -112,9 +126,12 @@
 				<input type="text" name="last-name" placeholder="Last Name">
 			</div>		  
 		</form>
+	</div>
 
-
-
-		<!--CONTACT DETAILS END-->
-		<h3>Documents</h3>		
+	<!--COMMISSION AND TAX DETAILS END-->
+	
+	<div class = "ui segment bottom attached">
+		<h3>Documents</h3>	
+	</div>	
+	</div>
 {% endblock content%}
