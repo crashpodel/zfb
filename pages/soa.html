@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
+
+<script> 
+$('#neft-link').href = $('#neft-popup').modal('show');
+</script>
+
 	<div class="ui segments">
 
 
@@ -70,7 +75,7 @@
 		    	<td>-₹2946.29</td>
 		    </tr>
 		    <tr>
-		    	<td>5834341</td>
+		    	<td><a id = "neft-link">CITIN16669920032</a></td>
 		    	<td>27th July 2016</td>
 		    	<td>Cash</td>
 		    	<td>₹850.08</td>
@@ -128,12 +133,14 @@
 		  </tbody>
 		</table>
 	</div>	
-<!--
-<div class="ui modal active">
+
+
+
+<div class="ui modal active" id="neft-popup">
 	  <i class="close icon"></i>
-	  <div class="header">
-	   UTR NO: CITIN16669920032
-	  </div>
+	  <h3 class= "ui header"> Statement details
+	  <div class = "sub header"> UTR NO: CITIN16669920032 
+	  </div></h3>
 	<div class="content">
       <table class="ui celled striped table">
       	<thead>
@@ -141,45 +148,45 @@
       		<th>Order ID</th>
       		<th>Order Date</th>
       		<th>Channel</th>
-      		<th>Comm. Amount</th>
+      		<th>Commisson Amount</th>
       	</tr>
       	</thead>
       	<tr>
       		<td>5654398</td>
       		<td>22th July 2016, 8:45 P.M.</td>
       		<td>Online</td>
-      		<td>228.94</td>
+      		<td>Rs. 228.94</td>
       	</tr>
       	<tr>
       		<td>5654398</td>
       		<td>22th July 2016, 8:45 P.M.</td>
       		<td>Online</td>
-      		<td>228.94</td>
+      		<td>- Rs. 228.94</td>
       	</tr>
        	<tr>
       		<td>5654398</td>
       		<td>22th July 2016, 8:45 P.M.</td>
       		<td>Online</td>
-      		<td>228.94</td>
+      		<td>Rs. 228.94</td>
       	</tr>
        	<tr>
       		<td>5654398</td>
       		<td>22th July 2016, 8:45 P.M.</td>
       		<td>Online</td>
-      		<td>228.94</td>
-      	</tr>     	     	
+      		<td>- Rs. 28.94</td>
+      	</tr> 
+  		<tr colspan = "3" class = "active">
+      		<td>Total Amount</td>
+      		<td></td>
+      		<td></td>
+      		<td>Rs. 773.43</td>
+      	</tr>      	     	
       </table>
 	</div>
 
   <div class="actions">
-    <div class="ui black deny button">
-      Nope
-    </div>
-    <div class="ui positive right labeled icon button">
-      Yep, that's me
-      <i class="checkmark icon"></i>
+    <a class="ui green basic button center aligned"> Close </a>
     </div>
   </div>
-</div>
--->
+
 {% endblock content%}

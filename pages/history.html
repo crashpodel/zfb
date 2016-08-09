@@ -70,7 +70,7 @@ Fries : French Fries<br/>
         <div class="sub header">View all orders placed using Zomato online ordering</div>
       </h1>
     </div>
-    <table class="ui fcelled striped table attached">
+    <table class="ui celled structured striped table attached">
       <thead>
         <tr>
           <th>Hash ID</th>
@@ -108,12 +108,56 @@ Fries : French Fries<br/>
     </table>
     <div class="ui center aligned segment attached"><a class="ui green basic button">Load More</a></div>
   </div>
+
+
+  <!--DISPUTE MODAL-->
+
+  <div class="ui modal active" id="dispute-modal">
+    <h3 class= "ui header"> Dispute this order
+    <div class = "sub header"> HashID: 5937070
+    </div></h3>
+  <div class="content">
+        <div class="ui form">
+    <div class="grouped fields">
+      <label>Select a reason.</label>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="example2" checked="checked">
+          <label>Invalid address</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="example2">
+          <label>Did not answer the phone</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="example2">
+          <label>Refused to pay</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="example2">
+          <label>Other</label>
+        </div> 
+        <div class = "ui small disabled input">
+         <input type="text" name="reason" placeholder="Provide reason">
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="actions">
+    <a class="ui grey basic button"> Cancel </a>
+    <a class="ui red basic button"> Raise Dispute </a>
+    </div>
+  </div>
+
+  <!--END DISPUTE MODAL -->
   
-
-
-
-		
-
-
 
 {% endblock content%}
