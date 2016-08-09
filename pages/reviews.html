@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+  <!--REVIEWS-->
+  <div class="ui segments">
+    <!--MAIN REVIEW - PRIMARY SEGMENT -->
+    <div class="ui segment">
+      <h2>All Reviews</h2>
+      <div class="ui secondary pointing menu" style="margin-left: -14px!important; margin-right: -14px;">
+        <a class="active item">
+          Popular 167
+        </a>
+        <a class="item">
+          Following 0
+        </a>
+        <a class="item">
+          All Reviews 273
+        </a>
+        <a class="item">
+          Blogs 2
+        </a>
+        <div class="right menu">
+        <span>
+          Sorted by
+          <div class="ui inline dropdown">
+            <div class="text">
+              Date
+            </div>
+            <i class="dropdown icon"></i>
+          </div>
+        </span>
+        </div>
+      </div>
+      <small>5 days ago</small> 
+
+        <div class="ui fluid card" style="margin: 0; border: none; box-shadow: none;">
+          <div class="content" style="padding-left: 0; padding-right: 0">
+            <img class="left floated circular mini ui image" style="width: 40px; margin-top: -3px" src="static/images/pic.svg">
+            <a class="right floated ui label">Follow</a>
+            <div class="header">
+              Ashish Kanwar
+            </div>
+            <div class="meta">
+              45 Reviews, 450 Followers
+            </div>
+          </div>
+        </div>
+
+      <p>
+         It's a decent place with loads of games to play. Its has got plenty of pool tables and few Carrom Boards. Also if you want to play darts and board games they are available here.  The Food served here is decent and add to the overall experience. The beer towers are nice so are the snacks. Its a nice place if you want to enjoy few games with your friends or if you want to enjoy an sports event on their large screens<a href="#">...more</a>
+      </p>
+        <div class="ui tiny images">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+      </div>
+      <p>- with <a href="#">Person 1</a>, <a href="#">Person 2</a></p>
+      <p><small>Viewed 250 times</small></p>
+      <div class="ui labeled button" tabindex="0">
+        <div class="ui button">
+          <i class="heart icon"></i> Like
+        </div>
+        <a class="ui basic label">
+          2,048
+        </a>
+      </div>
+      <div class="ui labeled button" tabindex="0">
+        <div class="ui button">
+          <i class="heart icon"></i> Comment
+        </div>
+        <a class="ui basic label">
+          10
+        </a>
+      </div>
+      <a class="ui button">
+       Share
+      </a>
+
+    </div>
+    <!--MAIN REVIEW - PRIMARY SEGMENT END-->
+    <!--COMMENT ETC. - SECONDARY SEGMENT END-->
+    <div class="ui secondary segment">
+      <h4>Management Response</h4>
+      <div class="ui comments">
+      <!--MANAGEMENT RESPONSE ON TOP--> 
+        <div class="comment">
+          <a class="avatar">
+            <img src="static/images/pic.svg">
+          </a>
+          <div class="content">
+            <a class="author">Farzi Café</a>
+            <div class="metadata">
+              <span class="date">5 days ago</span>
+            </div>
+            <div class="text">
+              Dear Ms. Anand,
+
+          Thank you so much for sharing your experience and feedback with us. It is feedback from our guests that enable us in taking cognizance of the areas of improvement, for us to offer a higher level of dining experience to our patrons. We have addressed your points of observation with the team and assure you that they are being worked on.
+          We hope you would give us another opportunity to serve you in future and look forward to welcoming you back.
+
+          Stay updated by following us on Facebook and Instagram - 
+          https://www.facebook.com/FarziCafeCP/ 
+          http://instagram.com/farzicafe/
+
+
+          Best Regards,
+          Team Farzi Café
+
+            </div>
+            <div class="actions">
+              <a class="reply">Action</a> 
+            </div>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+        <!--USER COMMENTS-->
+        <h4>Comments</h4>
+        <a href="#">View previous comments (2)</a>
+        <div class="ui comments">
+          <div class="comment">
+            <a class="avatar">
+              <img src="static/images/pic.svg">
+            </a>
+            <div class="content">
+              <a class="author">Sakshi Gandhi</a>
+              <div class="metadata">
+                <span class="date">5 days ago</span>
+              </div>
+              <div class="text">
+                Can you please share your email ID?
+              </div>
+              <div class="actions">
+                <a>Like</a> <a>Comment</a> <a>Report</a> <a>Etc</a> 
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <a class="avatar">
+              <img src="static/images/pic.svg">
+            </a>
+            <div class="content">
+              <a class="author">Foodster</a>
+              <div class="metadata">
+                <span class="date">5 days ago</span>
+              </div>
+              <div class="text">
+                Of course!
+              </div>
+              <div class="actions">
+                <a>Like</a> <a>Comment</a> <a>Report</a> <a>Etc</a> 
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <a class="avatar">
+              <img src="static/images/pic.svg">
+            </a>
+            <div class="content">
+            <div class="ui fluid action input">
+              <input type="text" placeholder="Add a comment">
+              <button class="ui button">Post Comment</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!--USER COMMENTS END-->
+      </div>
+    </div>
+    <!--COMMENT ETC. - SECONDARY SEGMENT END-->
+  </div>
+
+
+  
+
+{% endblock content%}

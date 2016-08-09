@@ -1,82 +1,85 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="ui segment">
-<h2>Call Tracking</h2>
-<p>Listen to calls made to your restaurant from the business day. You can also download Zomato for Business app in order to view call details.</p>
-<strong>ACD number</strong> 011 33105668 &middot; <strong>Mapped numbers</strong> +91 9810093807,+91 9818900025
-</div>
-
-<div class="ui segment">
-		<h3>Overview</h3>
-		<div class="ui tiny statistics">
-			<div class="red statistic">
-			  <div class="value">
-			    2,204
-			  </div>
-			  <div class="label">
-			    Total Answered Calls
-			  </div>
+<div class="ui segments">
+	<div class="ui segment attached">
+		<h1 class="ui header">Call Tracking
+			<p class="sub header">Listen to calls made to your restaurant from the business day. You can also download Zomato for Business app in order to view call details.</p>
+		</h1>
+	</div>
+	<div class="ui segment attached">
+	<strong>ACD number</strong> 011 33105668 &middot; <strong>Mapped numbers</strong> +91 9810093807,+91 9818900025  <a href="#" class="ui button mini">Update ACD Numbers</a>
+	</div>
+	<div class="ui segment attached">
+			<h3>Overview</h3>
+			<div class="ui mini statistics">
+				<div class="red statistic">
+				  <div class="value">
+				    2,204
+				  </div>
+				  <div class="label">
+				    Total Answered Calls
+				  </div>
+				</div>
+				<div class="statistic">
+				  <div class="value">
+				    853
+				  </div>
+				  <div class="label">
+				    Total Call Minutes
+				  </div>
+				</div>
+				<div class="statistic">
+				  <div class="value">
+				    -
+				  </div>
+				  <div class="label">
+				    Total Orders
+				  </div>
+				</div>
+				<div class="statistic">
+				  <div class="value">
+				    -
+				  </div>
+				  <div class="label">
+				    Confirmed Covers
+				  </div>
+				</div>
+				<div class="statistic">
+				  <div class="value">
+				    197
+				  </div>
+				  <div class="label">
+				    Total Unanswered Calls
+				  </div>
+				</div>
 			</div>
-			<div class="statistic">
-			  <div class="value">
-			    853
-			  </div>
-			  <div class="label">
-			    Total Call Minutes
-			  </div>
-			</div>
-			<div class="statistic">
-			  <div class="value">
-			    -
-			  </div>
-			  <div class="label">
-			    Total Orders
-			  </div>
-			</div>
-			<div class="statistic">
-			  <div class="value">
-			    -
-			  </div>
-			  <div class="label">
-			    Confirmed Covers
-			  </div>
-			</div>
-			<div class="statistic">
-			  <div class="value">
-			    197
-			  </div>
-			  <div class="label">
-			    Total Unanswered Calls
-			  </div>
-			</div>
+	</div>
+		<div class="ui segment attached">
+			<h3>Call List</h3> <a href="#" class="ui tiny compact green basic button">Export Shown to Excel</a>
 		</div>
-</div>
-			
 
-
-		<h3>Call List</h3>
-		<a href="#" class="ui button">Export to Excel</a>	
-		<div class="ui menu">
-		  <a class="active item">
-		    All (197)
-		  </a> 
-		  <a class="item">
-		    Calls heard (0)
-		  </a>
-		  <a class="item">
-		    Calls not heard (556)
-		  </a>
-		  <a class="item">
-		    Invisible (0)
-		  </a>
-		  <a class="item">
-		    Important (0)
-		  </a>
-		  <a class="item">
-		    Missed (197)
-		  </a> 
-		</div>
-		<table class="ui striped table">
+		<div class="ui text attached menu">
+			  <a class="active item">
+			    All (197)
+			  </a> 
+			  <a class="item">
+			    Calls heard (0)
+			  </a>
+			  <a class="item">
+			    Calls not heard (556)
+			  </a>
+			  <a class="item">
+			    Invisible (0)
+			  </a>
+			  <a class="item">
+			    Important (0)
+			  </a>
+			  <a class="item">
+			    Missed (197)
+			  </a> 
+		</div>			
+	
+		<table class="ui striped table attached">
 		  <thead>
 		    <tr>
 		      <th>Number</th>
@@ -90,50 +93,35 @@
 		      <td>91989983XXXX</td>
 		      <td>32 seconds</td>
 		      <td>28 July 2:41pm</td>
-		      <td><a class="ui button ">Play</a> <a class="ui button ">Edit</a> <a class="ui button ">Call Quality</a></td>
+		      <td><a class="ui mini button compact">Play</a> <a class="ui mini button compact">Edit</a> <a class="ui mini button compact">Call Quality</a></td>
 		    </tr>
 		    <tr>
-		      <td>Jamie Harington</td>
-		      <td>January 11, 2014</td>
-		      <td>jamieharingonton@yahoo.com </td>
-		      <td>Yes</td>
+		      <td>91989983XXXX</td>
+		      <td>32 seconds</td>
+		      <td>28 July 2:41pm</td>
+		      <td><a class="ui mini button compact">Play</a> <a class="ui mini button compact">Edit</a> <a class="ui mini button compact">Call Quality</a></td>
 		    </tr>
 		    <tr>
-		      <td>Jill Lewis</td>
-		      <td>May 11, 2014</td>
-		      <td>jilsewris22@yahoo.com</td>
-		      <td>Yes</td>
+		      <td>91989983XXXX</td>
+		      <td>32 seconds</td>
+		      <td>28 July 2:41pm</td>
+		      <td><a class="ui mini button compact">Play</a> <a class="ui mini button compact">Edit</a> <a class="ui mini button compact">Call Quality</a></td>
 		    </tr>
 		    <tr>
-		      <td>John Lilki</td>
-		      <td>September 14, 2013</td>
-		      <td>jhlilk22@yahoo.com</td>
-		      <td>No</td>
+		      <td>91989983XXXX</td>
+		      <td>32 seconds</td>
+		      <td>28 July 2:41pm</td>
+		      <td><a class="ui mini button compact">Play</a> <a class="ui mini button compact">Edit</a> <a class="ui mini button compact">Call Quality</a></td>
 		    </tr>
 		    <tr>
-		      <td>John Lilki</td>
-		      <td>September 14, 2013</td>
-		      <td>jhlilk22@yahoo.com</td>
-		      <td>No</td>
-		    </tr>
-		    <tr>
-		      <td>Jamie Harington</td>
-		      <td>January 11, 2014</td>
-		      <td>jamieharingonton@yahoo.com</td>
-		      <td>Yes</td>
-		    </tr>
-		    <tr>
-		      <td>Jill Lewis</td>
-		      <td>May 11, 2014</td>
-		      <td>jilsewris22@yahoo.com</td>
-		      <td>Yes</td>
-		    </tr>
-		    <tr>
-		      <td>John Lilki</td>
-		      <td>September 14, 2013</td>
-		      <td>jhlilk22@yahoo.com</td>
-		      <td>No</td>
-		    </tr>
+		      <td>91989983XXXX</td>
+		      <td>32 seconds</td>
+		      <td>28 July 2:41pm</td>
+		      <td><a class="ui mini button compact">Play</a> <a class="ui mini button compact">Edit</a> <a class="ui mini button compact">Call Quality</a></td>
+		    </tr>		    
+
 		  </tbody>
 		</table>
+</div>
+
 {% endblock content%}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>plc-tiny</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="plc-tiny">
+            <rect id="Rectangle-path" fill="#BBBBBB" x="0" y="0" width="100" height="100"></rect>
+            <g id="Group" transform="translate(27.000000, 31.000000)" fill="#FFFFFF">
+                <path d="M0.524231241,0.651017281 L0.524231241,37.0871173 L46.8376981,37.0871173 L46.8376981,0.651017281 L0.524231241,0.651017281 L0.524231241,0.651017281 Z M43.1049435,33.1357461 L4.47489498,33.1357461 L4.47489498,4.60203477 L43.1049435,4.60203477 L43.1049435,33.1357461 L43.1049435,33.1357461 L43.1049435,33.1357461 Z" id="Shape"></path>
+                <polygon id="Shape" points="6.55246018 30.0627325 14.5146324 21.6933957 17.4977939 22.9842241 26.9106889 12.9642966 30.6158511 17.3960584 32.2876668 16.38646 41.3323095 30.0627325"></polygon>
+                <ellipse id="Oval" cx="15.7506298" cy="11.8577712" rx="3.47734819" ry="3.47734819"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

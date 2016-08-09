@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="ui segments">
+		<div class="ui segment">
+			<h1 class="ui header">Online Ordering Settings
+				<p class="sub header">Change or edit your online ordering settings.</p>
+			</h1>
+		</div>
+		<div class="ui segment attached">
+			<div class="ui top attached label">Last updated by: Nidhi Jha</div>
+			<div class="ui form">
+			  <div class="field">
+			    <div class="ui toggle checkbox">
+			      <input type="checkbox" checked tabindex="0" class="hidden">
+			      <label>Delivery Status &nbsp;&nbsp;<span class="ui tiny green label">ON</span></label>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<div class="ui segment attached">	
+		<h3>Billing Settings</h3>
+		<p>Create categories for different menu items</p>
+		<a class="ui button green">Add New</a>
+		None<br/>
+		VAT on Food @13.125%<br/>
+		VAT on food @13.130%<br/>
+		Default
+		<h3>Change Groups</h3>	
+
+		</div>
+
+		<table class="ui celled striped table attached">
+		  <thead>
+		    <tr>
+		    	<th>Charge</th>
+		    	<th>Tier 1</th>
+		    	<th>Tier 2</th>
+		    	<th>Tier 3</th>
+		    	<th>Pickup</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		    	<td>Surcharge on VAT</td>
+		    	<td>0.63% <a class="ui button compact">Edit</a>
+		    	Applicable on: VAT on food @13.125%
+		    	</td>
+		    	<td><a class="ui button compact">Add Charge</a></td>
+		    	<td><a class="ui button compact">Add Charge</a></td>
+		    	<td><a class="ui button compact">Add Charge</a></td>
+		    </tr>		    
+		  </tbody>
+		</table>
+		<div class="ui segment attached">
+			<h3>Taxes</h3>
+			<a class="ui button green">Add New</a>
+		</div>
+		<table class="ui celled striped table bottom attached">
+		  <thead>
+		    <tr>
+		    	<th>Name</th>
+		    	<th>Value Type</th>
+		    	<th>Value</th>
+		    	<th>Applied On</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		    	<td>VAT (None)</td>
+		    	<td>Percentage
+		    	</td>
+		    	<td>0</td>
+		    	<td>Default</td>
+		    </tr>
+		    <tr>
+		    	<td>VAT on food</td>
+		    	<td>Percentage
+		    	</td>
+		    	<td>0</td>
+		    	<td>Default</td>
+		    </tr>
+		    <tr>
+		    	<td>Service Tax</td>
+		    	<td>Percentage
+		    	</td>
+		    	<td>0</td>
+		    	<td>Default</td>
+		    </tr>		    		    		    
+		  </tbody>
+		</table>
+		If you notice any discrepancy in the provided VAT rates, kind contact <a href="#">merchant@zomato.com</a>
+		<div class="ui segment attached">
+			<h3>Minimum Order (Tier 1)</h3>
+			<div class="ui equal width form">
+			  <div class="fields">
+			    <div class="field">
+			      <label>Minimum Order Amount (Rs.)</label>
+			      <input type="text" placeholder="First Name">
+			    </div>
+			    <div class="field">
+			      <label>Delivery Charge (Rs.)</label>
+			      <input type="text" placeholder="Middle Name">
+			    </div>
+			    <div class="field">
+			      <label>Apply Delivery Charge below (Rs.)</label>
+			      <input type="text" placeholder="Last Name">
+			    </div>
+			     <div class="field">
+			      <div class="ui checkbox">
+			        <input type="checkbox" tabindex="0" class="hidden">
+			        <label>Always apply delivery charge</label>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<ul>
+				<li>The minimum order amount would be considered the amount prior to the addition of charges and taxes.</li>
+				<li>The Delivery minimum order amount is the amount upto which the user will have to pay additional delivery charge. Applicable only when flat Delivery Charges are not included in charges.</li>
+			</ul>
+		</div>
+		<div class="ui segment attached">
+			<h3>Delivery Modes and Times</h3>
+			<div class="ui equal width form">
+			  <div class="fields">
+			    <div class="field">
+			      <label>Average Delivery Time (in minutes)</label>
+			      <input type="text" placeholder="First Name">
+			    </div>
+			    <div class="field">
+			      <label>Average Pickup Time (in minutes)</label>
+			      <input type="text" placeholder="Middle Name">
+			    </div>
+			     <div class="field">
+			      <div class="ui checkbox">
+			        <input type="checkbox" tabindex="0" class="hidden">
+			        <label>Has Delivery</label>
+			      </div>
+			    </div>
+			     <div class="field">
+			      <div class="ui checkbox">
+			        <input type="checkbox" tabindex="0" class="hidden">
+			        <label>Has Pickup</label>
+			      </div>
+			    </div>			    
+
+			  </div>
+			</div>
+
+		</div>
+		<div class="ui segment attached">
+			<h3>Logistics: Delivery by Zomato</h3>
+			<div class="ui equal width form">
+			  <div class="fields">
+			    <div class="field">
+			      <label>Base Commission</label>
+			      <input type="text" placeholder="First Name">
+			    </div>
+			    <div class="field">
+			      <label>Average Pickup Time (in minutes)</label>
+			      <input type="text" placeholder="Middle Name">
+			    </div>
+			    <div class="field">
+			      <div class="ui checkbox">
+			        <input type="checkbox" tabindex="0" class="hidden">
+			        <label>Enable Logistics Support</label>
+			      </div>
+			    </div>		    
+
+			    <div class="field">
+			      <div class="ui checkbox">
+			        <input type="checkbox" tabindex="0" class="hidden">
+			        <label>Has Base Commission</label>
+			      </div>
+			    </div>	
+			  </div>
+			</div>			
+		</div>
+		<div class="ui segment attached">
+			<h3>Phone Numbers</h3>
+			<div class="ui form">
+			  <div class="inline fields">
+			    <label>Priority O2 Number</label>
+			    <div class="field">
+			      <input type="text" placeholder="(xxx)">
+			    </div>
+			    <div class="field">
+			      <input type="text" placeholder="xxx">
+			    </div>
+			  </div>
+			</div>
+			<div class="ui form">
+			  <div class="inline fields">
+			    <label>Only O2 Number</label>
+			    <div class="field">
+			      <input type="text" placeholder="(xxx)">
+			    </div>
+			    <div class="field">
+			      <input type="text" placeholder="xxx">
+			    </div>
+			  </div>
+			</div>
+		</div>		
+		<div class="ui segment attached">
+			<h3>Notifications to Manager</h3>
+			<div class="ui form">
+			  <div class="inline field">
+			    <label>Manager Email</label>
+			    <input type="text" placeholder="Full Name">
+			  </div>
+			  <div class="inline field">
+			    <label>Manager Mobile</label>
+			    <input type="text" placeholder="Full Name">
+			  </div>
+			</div>
+			<p>Notifications regarding new orders will be sent to the email and mobile provided above.</p>
+		</div>
+		<div class="ui segment attached">
+			<h3>Notifications to Owner</h3>
+			<div class="ui form">
+			  <div class="inline field">
+			    <label>Owner Email</label>
+			    <input type="text" placeholder="Full Name">
+			  </div>
+			  <div class="inline field">
+			    <label>Owner Mobile</label>
+			    <input type="text" placeholder="Full Name">
+			  </div>
+			    <div class="field">
+			      <div class="ui checkbox">
+			        <input type="checkbox" tabindex="0" class="hidden">
+			        <label>Send notifications to owner for new orders</label>
+			      </div>
+			    </div>
+				<div class="inline field">
+			    	<label>Commission applicable above order amount</label>
+			    	<input type="text" placeholder="Full Name">
+			  	</div>			    
+				
+
+
+			</div>
+
+		</div>
+
+
+	</div>	
+
+{% endblock content%}
