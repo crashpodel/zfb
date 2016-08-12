@@ -111,17 +111,32 @@
 			<h1 class="ui header">Analytics
 				<p class="sub header">See how your listing is doing on Zomato.</p>	
 			</h1>
+
+			<!--EBG-->
 			<h3>Estimated Business Generated</h3>
 			<div class="ui horizontal segments">
-				<div class="ui segment">
+				<div class="ui center aligned segment">
 					July'16
 					(Last month)
-					₹4,78,593
+			<div class="ui mini statistics">
+				<div class="green statistic">
+				  <div class="value">
+				    ₹4,78,593
+				  </div>
+				  </div>
+			  </div>
+					
 				</div>
 				<div class="ui segment">
 					August'16
 					(This month so far)
-					₹1,32,676
+			   <div class="ui mini statistics">
+				<div class="green statistic">
+				  <div class="value">
+				    ₹1,78,593
+				  </div>
+			  </div>
+			  </div>
 				</div>
 				<div class="ui segment">
 					<img src="http://placehold.it/260x78"/>	
@@ -129,21 +144,95 @@
 
 			</div>
 
+			<!--PAGE VIEWS GRAPH-->
+			<h3> Page views </h3>
 
+			<div class="ui text attached menu">
+			  <a class="active item">
+			    Daily
+			  </a> 
+			  <a class="item">
+			    Weekly
+			  </a>
+			  <a class="item">
+			    Monthly
+			  </a>
+			</div>
+
+			<div class = "ui segment attached">
+				<img src="http://placehold.it/850x350"/>
+			</div>
+
+
+			<!-- YTD AVERAGE PAGE VIEWS -->
+
+			<div class="ui horizontal segments">
+					
+				<div class="ui segment">
+					Total Page Views (YTD)					
+						<div class="ui mini statistics">
+							<div class="green statistic">
+							  <div class="value">
+							    36299 page views
+							  </div>
+							  </div>
+						  </div>
+					
+					<div class = "ui divider"> </div>
+					<img src="http://placehold.it/250x100"/>
+					
+				</div>
+
+				<div class="ui segment">
+					Average page views per day (YTD)					
+						<div class="ui mini statistics">
+							<div class="green statistic">
+							  <div class="value">
+							    36299 page views
+							  </div>
+							  </div>
+						  </div>
+					
+					<div class = "ui divider"> </div>
+					<img src="http://placehold.it/250x100"/>
+				</div>
+
+			</div>
+
+
+
+			<!-- SOCIAL ACTIONS BY CUSTOMERS-->
 			<h3>Social Actions by Customers</h3>
 			<div class="ui horizontal segments">
 				<div class="ui segment">
-					July'16
-					(Last month)
-					₹4,78,593
+				Restaurant bookmarked by users
+			<div class="ui mini statistics">
+				<div class="blue statistic">
+				  <div class="value">
+				    10 bookmarks
+				  </div>
+				  </div>
+			  </div>
 				</div>
 				<div class="ui segment">
-					August'16
-					(This month so far)
-					₹1,32,676
+				Photos uploaded by users
+					<div class="ui mini statistics">
+				<div class="blue statistic">
+				  <div class="value">
+				    40 photos
+				  </div>
+				  </div>
+			  </div>
 				</div>
 				<div class="ui segment">
-					<img src="http://placehold.it/260x78"/>	
+				Reviews written by users
+				<div class="ui mini statistics">
+					<div class="blue statistic">
+				  	<div class="value">
+				    10 reviews 
+				  	</div>
+				  </div>
+			  </div>
 				</div>
 
 			</div>
@@ -151,125 +240,62 @@
 
 
 
+			<div class = "ui divider"></div>
 
-	
-			<p>	
-				<a class="ui green empty circular label"></a> Payment Settled Orders &nbsp;&nbsp;
-				<a class="ui orange empty circular label"></a> Payment Pending Orders &nbsp;&nbsp;
-				<a class="ui red empty circular label"></a> NEFT Transfers &nbsp;&nbsp;
-				<a class="ui blue empty circular label"></a> Reverse Entry &nbsp;&nbsp;
-			</p>
-		</div>
-		<div class="ui segment attached">
-			<div class="ui dropdown branch compact button">
-	          <div class="text">
-	            From:
-	            <b>27th July 2016 &nbsp; &nbsp;</b>
-	          </div>
-	          <i class="dropdown icon"></i>
-	        </div>
 
-			<div class="ui dropdown branch compact button">
-	          <div class="text">
-	            To:
-	            <b>5th Aug 2016 &nbsp; &nbsp;</b>
-	          </div>
-	         <i class="dropdown icon"></i>
-	        </div>
 
-			
-			<a class="ui compact green button">Filter</a>
+		<!--SALES POC VIEW FOR BANNERS -->
 
-			<a class="ui right floated blue compact button">Download CSV</a>
-		</div>
+		<div class="ui segment">
+		<h3 class = "ui header"> Ad banner impressions
+			<p class = "sub header"> Advertisement record </p>
+		</h3>
 
 		<table class="ui celled striped table bottom attached">
 		  <thead>
 		    <tr>
-		    	<th>Hash ID</th>
-		    	<th>Order Date</th>
-		    	<th>Channel</th>
-		    	<th>Total</th>
-		    	<th>Net</th>
-		    	<th>Comm. Rate</th>
-		    	<th>Comm. Amount</th>
-		    	<th>Service Tax</th>
-		    	<th>TDS</th>
-		    	<th>Debit</th>
-		    	<th>Credit</th>
-		    	<th>Balance</th>
+		    	<th>Info</th>
+		    	<th>Start date</th>
+		    	<th>End date</th>
+		    	<th>Impressions</th>
+		    	<th>Status</th>
 		    </tr>
 		  </thead>
 		  <tbody>
 		    <tr>
-		    	<td>5834341</td>
+		    	<td>bzone: Sector 18 <br> category: Premium-Delivery <br> slot: 4</td>
 		    	<td>27th July 2016</td>
-		    	<td>Cash</td>
-		    	<td>₹850.08</td>
-		    	<td>₹680.00	</td>
-		    	<td>17.35 %</td>
-		    	<td>₹118.00</td>
-		    	<td>₹17.70</td>
-		    	<td>₹0.00</td>
-		    	<td>₹135.70</td>
-		    	<td>--</td>
-		    	<td>-₹2946.29</td>
+		    	<td>27th August 2016</td>
+		    	<td>106621</td>
+		    	<td>ongoing</td>
 		    </tr>
 		    <tr>
-		    	<td><a id = "neft-link">CITIN16669920032</a></td>
+		    	<td>bzone: Sector 18 <br> category: Premium-Delivery <br> slot: 4</td>
 		    	<td>27th July 2016</td>
-		    	<td>Cash</td>
-		    	<td>₹850.08</td>
-		    	<td>₹680.00	</td>
-		    	<td>17.35 %</td>
-		    	<td>₹118.00</td>
-		    	<td>₹17.70</td>
-		    	<td>₹0.00</td>
-		    	<td>₹135.70</td>
-		    	<td>--</td>
-		    	<td>-₹2946.29</td>
+		    	<td>27th August 2016</td>
+		    	<td>106621</td>
+		    	<td>ongoing</td>
 		    </tr>
 		    <tr>
-		    	<td>5834341</td>
+		    	<td>bzone: Sector 18 <br> category: Premium-Delivery <br> slot: 4</td>
 		    	<td>27th July 2016</td>
-		    	<td>Cash</td>
-		    	<td>₹850.08</td>
-		    	<td>₹680.00	</td>
-		    	<td>17.35 %</td>
-		    	<td>₹118.00</td>
-		    	<td>₹17.70</td>
-		    	<td>₹0.00</td>
-		    	<td>₹135.70</td>
-		    	<td>--</td>
-		    	<td>-₹2946.29</td>
+		    	<td>27th August 2016</td>
+		    	<td>106621</td>
+		    	<td>ongoing</td>
 		    </tr>		    
 		    <tr>
-		    	<td>5834341</td>
+		    	<td>bzone: Sector 18 <br> category: Premium-Delivery <br> slot: 4</td>
 		    	<td>27th July 2016</td>
-		    	<td>Cash</td>
-		    	<td>₹850.08</td>
-		    	<td>₹680.00	</td>
-		    	<td>17.35 %</td>
-		    	<td>₹118.00</td>
-		    	<td>₹17.70</td>
-		    	<td>₹0.00</td>
-		    	<td>₹135.70</td>
-		    	<td>--</td>
-		    	<td>-₹2946.29</td>
+		    	<td>27th August 2016</td>
+		    	<td>106621</td>
+		    	<td>ongoing</td>
 		    </tr>
 		    <tr>
-		    	<td>5834341</td>
+		    	<td>bzone: Sector 18 <br> category: Premium-Delivery <br> slot: 4</td>
 		    	<td>27th July 2016</td>
-		    	<td>Cash</td>
-		    	<td>₹850.08</td>
-		    	<td>₹680.00	</td>
-		    	<td>17.35 %</td>
-		    	<td>₹118.00</td>
-		    	<td>₹17.70</td>
-		    	<td>₹0.00</td>
-		    	<td>₹135.70</td>
-		    	<td>--</td>
-		    	<td>-₹2946.29</td>
+		    	<td>27th August 2016</td>
+		    	<td>106621</td>
+		    	<td>ongoing</td>
 		    </tr>		    
 		  </tbody>
 		</table>
