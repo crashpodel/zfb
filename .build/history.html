@@ -41,7 +41,7 @@
 <p>Golf Course Road</p>-->
 <div class="ui grid container">
 	<div class="three wide column">
-		<div class="ui vertical menu">
+		<div class="ui inverted vertical menu">
 			<div class="item">
 				<div class="header">Performance</div>
 				<div class="menu">
@@ -102,69 +102,111 @@
 	</div>
 	<div class="thirteen wide column">
 		
-<!--<div class="ui small modal active scrolling">
+
+
+
+<div class="ui small active modal" style="top:10%;">
 	  <i class="close icon"></i>
-	  <div class="header">
-	   Order Details
-	  </div>
 	<div class="content">
-      <table class="ui  striped table">
-      	<tr>
-      		<td>Hot Bihari Sauce<br/>1 x ₹ 20</td>
-      		<td>₹ 20</td>
-      	</tr>
-      	<tr>
-      		<td>White Guy Chicken Burger<br/>
-Option : Make a Combo [Fries+Beverage]<br/>
-Beverage : Fizzy<br/>
-Fries : French Fries<br/>
-<br/>1 x ₹ 20
-</td>
-      		<td>₹ 298
-</td>
-
-      	</tr>
-       	<tr>
-      		<td>Subtotal</td>
-      		<td>₹ 318</td>
-      	</tr>
-       	<tr>
-      		<td>S.B. Cess</td>
-      		<td>₹ 0.63</td>
-      	</tr>
-       	<tr>
-      		<td>Krishi Kalyan Cess</td>
-      		<td>₹ 0.62</td>
-      	</tr>
-       	<tr>
-      		<td>Service Tax</td>
-      		<td>₹ 17.80</td>
-      	</tr>
-       	<tr>
-      		<td>VAT</td>
-      		<td>₹ 39.75</td>
-      	</tr>
-       	<tr>
-      		<td>Delivery Charge</td>
-      		<td>₹ 40</td>
-      	</tr>
-        <tr>
-      		<td>Surcharge on VAT</td>
-      		<td>₹ 2</td>
-      	</tr>       	    	     	
-      </table>
-	</div>
-
-  <div class="actions">
-    <div class="ui black deny button">
-      Nope
-    </div>
-    <div class="ui positive right labeled icon button">
-      Yep, that's me
-      <i class="checkmark icon"></i>
+  <div class="ui sub header brown">Order Details (6508985 placed on 02:50 PM, August 13 2016)</div>
+<div class="ui list">
+  <div class="item">
+    <i class="user middle aligned icon"></i>
+    <div class="content">
+      Akshat Mittal&nbsp;
+      <div class="ui tiny label basic blue">3rd order from this outlet</div>
     </div>
   </div>
-</div>-->
+  <div class="item">
+    <i class="home middle aligned icon"></i>
+    <div class="content">
+      flat no - 803, sheeba apartments, sector 28, Sector 28, Golf Course Road, Sector 28
+    </div>
+  </div> 
+</div>
+    <div class="ui sub header brown">Items</div>
+    <table class="ui very basic bottom attached single line table">
+      	<tr>
+          <td>
+            <h4 class="ui header">
+            <div class="content">
+              Hot Bihari Sauce
+            </div>
+            </h4>
+          </td>
+          <td><code>2</code> &times; ₹ 20</td>
+      		<td class="right aligned">₹ 40</td>
+      	</tr>
+      	<tr>
+      		<td>
+          <div class="ui list">
+            <div class="item">
+              <div class="content">
+                <div class="header">White Guy Chicken Burger</div>
+                <div class="description">
+                  <div class="list">
+                    <div class="item">Option : Make a Combo [Fries+Beverage]</div>
+                    <div class="item">Beverage : Fizzy</div>
+                    <div class="item">Fries : French Fries</div>        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
+          <td class="top aligned"><code>1</code> &times; ₹ 298</td>
+      		<td class="top aligned right aligned">₹ 298</td>
+
+      	</tr>
+       	<tr>
+      		<td><strong>Subtotal</strong></td>
+          <td></td>
+      		<td class="right aligned"><strong>₹ 318</strong></td>
+      	</tr>
+       	<tr class="disabled">
+      		<td>
+            S.B. Cess
+          </td>
+          <td></td>
+      		<td class="right aligned">₹ 0.63</td>
+      	</tr>
+       	<tr class="disabled">
+      		<td>Service Tax</td>
+          <td></td>
+      		<td class="right aligned">₹ 0.62</td>
+      	</tr>
+       	<tr class="disabled">
+      		<td>Krishi Kalyan Cess</td>
+          <td></td>
+      		<td class="right aligned">₹ 17.80</td>
+      	</tr>
+       	<tr class="disabled">
+      		<td>VAT</td>
+          <td></td>
+      		<td class="right aligned">₹ 39.75</td>
+      	</tr>
+       	<tr class="disabled">
+      		<td>Delivery Charge</td>
+          <td></td>
+      		<td class="right aligned">₹ 40</td>
+      	</tr>
+        <tr class="disabled">
+      		<td> Surcharge on VAT</td>
+          <td></td>
+      		<td class="right aligned">₹ 2</td>
+      	</tr> 
+        <tr>
+          <td><strong>Total Cost</strong></td>
+          <td></td>
+          <td class="right aligned"><strong>₹ 337.82</strong></td>
+        </tr>               	    	     	
+      </table>
+
+	</div>
+  <!--<div class="actions">
+    <a class="ui basic button red compact">Report</a>
+  </div>-->
+</div>
 
   <div class="ui segments">
     <div class="ui segment attached">
@@ -214,7 +256,7 @@ Fries : French Fries<br/>
 
   <!--DISPUTE MODAL-->
 
-  <div class="ui modal active" id="dispute-modal">
+  <!--<div class="ui modal active" id="dispute-modal">
     <h3 class= "ui header"> Dispute this order
     <div class = "sub header"> HashID: 5937070
     </div></h3>
@@ -257,7 +299,7 @@ Fries : French Fries<br/>
     <a class="ui grey basic button"> Cancel </a>
     <a class="ui red basic button"> Raise Dispute </a>
     </div>
-  </div>
+  </div>-->
 
   <!--END DISPUTE MODAL -->
   

@@ -13,7 +13,7 @@
 			<h2>Order Settings</h2>
 			<div class="ui equal width grid">
 				<div class="column">
-					<h3>Order Hours</h3>
+					<h3 class="ui sub header">Order Hours</h3>
 					<table class="ui very basic compact single line table">
 						<tr>
 							<td>Mon</td>
@@ -46,24 +46,39 @@
 					</table>
 				</div>
 				<div class="column ">
-					<h3>Minimum Order</h3>
-					<div>$50</div>
-					<h3>Promised Delivery Time</h3>
-						<div>45 minutes &nbsp;<div class="ui small label red">Often Late</div>
-						<div><i class="motorcycle icon"></i> Using Zomato Logistics</div>
+					<h3 class="ui sub header">Minimum Order</h3>
+					<div>
+						$50 <small>for Tier 1 </small><br/>
+						$60 <small>for Tier 2 </small><br/>
+						$80 <small>for Tier 3 </small><br/>
+
 					</div>
-					<h3>Additional Charges</h3>
+					<h3 class="ui sub header">Promised Delivery Time</h3>
+						<div>45 minutes &nbsp;<div class="ui small label red">Often Late</div>
+					</div>
+					<h3 class="ui sub header">Zomato Logistics</h3>
+					<div>Active</div>
+					<h3 class="ui sub header">Additional Charges</h3>
 					<div>Delivery Charge $50</div>
 					<div>Packing Charge $50</div>
 				</div>
 				<div class="column">
-					<h3>Delivery Areas</h3>
-					<div class="ui segment">
-						<h4>Tier 1</h4>
-						<p class="ui label">Suncity, Sector 54, Gurgaon (0.67km)<i class="delete icon"></i></p>
-						<p class="ui label">Suncity, Sector 54, Gurgaon (0.67km)<i class="delete icon"></i></p>
-						<div><a href="#">View All</a></div>
-					</div>
+					<h3 class="ui sub header">Delivery Areas</h3>
+						<h5>Tier 1</h5>
+						<div class="ui list">
+							<div class="item">
+								<div class="ui label">Suncity, Sector 54, Gurgaon (0.67km)</div>
+							</div>
+							<div class="item">
+								<div class="ui label">Golf Course Road, Gurgaon (0.67km)</div>
+							</div>
+							<div class="item">
+								<div class="ui label">Sector 14, Gurgaon (0.67km)</div>
+							</div>
+							<div class="item">
+								<div class="ui basic tiny button">+ 5 areas</div>
+							</div>							
+						</div>							
 				</div>			
 			</div>
 		</div>
@@ -71,94 +86,60 @@
 			<h2>Order Contacts and Notifications</h2>
 			<div class="ui equal width grid">
 				<div class="column">
-					<h3>Manager Email</h3> 
+					<h3 class="ui sub header">Manager Email</h3> 
 					<div>nipun.soodan@tippingmrpink.com</div>
 
-					<h3>Manager Mobile </h3>
-					<div>
+					<h3 class="ui sub header">Manager Mobile </h3>
+					<div class="content">
 						<p>+919821600829</p>
-						<p>Notifications regarding new orders will be sent to the email and mobile provided above.</p>
+						<p class="ui message">Notifications regarding new orders will be sent to the manager email and mobile provided above.</p>
 					</div>
 
 				</div>
 				<div class="column ">
-					<h3>Owner Email </h3>
+					<h3 class="ui sub header">Owner Email </h3>
 					<div>nitin.rana@tippingmrpink.com</div>
 
-					<h3>Owner Mobile </h3>
+					<h3 class="ui sub header">Owner Mobile </h3>
 					<div>+918800146890</div>
 				</div>
 				<div class="column">
-					<h3>Priority Order Number</h3>
+					<h3 class="ui sub header">Priority Order Number</h3>
 
 					<div>+91 9821-600-829</div>
 
-					<h3>Order Only Number:</h3>
+					<h3 class="ui sub header">Order Only Number:</h3>
 					<div>1244225961</div>					
 				</div>
 			</div>			
 		</div>
+		<div class="ui segment attached">
+			<h2>Contract and Payment Details</h2>
+			<table class="ui very basic collapsing single line table">
+				<tr>
+					<td>Beneficiary Name</td>
+					<td>Kabir Jeet</td>
+				</tr>
+				<tr>
+					<td>Bank Name</td>
+					<td>HDFC Bank</td>
+				</tr>
+				<tr>
+					<td>Account Number</td>
+					<td>50200007945800</td>
+				</tr>
+				<tr>
+					<td>Commission Slab 1</td>
+					<td>10%</td>
+				</tr>
+				<tr>
+					<td>Commission Slab 2</td>
+					<td>20%</td>
+				</tr>
+			</table>
+			<p><strong>Last payment made to this account was $5000.00 on 12th January 2016</strong></p>			
+		</div>
+
 	</div>
-
-
-
-		<div class="ui segment attached">
-			<h2>Order Notifications</h2>
-			<div class="ui equal width grid">
-				<div class="column">
-
-				
-
-				</div>
-				<div class="column">
-	
-
-
-
-
-
-
-
-
-
-
-			<h3>Primary PoC for Burger Singh</h3>
-				Kabir Jeet
-				9990278948
-				kj@tippingmrpink.com
-
-
-			<h3>Payments</h3>
-			<p>Kabir Jeet HDFC Bank 50200007945800</p>
-
-			<h3>Contract Terms</h3>
-			Commission Slab 1
-
-		</div>
-
-		<div class="ui segment attached">
-			<h2>Contract and Payments</h2>
-
-
-
-			<h3>Payments</h3>
-			<p>Kabir Jeet HDFC Bank 50200007945800</p>
-
-			<h3>Contract Terms</h3>
-			Commission Slab 1
-
-		</div>
-
-		
-
-
-		
-
-		<div class="ui segment attached">
-			
-		</div>
-
-
-	</div>	
 
 {% endblock content%}
