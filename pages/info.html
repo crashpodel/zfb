@@ -17,7 +17,7 @@
 	    <input type="text" value="Kanhi Colony, Opposite Gold Souk, Sector 44, Gurgaon" name="last-name" placeholder="Last Name">
 	  </div>
 	  <div class="field">
-	    <label>Happy Hours</label>
+	    <label>Coordinates</label>
 	    <input type="text" value="122001"  name="first-name" placeholder="First Name">
 	  </div>
 
@@ -28,25 +28,149 @@
 	    <input type="text" value="122001"  name="first-name" placeholder="First Name">
 	  </div>
 
-<div class="ui secondary segment">
-Facilities
+<div class = "ui segments">
+	<div class="ui secondary clearing segment"> Facilities </div>
+	<div class = "ui segment">
+		<div class="ui checkbox">
+		  <input type="checkbox" name="example">
+		  <label>Delivery</label>
+		</div>
+	</div>
 </div>
 
-<div class="ui secondary segment">
-Features
+<div class = "ui segments">
+	<div class="ui secondary clearing segment"> Features </div>
+	<div class = "ui segment">
+		<div class="ui checkbox">
+		  <input type="checkbox" name="example">
+		  <label>Live music</label>
+		</div>
+		<br>
+	<div class="ui checkbox">
+	  <input type="checkbox" name="example">
+	  <label>Smoking area</label>
+	</div>
+		<br>
+	<div class="ui checkbox">
+	  <input type="checkbox" name="example">
+	  <label>Sports screenings</label>
+	</div>
+	</div>
 </div>
 
-<div class="ui segment attached">
-Buffet
+<div class = "field">
+
+<div class = "ui segments">
+	<div class="ui secondary clearing segment"> Buffet
+	<div class="ui right floated basic mini green button">Add new buffet</div>
+	 </div>
+	 <div class = "ui segment"> Veg breakfast buffet (Sat)
+		 <div class="ui right floated basic mini grey button">Expand</div>
+	 </div>
+	 <div class = "ui segment"> Non-veg breakfast buffet (Mon, Tues, Wed)
+		 <div class="ui right floated basic mini grey button">Expand</div>
+	 </div>
+	 <div class = "ui segment attached"> Veg breakfast buffet (Sat, Sun)
+		 <div class="ui right floated basic mini grey button">Collapse</div>
+	 </div>
+
+	 <div class = "ui segment attached">
+
+
+ 	<form class="ui form">
+	 	<div class = "field">
+	 	<div class="two fields">
+    	<div class="field">
+	      	<label>Course</label>
+		      <select class="ui fluid dropdown">
+		    <option value="bf">Breakfast</option>
+		    <option value="lu">Lunch</option>
+		    <option value="dn">Dinner</option>
+		      </select>
+	    </div>
+    	<div class="field">
+	      	<label>Meal type</label>
+		      <select class="ui fluid dropdown">
+		    <option value="bf">Vegetarian</option>
+		    <option value="lu">Non-vegetarian</option>
+		    <option value="lu">Both</option>
+		      </select>
+	    </div>
+	    </div>
+	    </div>
+
+	    <div class = "field">
+	    <label>Days of the week </label>
+	    <select class="ui fluid search dropdown" multiple="">
+		  <option value="mon">Monday</option>
+		  <option value="tue">Tuesday</option>
+		  <option value="wed">Wednesday</option>
+		  <option value="tr">Thursday</option>
+		  <option value="fri">Friday</option>
+		  <option value="sat">Saturday</option>
+		  <option value="sun">Sunday</option>
+		</select>
+
+	    </div>
+
+		  <div class="field">
+		    <div class="two fields">
+		      <div class="field">
+		      <label>Enter start time</label>
+		        <input type="text" name="shipping[first-name]" placeholder="Start time">
+		      </div>
+		      <div class="field">
+		     	<label>Enter end time</label>
+		        <input type="text" name="shipping[last-name]" placeholder="End time">
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="field">
+		    <div class="two fields">
+		      <div class="field">
+		      <label>Price</label>
+		        <input type="text" name="shipping[first-name]" placeholder="Enter price">
+		      </div>
+		      <div class="field">
+		      <label> Taxes </label>
+		       <div class="ui radio checkbox">
+	        <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+	        <label>Taxes extra</label>
+	      </div>
+		      </div>
+		    </div>
+		  </div>
+
+	<div class="field">
+	    <label>Details</label>
+	    <input type="text" name="first-name" placeholder="Enter details about the buffet">
+	 </div>
+
+	</form>
+
+
+	 </div>
+	 </div>
+
 </div>
+
+
 
 
 	<div class="field">
-	    <label>Happy Hours</label>
-	    <input type="text" value="23:00 AM"  name="first-name" placeholder="First Name">
-	  </div>
+	    <label>Happy hours</label>
+	    <input type="text" value="23:00 AM"  name="first-name" placeholder="Enter hours">
+	 </div>
+
+
+<div class = "field">
+  <div class = "ui segments">
 	  <div class="grouped fields">
+	  <div class = "ui secondary segment attached">
 	    <label for="fruit">Table Bookings</label>
+	 </div>
+	 <div class = "ui segment bottom attached">
 	    <div class="field">
 	      <div class="ui radio checkbox">
 	        <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
@@ -72,6 +196,13 @@ Buffet
 	      </div>
 	    </div>
 	  </div>
+	 </div>
+	</div>
+
+</div>
+
+
+
 	<div class="field">
 	    <label>Website</label>
 	    <input type="text" value="www.9dc.com"  name="first-name" placeholder="First Name">
