@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="ui segments">
+	<div class="ui segment attached">
+		<h1 class="ui header">Loyalty reward points
+			<div class="sub header">Create a loyalty program for your whitelabel app customers</div>
+		</h1>
+	</div>
+
+<div class = "ui segment attached">
+	<div class="ui top attached tabular menu">
+	  <a class="item active" data-tab="first">Add Points</a>
+	  <a class="item" data-tab="second">Redeem Points</a>
+	  <a class="item" data-tab="third">User History</a>
+	</div>
+
+	<form class = "ui form">
+		<div class="ui bottom attached tab segment active" data-tab="first">
+
+			  <div class="three fields">
+			  <div class = "field">
+			    <label>Phone number*</label>
+			    <input type="text" name="number" placeholder="Enter phone number">
+			  </div>
+			  <div class="field">
+			    <label>Bill amount*</label>
+			    <input type="text" value="₹500" name="bill-amount" placeholder="Enter bill amount">
+			  </div>
+			  <div class="field">
+			    <label>Invoice ID</label>
+			    <input type="text" name="invoice-id" placeholder="Enter invoice amount (optional)">
+			  </div>
+			 </div>	
+
+			 <div class = "field">
+				 <label>Total Points</label>
+				  <label class="header">10</label>
+			 </div>
+
+			 <div class = "field">
+				 <div class = "ui green button">Submit</div>
+			 </div>
+		</div>
+
+
+
+		<div class="ui bottom attached tab segment" data-tab="second">
+		  <div class="three fields">
+			  <div class = "field">
+			    <label>Phone number*</label>
+			    <input type="text" name="number" placeholder="Enter phone number">
+			  </div>
+			  <div class="field">
+			    <label>Points*</label>
+			    <input type="text" name="bill-amount" placeholder="Enter bill amount">
+			  </div>
+			  <div class="field">
+			    <label>Invoice ID</label>
+			    <input type="text" name="invoice-id" placeholder="Enter invoice amount (optional)">
+			  </div>
+			 </div>	
+
+			 <div class = "field">
+				 <label>Total Points</label>
+				  <label class="header">10</label>
+			 </div>
+
+			 <div class = "field">
+				 <div class = "ui green button">Submit</div>
+			 </div>
+		
+		</div>
+
+
+		<div class="ui bottom attached tab segment" data-tab="third">
+		  <div class = "three fields">
+			  	<div class="field">
+				    <label>Phone number</label>
+				    <input type="text" name="phone-num" placeholder="Enter phone number">
+				 </div>
+			  	<div class = "field">
+					 <label>Total Points</label>
+					  <label class="header">0</label>
+				 </div>
+		 </div>
+
+			 <div class = "field">
+				 <div class = "ui green button">Submit</div>
+			 </div>
+
+
+		</div>
+	</form>
+
+</div>
+
+
+	<table class="ui celled striped table attached">
+		  <thead>
+		    <tr>
+		    	<th>Id</th>
+		    	<th>Time</th>
+		    	<th>Customer name</th>
+		    	<th>Location</th>
+		    	<th>Bill amount</th>
+		    	<th>Type</th>
+		    	<th>Points</th>
+		    	<th>Invoice</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		    	<td>81</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td>Sector 44</td>
+		    	<td>₹ 1000.00</td>
+		    	<td><p style = "color:#21BA45;">EARN</p></td>
+		    	<td><p style = "color:#21BA45;">100</p></td>
+		    	<td></td>
+		    </tr>
+		    <tr>
+		    	<td>81</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td>Sector 44</td>
+		    	<td>₹ 1000.00</td>
+		    	<td><p style = "color:#DB2828;">BURN</p></td>
+		    	<td><p style = "color:#DB2828;">100</p></td>
+		    	<td></td>
+		    </tr>
+		    <tr>
+		    	<td>81</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td>Sector 44</td>
+		    	<td>₹ 1000.00</td>
+		    	<td><p style = "color:#21BA45;">EARN</p></td>
+		    	<td><p style = "color:#21BA45;">100</p></td>
+		    	<td></td>
+		    </tr>		    
+		    <tr>
+		    	<td>81</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td>Sector 44</td>
+		    	<td>₹ 1000.00</td>
+		    	<td><p style = "color:#21BA45;">EARN</p></td>
+		    	<td><p style = "color:#21BA45;">100</p></td>
+		    	<td></td>
+		    </tr>
+		    <tr>
+		    	<td>81</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td>Sector 44</td>
+		    	<td>₹ 1000.00</td>
+		    	<td><p style = "color:#21BA45;">EARN</p></td>
+		    	<td><p style = "color:#21BA45;">100</p></td>
+		    	<td></td>
+		    </tr>		    
+		  </tbody>
+		</table>
+
+
+	<div class="ui center aligned segment attached"><a class="ui green basic button">Load More</a></div>
+
+
+
+
+</div>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content%}

@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="ui segments">
+	<div class="ui segment attached">
+		<h1 class="ui header">Manage sections on whitelabel app
+			<div class="sub header">Show and hide sections on the whitelabel app.</div>
+		</h1>
+	</div>	
+
+	<table class="ui celled striped table attached">
+		  <thead>
+		    <tr>
+		    	<th>Section</th>
+		    	<th>Visibility of section on the app</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    
+		    <tr>
+		    	<td>
+		    		<div class="ui items">
+		              <div class="item">
+		                <div class="content">
+		                  <b>Online ordering</b>
+		                  <div class="meta">
+		                    <span>This will enable/disable online ordering from all Zomato products.</span>
+		                  </div>
+		                </div>
+		              </div>
+		             </div> 
+				</td>
+		    	<td>
+		    		<div class="ui slider checkbox">
+					  <input type="checkbox" name="newsletter">
+					  <label>Hidden</label>
+					</div>
+				</td>
+		    </tr>
+
+		    <tr>
+		    	<td>
+		    		<div class="ui items">
+		              <div class="item">
+		                <div class="content">
+		                  <b>Testimonials</b>
+		                  <div class="meta">
+		                    <span>This will enable/disable testimonials on your whitelabel app.</span>
+		                  </div>
+		                </div>
+		              </div>
+		             </div> 
+				</td>
+		    	<td>
+		    		<div class="ui slider checkbox">
+					  <input type="checkbox" name="newsletter">
+					  <label>Hidden</label>
+					</div>
+				</td>
+		    </tr>
+
+		    <tr>
+		    	<td>
+		    		<div class="ui items">
+		              <div class="item">
+		                <div class="content">
+		                  <b>Table Reservations</b>
+		                  <div class="meta">
+		                    <span>This will enable/disable table booking from your whitelabel app.</span>
+		                  </div>
+		                </div>
+		              </div>
+		             </div> 
+				</td>
+		    	<td>
+		    		<div class="ui slider checkbox">
+					  <input type="checkbox" name="newsletter">
+					  <label>Hidden</label>
+					</div>
+				</td>
+		    </tr>
+
+
+		    <tr>
+		    	<td>
+		    		<div class="ui items">
+		              <div class="item">
+		                <div class="content">
+		                  <b>About the restaurant</b> 
+		                  <div class="meta">
+		                    <span>This will enable/disable the restaurant's description from your whitelabel app.</span>
+		                  </div>
+		                </div>
+		              </div>
+		             </div> 
+				</td>
+		    	<td>
+		    		<div class="ui slider checkbox">
+					  <input type="checkbox" name="newsletter" checked = "checked">
+					  <label>Visible</label>
+					</div>
+				</td>
+		    </tr>
+
+		    <tr>
+		    	<td>
+		    		<div class="ui items">
+		              <div class="item">
+		                <div class="content">
+		                  <b>Rating</b> 
+		                  <div class="meta">
+		                    <span>This will enable/disable display of restaurant's rating from your whitelabel app.</span>
+		                  </div>
+		                </div>
+		              </div>
+		             </div> 
+				</td>
+		    	<td>
+		    		<div class="ui slider checkbox">
+					  <input type="checkbox" name="newsletter">
+					  <label>Hidden</label>
+					</div>
+				</td>
+		    </tr>
+		</tbody>
+	</table>
+
+</div>
+
+
+{% endblock content%}

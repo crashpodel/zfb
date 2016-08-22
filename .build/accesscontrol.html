@@ -81,8 +81,8 @@
 				<div class="menu">
 					<a class="item" href="wla-analytics.html">Analytics</a>
 					<a class="item" href = "#">Notifications</a>
-					<a class="item" href = "#">Section Settings</a>
-					<a class="item" href = "#">WLA Reward Points</a>
+					<a class="item" href = "wla-sections.html">Section Settings</a>
+					<a class="item" href = "wla-rewardpoints.html">WLA Reward Points</a>
 				</div>
 			</div>
 
@@ -141,23 +141,23 @@
 		    	<td>Restaurant Secondary Manager</td>
 		    	<td><div class="ui slider checkbox">
 					  <input type="checkbox" name="newsletter">
-					  <label></label>
+					  <label>Off</label>
 					</div>
 				</td>
 				<td><div class="ui slider checkbox">
 					  <input type="checkbox" name="newsletter">
-					  <label></label>
+					  <label>Off</label>
 					</div>
 				</td>
 				<td><div class="ui slider checkbox">
 					  <input type="checkbox" name="newsletter">
-					  <label></label>
+					  <label>Off</label>
 					</div>
 				</td>
 		    	<td>
 		    	<div class="ui slider checkbox">
-					  <input type="checkbox" name="newsletter">
-					  <label><a href="#">Subscribed</a></label>
+					  <input type="checkbox" checked="checked" name="newsletter">
+					  <label>Subscribed</label>
 					</div>
 				</td>
 		    </tr>		 
@@ -166,23 +166,23 @@
 		    	<td>Restaurant Secondary Manager</td>
 		    	<td><div class="ui slider checkbox">
 					  <input type="checkbox" name="newsletter">
-					  <label></label>
+					  <label>Off</label>
 					</div>
 				</td>
 				<td><div class="ui slider checkbox">
-					  <input type="checkbox" name="newsletter">
+					  <input type="checkbox" checked="checked" name="newsletter">
 					  <label>On</label>
 					</div>
 				</td>
 				<td><div class="ui slider checkbox">
 					  <input type="checkbox" name="newsletter">
-					  <label></label>
+					  <label>Off</label>
 					</div>
 				</td>
 		    	<td>
 		    	<div class="ui slider checkbox">
-					  <input type="checkbox" name="newsletter">
-					  <label><a href="#">Subscribed</a></label>
+					  <input type="checkbox" checked="checked" name="newsletter">
+					  <label>Subscribed</label>
 					</div>
 				</td>
 		    </tr>		 
@@ -200,14 +200,14 @@
 					</div>
 				</td>
 				<td><div class="ui slider checkbox">
-					  <input type="checkbox" name="newsletter">
+					  <input type="checkbox" checked = "checked" name="newsletter">
 					  <label>On</label>
 					</div>
 				</td>
 		    	<td>
 		    	<div class="ui slider checkbox">
 					  <input type="checkbox" name="newsletter">
-					  <label><a href="#">Subscribed</a></label>
+					  <label>Unsubscribed</label>
 					</div>
 				</td>
 		    </tr>		 
@@ -245,6 +245,10 @@
 		$('.ui.accordion')
   			.accordion()
 		;
+
+		$('.menu .item')
+			  .tab()
+			;
 
 		</script>
 
