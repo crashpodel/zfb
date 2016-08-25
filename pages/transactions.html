@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block content %}
+
+ <div class="ui segments">
+    <div class="ui segment attached">
+      <h1 class="ui header">Transactions
+        <div class="sub header">Business entering your restaurant from Zomato</div>
+      </h1>
+    </div>
+
+    <div class = "ui segment attached">
+
+    <div class="sub header">This is a report of transactions for time period <b>26 May 2016 to 24 Aug 2016 </b>, with a comparison to the previous period <b>25 Feb 2016 to 25 May 2016</b>. To see transactions for a different time period, please use the date selector at the upper right corner of this page.</div>
+
+    </div>
+
+</div>
+
+    <div class = "ui segment">
+
+	    <!-- please center align this div "you are viewing transactions..."-->	
+	     <div class="ui subheader center aligned"><b>You are viewing transactions for the following Zomato products:  Online ordering. </b></div>
+     </div>
+
+     <div class = "ui fluid card attached">
+     <!--card title-->
+	     <div class = "content">
+		     <div class="ui header center aligned">Tracked Revenue from Zomato <a class="ui circular label">?</a></div>
+		     <p class = "summary center aligned"> due to delivered orders.</p>
+		   
+
+     </div>
+
+
+     <div class = "content">
+	     <div class="ui subheader center aligned"><b>Rs. 84,379 in the selected time period</b></div>
+			<div class = "summary center aligned" style = "color:rgb(203, 0, 2)">Tracked revenue decreased by 22% compared to Rs. 107,575 in the previous time period.</div>
+	     </div>
+
+	     <div class = "content">
+		     <div class = "ui two column grid">
+			     <div class = "thirteen wide column"></div>
+			     <div class = "three wide column">		     	
+			     	<a class="ui grey basic button">View as table</a>
+			     </div>
+	    	</div>
+	    </div>
+
+	    <div class = "content center aligned">
+	    <img src="http://placehold.it/820x400"/>
+	    </div>
+
+	    <div class="extra content" style = "background-color:#f8f8f8">
+		    <div class = "subheader"><b> Understanding tracked revenue from Zomato </b></div>
+		    <div class = "summary">
+		    <span style = "color: orange">Revenue from delivered orders </span> is from the number of total orders delivered successfully.
+		    </div>
+	  </div>
+
+	</div>  <!--end card-->	
+
+	<!-- start card-->
+
+     <div class = "ui fluid card attached">
+    
+	     <div class = "content">
+		     <div class="ui header center aligned">Lost Revenue from Zomato <a class="ui circular label">?</a></div>
+		     <p class = "summary center aligned"> due to undelivered orders.</p>
+		   
+
+     </div>
+
+
+     <div class = "content">
+	     <div class="ui subheader center aligned"><b>Rs. 1,55,399 in the selected time period</b></div>
+			<div class = "summary center aligned" style = "color:rgb(203, 0, 2)">Lost revenue increased by 22% compared to Rs. 107,575 in the previous time period.</div>
+	     </div>
+
+	     <div class = "content">
+		     <div class = "ui two column grid">
+			     <div class = "thirteen wide column"></div>
+			     <div class = "three wide column">		     	
+			     	<a class="ui grey basic button">View as graph</a>
+			     </div>
+	    	</div>
+	    </div>
+
+	    <div class = "content">
+		    <table class="ui celled striped table bottom attached">
+			  <thead>
+			    <tr>
+			    	<th>Product</th>
+			    	<th>Previous time period</th>
+			    	<th>Selected time period</th>			    	
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			    	<td style = "color: orange">Online ordering</td>
+			    	<td>Rs. 1,54,574</td>
+			    	<td>Rs. 1,54,574</td>
+			    </tr>	
+			    <tr>
+			    	<td>Total undelivered orders</td>
+			    	<td>800 orders</td>
+			    	<td>1664 orders</td>			    
+		    	</tr>
+			    <tr>
+			    	<td>Rejected orders</td>
+			    	<td>800 orders</td>
+			    	<td>1664 orders</td>
+			    </tr>	    
+			    <tr>
+			    	<td>Timed out orders</td>
+			    	<td>800 orders</td>
+			    	<td>1664 orders</td>
+			    </tr>	    
+			  </tbody>
+			</table>
+	    </div>
+
+	    <div class="extra content" style = "background-color:#f8f8f8">
+		    <div class = "subheader"><b> Understanding lost revenue from Zomato </b></div>
+		    <div class = "summary">
+		    <span style = "color: orange">Lost revenue from undelivered orders </span> is from the total number of rejected and timed-out orders.
+		    </div>
+	  </div>
+
+	</div>  <!--end card-->	
+
+	<div class = "ui segment">
+
+    <div class="sub header">Have questions?  You can get in touch your Zomato point-of-contact to discuss your queries. If you want to see this information on the go, download the <a href="#">Zomato For Business app</a> and manage your business from anywhere. </div>
+
+    </div>
+
+
+
+{% endblock content%}

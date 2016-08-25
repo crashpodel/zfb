@@ -121,58 +121,173 @@
 
 <div class="ui segments">
 	<div class="ui segment attached">
-		<h1 class="ui header">Subscriptions
-			<div class="sub header">View subscription history for Zomato for Business.</div>
+		<h1 class="ui header">Table Bookings
+			<p class="sub header">View analytics for table bookings at your restaurant.</p>
 		</h1>
+		
+	</div>
+
+
+	<div class="ui segment attached">
+	<h2 class>Overview</h2>
+	<div class="ui relaxed horizontal list">
+		<div class="item">
+			<div class="ui sub header">Total Bookings</div>
+			<div class="ui sub header" style = "color:grey"> 26 May 2016 to 26 Aug 2016</div>
+			<div class="ui orange header">
+			285
+			</div>
+		</div>
+		<div class="item">
+			<div class="ui sub header">Confirmed bookings</div>			
+			<div class="ui sub header" style = "color:grey"> 26 May 2016 to 26 Aug 2016</div>
+			<div class="ui green header">
+			186
+			</div>
+		</div>
+		<div class="item">
+			<div class="ui sub header">Declined bookings</div>
+			<div class="ui sub header" style = "color:grey"> 26 May 2016 to 26 Aug 2016</div>
+			<div class="ui red header">
+			61
+			</div>
+		</div>
+		<div class="item">
+			<div class="ui sub header">Cancelled bookings</div>	
+			<div class="ui sub header" style = "color:grey"> 26 May 2016 to 26 Aug 2016</div>
+			<div class="ui red header">
+			 38
+			</div>
+		</div>
 	</div>	
 
-<table class="ui celled striped table attached">
+	
+	<div class = "ui divider"> </div>
+
+	
+	<div class="ui relaxed horizontal list">	
+		<div class="item">
+			<div class="ui sub header">Total Covers</div>
+			<div class="ui sub header" style = "color:grey"> 26 May 2016 to 26 Aug 2016</div>
+			<div class="ui orange header">
+			285
+			</div>
+		</div>
+		<div class="item">
+			<div class="ui sub header">Confirmed covers</div>			
+			<div class="ui sub header" style = "color:grey"> 26 May 2016 to 26 Aug 2016</div>
+			<div class="ui green header">
+			186
+			</div>
+		</div>
+		<div class="item">
+			<div class="ui sub header">Declined covers</div>
+			<div class="ui sub header" style = "color:grey"> 26 May 2016 to 26 Aug 2016</div>
+			<div class="ui red header">
+			61
+			</div>
+		</div>
+		<div class="item">
+			<div class="ui sub header">Cancelled covers</div>	
+			<div class="ui sub header" style = "color:grey"> 26 May 2016 to 26 Aug 2016</div>
+			<div class="ui red header">
+			 38
+			</div>
+		</div>
+
+
+
+	</div>
+</div>
+
+	<!--Bookings graph-->
+	<div class="ui segment attached">
+		<h2 class>Hourly distribution</h2>
+
+			<div class="ui text attached menu">
+			  <a class="active item">
+			    Monthly comparison
+			  </a> 
+			  <a class="item">
+			    This month
+			  </a>
+			  <a class="item">
+			    This week
+			  </a>
+			</div>
+		<img src="http://placehold.it/882x350"/>	
+
+		<p><small>Note: Cancelled includes both the bookings declined by you and the bookings cancelled by the users.</small></p>
+
+
+	</div><!--end bookings graph-->
+
+
+	<!--Bookings table-->
+	<div class="ui segment attached">
+		<h2 class>Bookings list</h2>
+
+		<table class="ui celled striped table attached">
 		  <thead>
 		    <tr>
-		    	<th>Subscription ID</th>
-		    	<th>Purchased by</th>
-		    	<th>Outlet(s)</th>
-		    	<th>Next billing</th>
-		    	<th>Payment details</th>
-		    	<th>Subscription</th>
-		    
+		    	<th>Diner name</th>
+		    	<th>Booking status</th>
+		    	<th>Date and time of booking</th>
+		    	<th>Covers</th>
 		    </tr>
 		  </thead>
 		  <tbody>
 		    <tr>
-		    	<td>ZF-40-9E8D14343</td>
-		    	<td>Aiswarya Kolisetty on 28th March 2016</td>
-		    	<td>Test Restaurant 4 <br> Test Restaurant 3</td>
-		    	<td>26th August 2016</td>
-		    	<td><a class="ui basic mini grey button">Edit</a></td>
-		    	<td><a class="ui basic mini red button">Cancel</a></td>
-		    	
-		    </tr>		 
+		    	<td>Aiswarya Kolisetty</td>
+		    	<td style = "color:#51a351">Confirmed</td>
+		    	<td>26 Aug 2016 7:00 PM</td>
+		    	<td>2</td>
+		    </tr>	
 		    <tr>
-		    	<td>ZF-40-9E8D14343</td>
-		    	<td>Aiswarya Kolisetty on 28th March 2016</td>
-		    	<td>Test Restaurant 4 <br> Test Restaurant 3</td>
-		    	<td>26th August 2016</td>
-		    	<td><a class="ui basic mini grey button">Edit</a></td>
-		    	<td><a class="ui basic mini red button">Cancel</a></td>
+		    	<td>Aiswarya Kolisetty</td>
+		    	<td style = "color:#CB202D">Declined</td>
+		    	<td>26 Aug 2016 7:00 PM</td>
+		    	<td>2</td>
 		    </tr>
 		    <tr>
-		    	<td>ZF-40-9E8D14343</td>
-		    	<td>Aiswarya Kolisetty on 28th March 2016</td>
-		    	<td>Test Restaurant 4 <br> Test Restaurant 3</td>
-		    	<td>26th August 2016</td>
-		    	<td><a class="ui basic mini grey button">Edit</a></td>
-		    	<td><a class="ui basic mini red button">Cancel</a></td>
-		    </tr>   
+		    	<td>Aiswarya Kolisetty</td>
+		    	<td style = "color:#51a351">Confirmed</td>
+		    	<td>26 Aug 2016 7:00 PM</td>
+		    	<td>2</td>
+		    </tr>	    
 		  </tbody>
 		</table>
+		<div class="ui center aligned segment attached"><a class="ui green basic button">Load More</a></div>
 
-		<div class="ui segment bottom attached">
-		<p><small>Please email us at <a href= "#">merchant@zomato.com</a> with questions or concerns.</small></p>
-		</div>	
+		</div><!--end bookings table-->
+
+</div>
 
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		
 	</div>

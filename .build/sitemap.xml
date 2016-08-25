@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
     <url>
+        <loc>/accesscontrol.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/addremove.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/analytics.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -21,7 +31,17 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/hours.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/index.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/info.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -36,12 +56,67 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/o2settings.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/paymenthistory.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/performance.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/reviews.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/soa.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/subscriptions.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/tablebookings.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/todos.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/transactions.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/wla-analytics.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/wla-notifications.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/wla-rewardpoints.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/wla-sections.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
