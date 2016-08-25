@@ -1,0 +1,300 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="ui segments">
+	<div class="ui segment attached">
+		<h1 class="ui header">Notifications
+			<div class="sub header">Push notifications to customers with the whitelabel app.</div>
+		</h1>
+	</div>
+
+<div class = "ui segment attached">
+	<div class="ui top attached tabular menu">
+	  <a class="item active" data-tab="first">Send notifications</a>
+	  <a class="item" data-tab="second">Scheduled notifications</a>
+	  <a class="item" data-tab="third">Discarded notifications</a>
+	</div>
+	<form class = "ui form">
+		<div class="ui bottom attached tab segment active" data-tab="first">
+		<h2 class="ui header">Send a notification</h2>
+			<div class = "field">
+			<label>Which page should it open?</label>
+			    <div class="ui selection dropdown">
+				  <input type="hidden" name="page">
+				  <i class="dropdown icon"></i>
+				  <div class="default text">Page</div>
+				  <div class="menu">
+				    <div class="item" data-value="0">Home</div>
+				    <div class="item" data-value="1">Menus</div>
+				    <div class="item" data-value="2">Events</div>
+				    <div class="item" data-value="3">Online ordering</div>
+				    <div class="item" data-value="4">Notifications</div>
+				    <div class="item" data-value="5">Promos</div>
+				  </div>
+				</div>
+			</div>	
+
+			<div class = "field">
+				<label> Notification text </label>
+				<textarea></textarea>
+		  	</div>
+
+			<div class = "field">
+			<label> or <a href="#"> Select from our templates </a></label>
+			</div>
+
+
+			<div class = "field">
+			<label>Choose date and time</label>
+			<div class = "two fields">
+			
+				<div class = "field">
+				    <div class = "ui labeled input">
+				    <div class = "ui label">
+				    	Icon
+				    </div>
+				    <input type="text" name="date" placeholder="Enter date">
+				</div>
+				</div>
+				<div class = "field">
+				<div class = "ui labeled input">
+				    <div class = "ui label">
+				    	Icon
+				    </div>
+				    <input type="text" name="time" placeholder="Enter time">
+				</div>
+				</div>
+			</div>
+			</div>
+
+		<div class = "ui segment">
+			<div class = "field">
+				<label> Repetition </label>
+					<div class="ui slider checkbox">
+				        <input type="radio" name="throughput" checked="checked">
+				        <label> Repeat notification for 1 week at the same time</label>
+					</div>
+			</div>
+
+			<div class = "ui accordion field">
+				<div class = "title">
+				<i class = "icon dropdown"></i>
+				Set number of weeks
+				</div>
+				<div class = "content field">
+					<label class = "transition hidden"> Enter number of weeks to resend notification</label>
+					<div class="ui right labeled input">
+					  <input type="text" value = "1" placeholder="Enter weeks" class="transition hidden">
+					  <div class = "ui label"> week(s) </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class = "field">
+		<label> Upload photo </label>
+		<img src="http://placehold.it/80x80"/>		
+		</div>
+
+		<div class = "ui divider"></div>
+
+		<div class = "field">
+		<button class="ui positive button floated left">Save Changes</button></div>
+</div>
+
+
+	<div class="ui bottom attached tab segment" data-tab="second">
+			<h2 class="ui header">Scheduled notifications</h2>
+
+		<table class="ui celled striped table attached">
+		  <thead>
+		    <tr>
+		    	<th class = "five wide">Notification</th>
+		    	<th class = "three wide">Notification image</th>
+		    	<th class = "three wide">Time</th>
+		    	<th class = "three wide">Sent by</th>
+		    	<th class = "two wide">Resend</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+		    	<td><img src="http://placehold.it/150x78"/>	</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td><a class="ui basic mini green button">Resend</a></td>
+		    </tr>
+		    <tr>
+		    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+		    	<td><img src="http://placehold.it/150x78"/>	</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td><a class="ui basic mini green button">Resend</a></td>
+		    </tr>
+		   <tr>
+		    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+		    	<td><img src="http://placehold.it/150x78"/>	</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td><a class="ui basic mini green button">Resend</a></td>
+		    </tr>
+		    <tr>
+		    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+		    	<td><img src="http://placehold.it/150x78"/>	</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td><a class="ui basic mini green button">Resend</a></td>
+		    </tr>
+		    <tr>
+		    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+		    	<td><img src="http://placehold.it/150x78"/>	</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td><a class="ui basic mini green button">Resend</a></td>
+		    </tr>    
+		  </tbody>
+		</table>
+		<br>
+
+		<div class="floated center"><a class="ui green basic button">Load More</a></div>
+  	</div>
+
+		<div class="ui bottom attached tab segment" data-tab="third">
+
+		<h2 class="ui header">Discarded notifications</h2>
+		<table class="ui celled striped table attached">
+		  <thead>
+		    <tr>
+		    	<th class = "five wide">Notification</th>
+		    	<th class = "three wide">Notification image</th>
+		    	<th class = "three wide">Time</th>
+		    	<th class = "three wide">Sent by</th>
+		    	<th class = "two wide">Resend</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+		    	<td><img src="http://placehold.it/150x78"/>	</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td><a class="ui basic mini green button">Resend</a></td>
+		    </tr>
+		    <tr>
+		    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+		    	<td><img src="http://placehold.it/150x78"/>	</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td><a class="ui basic mini green button">Resend</a></td>
+		    </tr>
+		   <tr>
+		    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+		    	<td><img src="http://placehold.it/150x78"/>	</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td><a class="ui basic mini green button">Resend</a></td>
+		    </tr>
+		    <tr>
+		    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+		    	<td><img src="http://placehold.it/150x78"/>	</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td><a class="ui basic mini green button">Resend</a></td>
+		    </tr>
+		    <tr>
+		    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+		    	<td><img src="http://placehold.it/150x78"/>	</td>
+		    	<td>07:06 PM, June 1, 2016</td>
+		    	<td>Archit Garg</td>
+		    	<td><a class="ui basic mini green button">Resend</a></td>
+		    </tr>    
+		  </tbody>
+		</table>
+
+		<br>
+
+		<div class="floated center"><a class="ui green basic button">Load More</a></div>
+	
+
+	</div>
+</div>
+
+	</form>
+</div>
+
+<div class = "ui segment attached">
+	<h2 class="ui header">Recent notifications</h2>
+	<table class="ui celled striped table attached">
+			  <thead>
+			    <tr>
+			    	<th class = "eight wide">Notification</th>
+			    	<th class = "three wide">Time</th>
+			    	<th class = "three wide">Sent by</th>
+			    	<th class = "two wide">Resend</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+			    	<td>07:06 PM, June 1, 2016</td>
+			    	<td>Archit Garg</td>
+			    	<td><a class="ui basic mini green button">Resend</a></td>
+			    </tr>
+			    <tr>
+			    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+			    	<td>07:06 PM, June 1, 2016</td>
+			    	<td>Archit Garg</td>
+			    	<td><a class="ui basic mini green button">Resend</a></td>
+			    </tr>
+			   <tr>
+			    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+			    	<td>07:06 PM, June 1, 2016</td>
+			    	<td>Archit Garg</td>
+			    	<td><a class="ui basic mini green button">Resend</a></td>
+			    </tr>
+			    <tr>
+			    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+			    	<td>07:06 PM, June 1, 2016</td>
+			    	<td>Archit Garg</td>
+			    	<td><a class="ui basic mini green button">Resend</a></td>
+			    </tr>
+			    <tr>
+			    	<td>Visit us between 3-7 pm today and get a buy one and get one free offer on draught beer.</td>
+			    	<td>07:06 PM, June 1, 2016</td>
+			    	<td>Archit Garg</td>
+			    	<td><a class="ui basic mini green button">Resend</a></td>
+			    </tr>    
+			  </tbody>
+			</table>
+			<div class="ui center aligned segment attached"><a class="ui green basic button">Load More</a></div>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content%}
