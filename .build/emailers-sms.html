@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	
+	<link rel="stylesheet" href="/static/dist/semantic.css">
+	<link rel="stylesheet" href="/static/css/zfb.css">
+
+
+	
+	<title>Default</title>
+	
+
+</head>
+
+<body>
+<div class="ui menu">
+      <a href="#" class="header item">
+        <img class="logo" src="/static/images/zfb-logo.jpg">
+      </a>
+      <a href="#" class="item">Underdoggs Sports Bar &amp; Grill</a>
+      <div class="ui simple dropdown item">
+        Golf Course Road <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Link Item</a>
+          <a class="item" href="#">Link Item</a>
+        </div>
+      </div>
+      <div class="item">
+	      <a class="ui compact red button">Go to Listing</a>
+	      <a class="ui compact brown button">Download ZFB</a>
+	      <a class="ui compact basic button">Aiswarya</a>
+	  </div>	    
+ </div>
+<!--<h1>Underdoggs Sports Bar &amp; Grill</h1>
+<p>Golf Course Road</p>-->
+<div class="ui grid container">
+	<div class="three wide column">
+		<div class="ui inverted vertical menu">
+			<div class="item">
+				<div class="header">Performance</div>
+				<div class="menu">
+					<a class="item" href="performance.html">Performance</a>
+					<a class="item" href="analytics.html">Analytics</a>
+					<a class="item" href="transactions.html">Transactions</a>
+					<a class="item" href="reviews.html">Reviews</a>
+					<a class="item" href="index.html">Call Tracking</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="header">Listing</div>
+				<div class="menu">
+					<a class="item" href="info.html">Information</a>
+					<a class="item" href="hours.html">Hours</a>
+					<a class="item">Photos</a>
+					<a class="item">Menu</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="header">Daily Menus</div>
+				<div class="menu">
+					<a class="item" href="dailymenus.html">Daily Menus</a>
+					<a class="item" href="emailers-sms.html">Mailers and SMS</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="header">Order</div>
+				<div class="menu">
+					<a class="item" href="soa.html">Statement of Accounts</a>
+					<a class="item" href="history.html">Order History</a>
+					<a class="item" href="invoice.html">Invoices</a>
+					<a class="item" href="o2settings.html">View your Settings</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="header">Book</div>
+				<div class="menu">
+					<a class="item" href="tablebookings.html">Table Bookings</a>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="header">Whitelabel</div>
+				<div class="menu">
+					<a class="item" href="wla-analytics.html">Analytics</a>
+					<a class="item" href = "wla-notifications.html">Notifications</a>
+					<a class="item" href = "wla-sections.html">Section Settings</a>
+					<a class="item" href = "wla-rewardpoints.html">WLA Reward Points</a>
+				</div>
+			</div>
+
+
+
+			<div class="item">
+				<div class="header">Other</div>
+				<div class="menu">
+					<a class="item">Promos</a>
+					<a class="item">Special Menu</a>
+					<a class="item">Events</a>
+					<a class="item" href="subscriptions.html">Subscriptions</a>
+					<a class="item" href="paymenthistory.html">Payment History</a>
+					<a class="item">Whitelabel</a>
+					<a class="item">Analytics</a>	
+					<a class="item">Users</a>
+					<a class="item" href="accesscontrol.html">Access Control</a>
+					<a class="item" href="addremove.html">Add &amp; Remove</a>
+					<a class="item">View Business Blog</a>
+				</div>
+			</div>			
+		</div>
+
+
+		<!--<h4>Book</h4>
+		<div class="ui vertical menu">
+			<a class="item">Table Bookings</a>
+			
+		</div>-->
+
+	
+	</div>
+	<div class="thirteen wide column">
+		
+
+<div class="ui segments">
+	<div class="ui segment attached">
+		<h1 class="ui header">Daily Menu Settings
+			<div class="sub header">Send daily menus by email to your loyal customers.</div>
+		</h1>
+	</div><!--ui segment end-->
+
+
+<form class = "ui form">
+
+<div class = "ui segment attached">
+	<div class="ui top attached tabular menu">
+	  <a class="item active" data-tab="first">Mailers</a>
+	  <a class="item" data-tab="second">SMS reminder</a>
+	</div>
+
+
+
+	<!--Emailers-->
+
+	<div class="ui bottom attached tab segment" data-tab="first">
+
+	<div class = "inline field">
+		<div class = "ui grid">
+		<div class = "five wide column">
+		<div class="ui positive message">
+		<div class="header">
+		    Email send status: On
+		  </div>
+		</div>
+		</div>
+		<div class = "seven wide column"></div>
+		<div class = "four wide column">
+		<button class = "ui basic mini red button right floated"> Turn off Daily Menus </button>
+		</div>
+		</div>
+	</div>
+
+	<div class = "ui divider"></div>
+
+	<h3 class="ui header">Email settings</h3>
+	<div class = "two fields">
+	  	<div class = "required field">
+	  		<label>Time</label>
+	  		<select class = "ui search dropdown" multiple="">
+		    		<option value="">Select time to send email</option>
+		    		<option value="mon">7:00 AM</option>
+		    		<option value="tues">7:00 AM</option>
+		    		<option value="wed">7:00 AM</option>
+		    		<option value="thur">7:00 AM</option>
+		    		<option value="fri">7:00 AM</option>
+		    </select>
+	  	</div>
+	  	<div class = "field">
+	  		<label>Repetition</label>
+	  		<select class = "ui search dropdown" multiple="">
+		    		<option value="">Select repetition of email</option>
+		    		<option value="mon">Daily</option>
+		    		<option value="tues">Weekly</option>
+		    </select>
+	  	</div>
+  	</div>
+
+  	<div class = "field">
+  		 <div class="ui positive message">
+		  <div class="header">
+		    Email send status
+		  </div>
+		  <p>Last sent: August 20, 2016 at 7:20AM</p>
+		</div>
+
+  	</div>
+
+  	<div class = "ui divider"> </div>
+
+  	<div class = "ui segment">
+	  	<div class = "ui grid">
+	  		<div class = "twelve wide column">
+	  		<h3 class="ui header">Add email recipients </h3>
+	  		<p>Add your newest customers to the daily menu mailing list.</p>
+	  		</div>
+	  		<div class = "four wide column">
+	  			<div class="ui submit green button right floated">Add Subscribers</div>
+	  		</div>
+		</div>
+  	</div>
+
+  	<div class = "ui divider"> </div>
+
+  	
+  	<h3 class="ui header">Modify email recipients </h3>
+
+	<div class="ui top attached four item menu">
+		<a class="active item" data-tab="first">Subscribed</a>
+		<a class="item" data-tab="second">Awaiting user confirmation</a>
+		<a class="item" data-tab="third">Unsubscribed by user</a>
+		<a class="item" data-tab="fourth">Unsubscribed by restaurant</a>
+	</div>
+
+	<div class = "ui active bottom attached segment" data-tab="first">
+		<table class="ui celled striped table bottom attached">
+		  <thead>
+		    <tr>
+		    	<th>Email</th>
+		    	<th>Date updated</th>
+		    	<th>Date added</th>
+		    	<th>Status</th>
+		    	<th>Action</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		    	<td>archit.garg@zomato.com</td>
+		    	<td>22 July 2016 3:00 PM</td>
+		    	<td>22 July 2016 3:00 PM</td>
+		    	<td style = "color:green">Active</td>
+		    	<td class = "inline field">
+		    	<a class="ui basic mini red button">Unsubscribe</a>
+		    	<a class="ui basic mini grey button">Delete</a>
+
+		    	</td>
+		    </tr>	
+
+			<tr>
+		    	<td>archit.garg@zomato.com</td>
+		    	<td>22 July 2016 3:00 PM</td>
+		    	<td>22 July 2016 3:00 PM</td>
+		    	<td style = "color:green">Active</td>
+		    	<td class = "inline field">
+		    	<a class="ui basic mini red button">Unsubscribe</a>
+		    	<a class="ui basic mini grey button">Delete</a>
+
+		    	</td>
+		    </tr>	
+
+		    <tr>
+		    	<td>archit.garg@zomato.com</td>
+		    	<td>22 July 2016 3:00 PM</td>
+		    	<td>22 July 2016 3:00 PM</td>
+		    	<td style = "color:green">Active</td>
+		    	<td class = "inline field">
+		    	<a class="ui basic mini red button">Unsubscribe</a>
+		    	<a class="ui basic mini grey button">Delete</a>
+
+		    	</td>
+		    </tr>	
+
+		  </tbody>
+		</table>
+
+	</div>
+
+	</div> <!--end Emailers-->
+
+	<!--SMS-->
+
+	<div class="ui bottom attached tab segment" data-tab="second">
+
+		<div class = "field">
+			<div class = "ui grid">
+			<div class = "twelve wide column">
+			<div class="ui positive message">
+			<div class="header">
+			    Sending reminders: On
+			  </div>
+			<p>SMS service is on. SMS are being sent to 8860870822 at 10AM on days that a Daily Menu is not uploaded.</p>
+			</div>
+			</div>
+			<div class = "four wide column">
+			<button class = "ui basic mini red button right floated"> Turn off SMS reminders </button>
+			</div>
+			</div>
+		</div>
+
+		<div class = "ui divider"></div>
+
+		<div class = "field">
+		<h3 class="ui header">Edit SMS details</h3>
+		<p> Enter your mobile contact number to receive the SMS reminder. </p>
+		</div>
+
+		<div class = "inline field">
+		<div class = "ui grid">
+			<div class = "five wide column">
+			<input type="text" name="shipping[first-name]" placeholder="Enter mobile phone number">
+			</div>
+			<div class = "three wide column">
+			<a class="ui basic mini green button">Save</a>
+			</div>
+		</div>
+		</div>
+
+
+
+		</div>
+
+
+	</div>
+
+</div> <!--end tabs-->
+
+
+
+</form>
+</div> <!--all ui segments-->
+
+			  
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	</div>
+</div>
+
+
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src = "/static/dist/semantic.js"></script>
+		<script src="/static/js/main.js"></script>
+		<script type="text/javascript">
+			
+		$('.ui.modal')
+		  .modal('show');
+		;
+
+		$('.ui.dropdown')
+			.dropdown()
+			;
+
+		$('.ui.accordion')
+  			.accordion()
+		;
+
+		$('.menu .item')
+			  .tab()
+			;
+		$('.ui.checkbox')
+			  .checkbox()
+			;
+
+		</script>
+
+	
+</body>
+
+</html>

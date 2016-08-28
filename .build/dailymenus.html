@@ -136,14 +136,19 @@
 
 	<div class = "ui segment attached">
 		<div class = "ui grid">
-		<div class = "eight wide column">
-		<p style = "color:#099E44"><strong> Daily Menu status:  On </strong></p>
+		<div class = "four wide column">
+		<div class="ui positive message">
+		<p><strong> Daily Menu status:  On </strong></p>
 		</div>
-		<div class = "eight wide column">
+		</div>
+		<div class = "eight wide column"></div>
+		<div class = "four wide column">
 		<button class = "ui basic mini red button right floated"> Turn off Daily Menus </button>
 		</div>
 		</div>
 	</div>
+
+	<form class = "ui form">
 
 	<div class = "ui segment attached">
 		<div class="ui top attached tabular menu">
@@ -151,7 +156,7 @@
 		  <a class="item" data-tab="second">Long menus</a>
 		</div>
 
-	<form class = "ui form">
+
 
 
 	<div class="ui bottom attached tab segment" data-tab="first">
@@ -166,7 +171,7 @@
 
 		  <div class = "ui secondary segment">
 		  	<div class = "field">
-			  	<label>Monday <span style="color:grey"> (22nd Aug 2016)</span> <i class="write icon right floated"></i></label>
+			  	<label>Monday <span style="color:gray"> (22nd Aug 2016)</span> <i class="write icon right floated"></i></label>
 			 	<textarea rows = "3"></textarea>
 		  	</div>
 		  	<div class = "field">
@@ -174,22 +179,13 @@
 			</div>
 		  	</div>
 
-		  	<div class = "ui secondary segment">
-		  	<div class = "field">
-			  	<label>Monday <span style="color:grey"> (22nd Aug 2016)</span> <i class="write icon right floated"></i></label>
-			 	<textarea rows = "3"></textarea>
-		  	</div>
-		  	<div class = "field">
-			  	<div class="ui basic mini green button">Save</div>
-			</div>
-		  	</div>
 
 		  <div class = "field">
-		  	<label>Wednesday <span style="color:grey"> (24nd Aug 2016)</span><i class="write icon"></i></label>
+		  	<label>Tuesday <span style="color:gray"> (24nd Aug 2016)</span><i class="write icon"></i></label>
 		  	<div class = "ui secondary segment">
 			  	<label>Item</label>
 			  	<div class = "two fields">
-				  	<div class = "field">
+				  	<div class = "required field">
 				  		<input type="text" name="shipping[first-name]" placeholder="Enter item name">
 				  	</div>
 				  	<div class = "field">
@@ -207,13 +203,13 @@
 				<div class = "field">
 					<div class="ui compact menu">
 					  <a class="item">
-					    <i class="bold icon"></i>
+					    <i class="small bold icon"></i>
 					  </a>
 					  <a class="item">
-					    <i class="move icon"></i>
+					    <i class="small move icon"></i>
 					  </a>
 					  <a class="item">
-					    <i class="remove icon"></i>
+					    <i class="small remove icon"></i>
 					  </a>
 					</div>
 
@@ -223,7 +219,7 @@
 
 			<label>Item</label>
 			  	<div class = "two fields">
-				  	<div class = "field">
+				  	<div class = "required field">
 				  		<input type="text" name="shipping[first-name]" placeholder="Enter item name">
 				  	</div>
 				  	<div class = "field">
@@ -241,13 +237,13 @@
 				<div class = "field">
 					<div class="ui compact menu">
 					  <a class="item">
-					    <i class="bold icon"></i>
+					    <i class="small bold icon"></i>
 					  </a>
 					  <a class="item">
-					    <i class="move icon"></i>
+					    <i class="small move icon"></i>
 					  </a>
 					  <a class="item">
-					    <i class="remove icon"></i>
+					    <i class="small remove icon"></i>
 					  </a>
 					</div>
 
@@ -261,6 +257,43 @@
 			</div>
 
 		</div>
+
+		<div class = "ui secondary segment">
+			<div class = "ui grid">
+			<div class = "four wide column">
+				<div class = "field">
+					<div class="ui secondary vertical menu">
+						  <a class="active item">
+						    Monday
+						  </a>
+						  <a class="item">
+						    Tuesday
+						  </a>
+						  <a class="item">
+						    Wednesday
+						  </a>
+						  <a class="item">
+						    Thursday
+						  </a>
+						  <a class="item">
+						    Friday
+						  </a>
+						  <a class="item">
+						    Saturday
+						  </a>
+						  <a class="item">
+						    Sunday
+						  </a>
+					</div>
+				</div>
+			</div>
+			<div class = "twelve wide stretched column">
+			<div class = "ui segment"></div>
+			</div>
+			</div>
+		</div>
+
+		<!--end of the data entry section-->
 
 		<div class = "ui grid">
 			<div class = "four wide column">
@@ -274,24 +307,472 @@
 			</div>
 
 		</div>
-	
 
 
-		  </div><!--ui attached segment-->
+  </div><!--ui attached segment-->
 
-	</div><!--end first tab-->
+  <div class = "ui bottom attached tab segment" data-tab = "second">
+
+		<div class = "ui secondary segment">
+			
+		  <div class = "two fields">
+		  	<div class = "required field">
+		  	<label> Long menu name </label>
+		  	<input type="text" name="shipping[first-name]" placeholder="Enter long menu name">
+		  	</div>
+		  	<div class = "field">
+		  	<label> Cost </label>
+		  		<div class = "ui labeled input">
+					 <div class = "ui label"><i class="euro icon"></i></div>
+		  			<input type="text" name="shipping[first-name]" placeholder="Enter long menu cost">
+		  		</div>
+		  	</div>
+		  </div>
+		  <div class = "field">
+		  	<input type="text" name="shipping[first-name]" placeholder="Enter long menu description">
+		  </div>
+		  	<div class="two fields">
+		  		<div class = "field">
+				    <div class="ui left labeled input">
+				    <div class="ui label">
+					    Start date
+					  </div>
+					  <input type="text" value = "08:00" placeholder="Start time (ex. 14:20)">
+					</div>
+				</div>
+				 <div class = "field">
+				    <div class="ui left labeled input">
+				    <div class="ui label">
+					    End date
+					  </div>
+					  <input type="text" value = "13:30" placeholder="End time (ex. 23:20)">
+					</div>
+				  </div>
+			</div>
+
+			<div class = "ui divider"></div>
+
+			  	<div class = "field">
+			  	<label> Enter long menu dishes <i class="write icon"></i></label>
+				 	<textarea rows = "3"></textarea>
+			  	</div>
+			  	<div class = "ui grid">
+			  	<div class = "two wide column">
+				  	<div class = "field">
+					  	<div class="ui basic mini green button">Save</div>
+					</div>
+				</div>
+				<div class = "two wide column">
+					<div class = "field">
+					  	<div class="ui basic mini red button">Delete</div>
+					</div>
+				</div>
+				</div>
+	  	</div>
 
 
-	<div class="ui bottom attached tab segment" data-tab="second">
-		  	  Second
+	  	<div class = "ui secondary segment">
+			
+		  <div class = "two fields">
+		  	<div class = "required field">
+		  	<label> Long menu name </label>
+		  	<input type="text" name="shipping[first-name]" placeholder="Enter long menu name">
+		  	</div>
+		  	<div class = "field">
+		  	<label> Cost </label>
+		  	<div class = "ui labeled input">
+				<div class = "ui label"><i class="euro icon"></i></div>
+		  		<input type="text" name="shipping[first-name]" placeholder="Enter long menu cost">
+		  	</div>
+		  	</div>
+		  </div>
+		  <div class = "field">
+		  	<input type="text" name="shipping[first-name]" placeholder="Enter long menu description">
+		  </div>
+		  	<div class="two fields">
+		  		<div class = "field">
+				    <div class="ui left labeled input">
+				    <div class="ui label">
+					    Start date
+					  </div>
+					  <input type="text" value = "08:00" placeholder="Start time (ex. 14:20)">
+					</div>
+				</div>
+				 <div class = "field">
+				    <div class="ui left labeled input">
+				    <div class="ui label">
+					    End date
+					  </div>
+					  <input type="text" value = "13:30" placeholder="End time (ex. 23:20)">
+					</div>
+				  </div>
+			</div>
+
+			<div class = "ui divider"></div>
+
+			  	<div class = "field">
+			  	<label> Enter long menu dishes <i class="write icon"></i></label>
+				 
+				  	<div class = "two fields">
+					  	<div class = "field">
+					  		<input type="text" name="shipping[first-name]" placeholder="Enter item name">
+					  	</div>
+					  	<div class = "field">
+					  		<div class = "ui labeled input">
+					  		<div class = "ui label"><i class="euro icon"></i></div>
+					  		<input type="text" name="shipping[first-name]" placeholder="Enter item cost">
+					  		</div>
+					  	</div>
+				  	</div>
+
+				  	<div class = "field">
+				  		<input type="text" name="shipping[first-name]" placeholder="Enter item description">
+					</div>
+
+					<div class = "field">
+						<div class="ui compact menu">
+						  <a class="item">
+						    <i class="small bold icon"></i>
+						  </a>
+						  <a class="item">
+						    <i class="small move icon"></i>
+						  </a>
+						  <a class="item">
+						    <i class="small remove icon"></i>
+						  </a>
+						</div>
+
+					</div>
+
+
+			  	</div>
+			  	<div class = "ui divider"></div>
+			  	<div class = "ui grid">
+			  	<div class = "two wide column">
+				  	<div class = "field">
+					  	<div class="ui basic mini green button">Save</div>
+					</div>
+				</div>
+				<div class = "two wide column">
+					<div class = "field">
+					  	<div class="ui basic mini red button">Delete</div>
+					</div>
+				</div>
+				</div>
+	  	</div>
+
+
+	  	<div class = "field">
+		  	<div class="ui confirm green button">Add Menu</div>
+		</div>
+
+  </div>
+
+</div>
+
+<!--MORE ACTIONS-->
+
+<div class = "ui segment attached">
+	<h2 class="ui header">More actions
+			<div class="sub header">Print the daily menu, publish it, or import the menu from your site.</div>
+	</h2>
+
+  	<div class="ui top attached four item menu">
+		<a class="active item" data-tab="first">Daily Menu print settings</a>
+		<a class="item" data-tab="second">Publish the daily menu</a>
+		<a class="item" data-tab="third">Import daily menu from your site</a>
+		<a class="item" data-tab="fourth">Post your daily menu on Facebook</a>
 	</div>
 
+	<div class = "ui active bottom attached segment" data-tab="first">
 
-	</form> <!--end form-->
-	</div><!--ui segment end-->
+		<div class = "field">
+		<p> <i>Notes:  Daily menu format will be for the printer.  In print settings, you may select the option to save as PDF.  Restaurant logo will be added to the printed menu.  Update the logo on the <a href="info.html">Information</a> tab.</i></p>
+		</div>
+
+		<div class = "field">
+			<label> Note for daily menu</label>
+			<textarea rows="2" placeholder="Add a note to the printed daily menu"></textarea>
+		</div>
 
 
-</div> <!--end all ui segments-->
+		<div class = "two fields">
+			<div class = "field">
+				<label>Menu duration</label>
+				<div class="ui selection dropdown">
+			          <input type="hidden" name="gender">
+			          <i class="dropdown icon"></i>
+			          <div class="default text">Select days to print</div>
+			          <div class="menu">
+			              <div class="item" data-value="1">Week</div>
+			              <div class="item" data-value="0">Per day</div>
+			          </div>
+		         </div>
+		    </div>
+		    <!--Note: if user selects "Per day" in the above field, then the field below should appear-->
+		    <div class = "field">
+		    	<label>Select days</label>
+		    	<select class = "ui search dropdown" multiple="">
+		    		<option value="">Select days</option>
+		    		<option value="mon">Monday</option>
+		    		<option value="tues">Tuesday</option>
+		    		<option value="wed">Wednesday</option>
+		    		<option value="thur">Thursday</option>
+		    		<option value="fri">Friday</option>
+		    		<option value="sat">Saturday</option>
+		    		<option value="sun">Sunday</option>
+		    	</select>
+		    </div>
+	    </div>
+
+		<div class = "two fields">
+			<div class = "field">
+			<label>Letter size</label>
+				<div class="ui selection dropdown">
+			          <input type="hidden" name="gender">
+			          <i class="dropdown icon"></i>
+			          <div class="default text">Select letter size</div>
+			          <div class="menu">
+			              <div class="item active" data-value="0">Extra small</div>
+			              <div class="item" data-value="1">Small</div>
+			              <div class="item" data-value="2">Medium</div>
+			              <div class="item" data-value="3">Large</div>
+			              <div class="item" data-value="4">Extra Large</div>
+			          </div>
+		         </div>
+			</div>
+			<div class = "field">
+				<label>Line spacing</label>
+				<div class="ui selection dropdown">
+			          <input type="hidden" name="gender">
+			          <i class="dropdown icon"></i>
+			          <div class="default text">Select line spacing</div>
+			          <div class="menu">
+			              <div class="item" data-value="0">Narrow</div>
+			              <div class="item" data-value="1">Normal</div>
+			              <div class="item" data-value="3">Wide</div>
+			          </div>
+		         </div>
+			</div>
+		</div>
+
+		
+
+		<div class = "ui segment">
+		<div class = "two fields">
+			<div class = "field">
+			<label> Menu orientation </label>
+				<div class = "ui inline dropdown">
+					<div class = "text">
+						<img src = "http://placehold.it/94x125" />
+						A4
+					</div>
+					<i class = "dropdown icon"></i>
+
+				<div class = "menu">
+					<div class = "item">
+						<img src = "http://placehold.it/125x94" />
+						A4
+					</div>
+					<div class = "item">
+						<img src = "http://placehold.it/125x94" />
+						2xA5
+					</div>
+				</div>
+				</div>
+			</div>
+
+
+		    <div class = "field">
+		    	<label>Long Menu </label>
+			    <div class = "ui toggle checkbox">
+			    	<input type = "checkbox" tabindex = "0" class="hidden">
+			    	<label>Include long Menu</label>
+		    	</div>
+			</div>
+		</div>
+		</div>
+
+		<div class = "field">
+			<div class="ui submit green button">Save and print menu</div>
+		</div>
+
+    </div>
+
+
+    <div class = "ui bottom attached segment" data-tab="second">
+    		<div class = "inline fields">
+		    	<label>Daily menu to be displayed: </label>
+		    	    <div class="field">
+				      <div class="ui radio checkbox">
+				        <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+				        <label>All week</label>
+				      </div>
+				    </div>
+				    <div class="field">
+				      <div class="ui radio checkbox">
+				        <input type="radio" name="fruit" tabindex="0" class="hidden">
+				        <label>Today only</label>
+				      </div>
+				    </div>
+			</div>
+
+			<div class = "two fields">
+				<div class = "field">
+					<label>Width</label>
+					<input type="text" name="shipping[first-name]" placeholder="Enter width for widget">
+				</div>
+				<div class = "field">
+					<label>Width</label>
+					<input type="text" name="shipping[first-name]" placeholder="Enter height for widget">
+				</div>
+			</div>
+			<div class = "field">
+				<label> Add your own CSS</label>
+				<textarea rows = "3" placeholder="Enter custom CSS for the widget"></textarea>
+			</div>
+
+			<div class = "field">
+			<label>Copy this snippet into your restaurant website</label>
+			<div class="ui info message">
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+				</div>
+			</div>
+
+			<div class = "field">
+			<p><i>You can also export your daily menu via this XML link and display it on your restaurant website: </i><a href="https://www.zomato.com/export/restaurant.php?id=18156324">https://www.zomato.com/export/restaurant.php?id=18156324</a>
+			</p>
+			</div>
+
+
+    </div>
+
+    <div class = "ui bottom attached segment" data-tab="third">
+    	<div class = "field">
+    	<p><i>Your daily menu will be imported from the XML link every day at <b>0900 hrs</b>. Please refer to the format given at </i><a href="https://www.zomato.com/daily_menu_import_sample.xml">https://www.zomato.com/daily_menu_import_sample.xml</a></p>.
+    	</div>
+    	<div class="ui positive message">
+		  <div class="header">
+		    XML import status
+		  </div>
+		  <p>Last updated on 30 May, 2016</p>
+		</div>
+    	<div class = "field">
+    		<div class = "ui segment">
+		    <div class="field">
+			      <div class="ui slider checkbox">
+			        <input type="radio" name="throughput" checked="checked">
+			        <label>Enable import</label>
+			      </div>
+    		</div>
+    	</div>
+    	<div class = "field">
+    		<label> Link to XML</label>
+    			<input type="text" name="shipping[first-name]" placeholder="Enter link to XML for menu from your restaurant website">
+    	</div>
+    	</div>
+    </div>
+
+    <div class = "ui bottom attached segment" data-tab="fourth">
+    	<div class = "field">
+    		<label> Get Started </label>
+    		<p> Start by logging into Facebook. Click on "Log In" below and allow Facebook to authorize your content.</p>
+    		<div class = "field">
+    		<div class="ui positive message">
+	    		<div class = "inline field">
+	    			<i class="check circle icon"></i><p>You successfully linked your Facebook account.</p>
+    			</div>
+    		</div>
+    		</div>		
+    	</div>
+    	<div class = "ui divider"></div>
+    	<div class = "field">
+    		<label> Option A </label>
+    		<p> Upload as a Facebook post.  Select publish interval, time and description for the menu and it will get posted automatically. </p>
+    	</div>
+    	<div class = "field">
+    		<label> Description </label>
+    		<input type="text" name="shipping[first-name]" placeholder="Enter description for the Facebook post">
+    	</div>
+    	<div class = "field">
+    		<table class="ui celled striped table bottom attached">
+			  <thead>
+			    <tr>
+			    	<th>Page name</th>
+			    	<th>Publish interval</th>
+			    	<th>Publish hour</th>
+			    	<th>Action</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			    	<td>Test Page</td>
+			    	<td>
+			    		<div class="ui selection dropdown">
+						  <input type="hidden" name="gender">
+						  <i class="dropdown icon"></i>
+						  <div class="default text">Select interval</div>
+						  <div class="menu">
+						    <div class="item" data-value="0">None</div>
+						    <div class="item" data-value="1">Daily</div>
+						    <div class="item" data-value="2">Weekly</div>
+						  </div>
+						</div>
+			    	</td>
+			    	<td>
+			    		<div class="ui selection dropdown">
+						  <input type="hidden" name="gender">
+						  <i class="dropdown icon"></i>
+						  <div class="default text">Select time</div>
+						  <div class="menu">
+						    <div class="item" data-value="0">7:00 AM</div>
+						    <div class="item" data-value="1">8:00 AM</div>
+						    <div class="item" data-value="2">9:00 AM</div>
+						    <div class="item" data-value="3">10:00 AM</div>
+						    <div class="item" data-value="4">11:00 AM</div>
+						  </div>
+						</div>
+			    	</td>
+			    	<td><a class="ui basic mini red button">Delete</a></td>
+			    </tr>	
+			  </tbody>
+		</table>
+    	</div>
+
+    	<div class = "field">
+    		<div class="ui submit green button">Save settings</div>
+    	</div>
+
+    	<div class = "ui divider"> </div>
+
+    	<div class = "field">
+    	<label> Option B </label>
+    		<p> Add the menu as a Facebook tab.  Click on 'Add daily menu tab to your page' button to do this. </p>
+    	</div>
+
+    	<div class = "field">
+    	<div class="ui submit green button">Add daily menu tab to your page</div>
+    	</div>
+
+
+
+	</div> <!--fourth ui segment-->
+
+    </div>
+
+    <div class = "ui segment attached">
+
+    <p><small>Need help or have any suggestions? Write to us at <a href="restaurants@zomato.com">restaurants@zomato.com</a></small></p>
+
+    </div>
+
+</div> <!--bottom attached ui segment-->
+
+
+
+</form> <!--end form-->
+</div><!--all ui segments-->
+
 
 
 
@@ -313,7 +794,7 @@
 		  .modal('show');
 		;
 
-		$('.dropdown')
+		$('.ui.dropdown')
 			.dropdown()
 			;
 
@@ -323,6 +804,9 @@
 
 		$('.menu .item')
 			  .tab()
+			;
+		$('.ui.checkbox')
+			  .checkbox()
 			;
 
 		</script>
