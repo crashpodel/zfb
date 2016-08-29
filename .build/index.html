@@ -128,8 +128,10 @@
 <div class="ui segments">
 	<div class="ui segment attached">
 		<h1 class="ui header">Call Tracking
-			<p class="sub header">Listen to calls made to your restaurant from the business day. You can also download Zomato for Business app in order to view call details.</p>
+			<p class="sub header">Listen to calls made to your restaurant from the business day. You can also download the <a href="www.zomato.com/biz">Zomato for Business app</a> to view call details.</p>
 		</h1>
+	</div>
+	<div class = "ui segment attached">
 		<div class="ui horizontal bulleted list">
 			<div class="item">
 				<strong>ACD number</strong> 011 33105668
@@ -176,44 +178,373 @@
 				</div>
 			</div>												
 		</div>
+	</div>
 
 
+	<div class = "ui segment attached">
+		<div class = "ui grid">
+			<div class = "thirteen wide column">
+				<h2>Call List</h2>
+			</div>
+			<div class = "three wide column">
 
-
-
-			<h2>Call List</h2>
-			<div class="ui grid">
-			  <div class="four column row">
-			    <div class="thirteen wide column">
-			    	
-					<div class="ui horizontal list">
-						  <a class="active item">
-						    All (197)
-						  </a> 
-						  <a class="item">
-						    Calls heard (0)
-						  </a>
-						  <a class="item">
-						    Calls not heard (556)
-						  </a>
-						  <a class="item">
-						    Invisible (0)
-						  </a>
-						  <a class="item">
-						    Important (0)
-						  </a>
-						  <a class="item">
-						    Missed (197)
-						  </a> 
-					</div>	
-
-
-			    </div>
-			    <div class="three wide column"><a href="#" class="ui tiny compact green right floated button">Export to Excel</a></div>
-			  </div>
+			<a href="#" class="ui tiny compact green right floated button">Export to Excel</a>
 			</div>
 		</div>
-		<table class="ui table attached">
+		<div class = "ui six item menu">
+			<a class="active item">All (197)</a>
+	  		<a class="item">Calls heard (10)</a>
+	  		<a class="item">Calls not heard (12)</a>
+	  		<a class="item"><i class="hide icon"></i>Invisible (2)</a>
+	  		<a class="item"><i class = "yellow star icon"></i>Important</a>
+	  		<a class="item">Missed calls (2)</a>
+
+		</div>
+	</div>
+
+</div>
+
+<!--individual calls -->
+<form class = "ui form">
+
+<!--CALL NOT HEARD -->
+<div class = "ui segments">
+	<div class = "ui top attached menu">
+		<div class = "ui icon item"><i class = "yellow large star icon"></i></div>
+				
+		<div class = "item">
+			<div class = "ui green header">
+			<i class = "call icon"></i>4573984758
+			</div>
+		</div>
+				
+		<div class = "right menu">
+			<div class = "item">
+				<div class = "ui labeled icon green button right floated"><i class="play icon"></i>Play</div>
+			</div>
+			<div class = "item">
+				<div class = "ui labeled icon blue button right floated active"><i class="write icon"></i>Edit</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "ui secondary segment attached">
+		<div class="ui relaxed horizontal divided list">
+        <div class="item">
+          <p><i class = "calendar icon"></i> 29 August 2016 1:27 PM</p>
+        </div>
+        <div class="item">
+            <p><i class = "clock icon"></i> 99 seconds </p>
+        </div>
+        <div class="item">
+          <div class="ui sub blue header">
+            DOWNLOAD
+          </div>
+        </div>
+      </div>
+	</div> <!--END CALL NOT HEARD-->
+</div>
+
+
+<!--CALL HEARD -->
+<div class = "ui segments">
+<div class = "ui top attached menu">
+		<div class = "ui icon item"><i class = "yellow large star icon"></i></div>
+				
+		<div class = "item">
+			<div class = "ui green header middle align">
+			<i class = "call icon"></i>4573984758
+			</div>
+		</div>
+
+		<div class = "item">
+			<div class = "ui green header middle align">
+			<i class = "user icon"></i>Ashish
+			</div>
+		</div>
+				
+		<div class = "right menu">
+			<div class = "item">
+				<div class = "ui labeled icon green button right floated"><i class="play icon"></i>Play</div>
+			</div>
+			<div class = "item">
+				<div class = "ui labeled icon blue button right floated active"><i class="write icon"></i>Edit</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "ui segment attached">
+		<table class = "ui very compact small structured table">
+		<thead>
+		<tr><th> Call notes </th>
+		<th></th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<div class = "ui sub header">Call category </div>
+				</td>
+				<td>	
+					<div class="extra">
+							<div class="ui label">Inquiry call</div>
+					        <div class="ui label">Complete customer details were not taken</div>
+					        <div class="ui label">Takeaway call</div>
+					        <div class="ui label">Delivery call, staff took the address and number</div>
+					        <div class="ui label" style = "margin-top:5px">Reservation call, staff took the name and number</div>
+					 </div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div class = "ui sub header">Call description </div>
+				</td>
+				<td>	
+					<p>  These people wanted a huge banquet hall for 40-50 people. </p>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div class = "ui sub header">Money value of order </div>
+				</td>
+				<td>	
+					<p> Rs. 2340 </p>
+				</td>
+			</tr>
+
+
+
+		</tbody>
+		</table>
+
+
+	</div>
+
+	<div class = "ui secondary segment attached">
+		<div class="ui relaxed horizontal divided list">
+        <div class="item">
+          <p><i class = "calendar icon"></i> 29 August 2016 1:27 PM</p>
+        </div>
+        <div class="item">
+            <p><i class = "clock icon"></i> 99 seconds </p>
+        </div>
+        <div class="item">
+          <div class="ui sub blue header">
+            DOWNLOAD
+          </div>
+        </div>
+      </div>
+	</div> 
+	<div class = "ui secondary segment attached">
+		<div class="ui relaxed horizontal divided list">
+        <div class="item">
+          <p><i class = "calendar icon"></i> 29 August 2016 1:27 PM</p>
+        </div>
+        <div class="item">
+            <p><i class = "clock icon"></i> 99 seconds </p>
+        </div>
+        <div class="item">
+          <div class="ui sub blue header">
+            DOWNLOAD
+          </div>
+        </div>
+      </div>
+	</div> 
+
+
+
+	</div><!--END CALL HEARD-->
+
+
+<!--CALL EDITING -->
+<div class = "ui segments">
+	<div class = "ui top attached menu">
+				
+		<div class = "item">
+			<div class = "ui green header">
+			<i class = "call icon"></i>4573984758
+			</div>
+		</div>
+				
+		<div class = "right menu">
+			<div class = "item">
+				<div class = "ui labeled icon green button right floated"><i class="play icon"></i>Play</div>
+			</div>
+			<div class = "item">
+				<div class = "ui labeled icon blue button right floated active"><i class="chevron down icon"></i>Edit</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "ui attached segment">
+		<div class = "field">
+		<label>Caller name </label>
+			<input type="text" name="shipping[first-name]" placeholder="Enter caller name">
+		</div>	
+
+		<div class = "field">
+			<label>Reason for the call </label>
+			<select name="skills" multiple="" class="ui fluid dropdown">
+				 <option value="">Enter reason(s) for the call</option>
+				<option value="angular">Reservation call, staff took the name and number</option>
+				<option value="css">Delivery call, staff took the address and number</option>
+				<option value="design">Inquiry call</option>
+				<option value="emerald">Takeaway call</option>
+				<option value="html">Reservation denied as no space available</option>
+				<option value="ia">Delivery denied</option>
+				<option value="javascript">Late delivery complaint</option>
+				<option value="mech">Marketing call</option>
+				<option value="meteor">Connection error</option>
+				<option value="node">Bad communication skills</option>
+				<option value="plumbing">Complete customer details were not taken</option>
+				<option value="python">Inquiry calls transferred to another number</option>				
+				<option value="ember">Other</option>
+			</select>
+		</div>
+
+		<div class = "field">
+		<label>Other details</label>
+			<textarea rows="3" placeholder="Enter other details"></textarea>
+		</div>	
+
+		<div class = "two fields">
+			<div class = "field">
+			<label>Reservation call </label>
+				<div class="ui right labeled input">
+				  <input type="text" placeholder="Find domain">
+				  <div class="ui label">
+				    <div class="text">covers</div>
+				  </div>
+				</div>
+			</div>	
+			<div class = "field">
+			<label style>Delivery call </label>
+				<div class="ui disabled labeled input">
+					  <div class="ui label">
+					    Rs.
+					  </div>
+					  <input type="text" placeholder="Enter money value of order (in your currency)">
+				</div>
+			</div>	
+		</div>
+
+		<div class="field">
+		    <label for="fruit">Select call type: </label>
+		    <div class = "inline fields">
+			    <div class="field">
+			      <div class="ui radio checkbox">
+			        <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+			        <label>Call heard</label>
+			      </div>
+			    </div>
+			    <div class="field">
+			      <div class="ui radio checkbox">
+			        <input type="radio" name="fruit" tabindex="0" class="hidden">
+			        <label>Invisible</label>
+			      </div>
+			    </div>
+			    <div class="field">
+			      <div class="ui radio checkbox">
+			        <input type="radio" name="fruit" tabindex="0" class="hidden">
+			        <label>Important</label>
+			      </div>
+			    </div>
+			</div>
+		  </div>
+
+		<div class = "field">
+			<div class = "ui submit green button">Submit</div>
+			<div class = "ui floating gray basic button">Cancel</div>
+		</div>
+
+		</div>
+
+	<div class = "ui segment attached">
+		    <div class = "field">
+
+			  <div class="ui styled fluid accordion">
+				  <div class="title">
+				    <i class="dropdown icon"></i>
+				    Call quality and rating (optional)
+				  </div>
+				  <div class="content">
+				  <div class = "field">
+				  	<label> Call rating </label>
+					    <div class="ui selection dropdown">
+							  <input type="hidden" name="gender">
+							  <i class="dropdown icon"></i>
+							  <div class="default text">Select rating for the call</div>
+							  <div class="menu">
+							    <div class="item" data-value="1">Impossible - Impossible to communicate</div>
+							    <div class="item" data-value="0">Very annoying - Nearly impossible to communicate</div>
+							    <div class="item" data-value="0">Annoying - But able to communicate</div>
+							  </div>
+						</div>
+				   </div>
+
+				   <div class = "field">
+				  	<label> Call quality </label>
+				  	<select name="skills" multiple="" class="ui fluid dropdown">
+							  <option value="">Select one or more quality issues</option>
+							<option value="angular">Not audible - Call not audible or volume too low to hear</option>
+							<option value="css">One way audible - One of the users not recieving sound</option>
+							<option value="design">Noisy - Call has significant disturbing noise in the background</option>
+							</select>
+					 </div>
+					<div class = "ui basic submit green button">Save</div>
+				  </div>
+
+			 </div>
+
+		  </div>
+
+	</div>
+
+	<div class = "ui secondary segment attached">
+		<div class="ui relaxed horizontal divided list">
+        <div class="item">
+          <p><i class = "calendar icon"></i> 29 August 2016 1:27 PM</p>
+        </div>
+        <div class="item">
+            <p><i class = "clock icon"></i> 99 seconds </p>
+        </div>
+        <div class="item">
+          <div class="ui sub blue header">
+            DOWNLOAD
+          </div>
+        </div>
+      </div>
+	</div> 
+	<div class = "ui secondary segment attached">
+		<div class="ui relaxed horizontal divided list">
+        <div class="item">
+          <p><i class = "calendar icon"></i> 29 August 2016 1:27 PM</p>
+        </div>
+        <div class="item">
+            <p><i class = "clock icon"></i> 99 seconds </p>
+        </div>
+        <div class="item">
+          <div class="ui sub blue header">
+            DOWNLOAD
+          </div>
+        </div>
+      </div>
+	</div> 
+
+
+
+	</div><!--END CALL EDITING-->
+
+</form>
+
+
+
+
+
+
+	<!--	<table class="ui table attached">
 		  <thead>
 		    <tr>
 		      <th>Number</th>
@@ -294,7 +625,7 @@
 			    		    	    
 		  </tbody>
 		</table>
-</div>
+</div>-->
 
 		
 	</div>
