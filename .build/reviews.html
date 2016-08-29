@@ -132,54 +132,68 @@
 
   <!--REVIEWS-->
   <div class="ui segments">
-    <!--MAIN REVIEW - PRIMARY SEGMENT -->
-    <div class="ui segment">
-      <h1 class="ui header">User Reviews
-      <div class="sub header">See reviews posted by customers on your Zomato page</div>
-      </h1>
-      <div class="ui text attached menu">
-        <a class="active item">
-          Popular 167
-        </a>
-        <a class="item">
-          Following 0
-        </a>
-        <a class="item">
-          All Reviews 273
-        </a>
-        <a class="item">
-          Blogs 2
-        </a>
-        <div class="right menu">
-        <span>
-          Sorted by
-          <div class="ui inline dropdown">
-            <div class="text">
-              Date
+      <!--MAIN REVIEW - PRIMARY SEGMENT -->
+      <div class="ui segment">
+        <h1 class="ui header">User Reviews
+        <div class="sub header">See reviews posted by customers on your Zomato page</div>
+        </h1>
+        <div class="ui grid">
+          <div class="four column row">
+            <div class="twelve wide column">
+              <div class="ui horizontal list">
+                  <a class="active item">
+                    Unanswered (197)
+                  </a> 
+                  <a class="item">
+                    Answered (0)
+                  </a>
+                  <a class="item">
+                    Starred (556)
+                  </a>
+                  <a class="item">
+                    View All (0)
+                  </a>
+              </div>  
             </div>
-            <i class="dropdown icon"></i>
+            <div class="four wide column">
+              <div class="ui dropdown">
+                <div class="text">Sort by Rating</div>
+                <i class="dropdown icon"></i>
+              </div>
+            </div>
           </div>
-        </span>
         </div>
       </div>
-      <small>5 days ago</small> 
+  </div>
 
-        <div class="ui fluid card" style="margin: 0; border: none; box-shadow: none;">
-          <div class="content" style="padding-left: 0; padding-right: 0">
-            <img class="left floated circular mini ui image" style="width: 40px; margin-top: -3px" src="static/images/pic.svg">
-            <a class="right floated ui label">Star</a>
-            <a class="right floated ui label">View on Zomato</a>
-            <div class="header">
-              Ashish Kanwar
-            </div>
-            <div class="meta">
-              45 Reviews, 450 Followers
-            </div>
+  <!---INDIVIDUAL REVIEW-->
+  <div class="ui segments">
+    <div class="ui secondary segment">
+      <div class="ui relaxed horizontal divided list">
+        <div class="item">
+          5 days ago
+        </div>
+        <div class="item">
+          <div class="ui green label">
+            Rated 3.5
           </div>
         </div>
-        <div class="ui label big green">3.5</div>
-        <div class="ui label blue">Replied</div>
-        <div class="ui label yellow">User Replied</div>
+        <div class="item">
+          <div class="ui sub blue header">
+            Replied
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui segment">
+
+      <h5 class="ui header">
+      <img class="ui avatar mini image" src="static/images/pic.svg">
+        <div class="content">
+        Ashish Kumar Kanwar
+        <div class="sub header">Level 5 Foodie, 45 Followers, 45 Reviews</div>
+        </div>
+      </h5>
       <p>
          It's a decent place with loads of games to play. Its has got plenty of pool tables and few Carrom Boards. Also if you want to play darts and board games they are available here.  The Food served here is decent and add to the overall experience. The beer towers are nice so are the snacks. Its a nice place if you want to enjoy few games with your friends or if you want to enjoy an sports event on their large screens<a href="#">...more</a>
       </p>
@@ -189,11 +203,12 @@
         <img class="logo" src="/static/images/pic.svg">
         <img class="logo" src="/static/images/pic.svg">
       </div>
+
+
     </div>
-    <!--MAIN REVIEW - PRIMARY SEGMENT END-->
+
     <!--COMMENT ETC. - SECONDARY SEGMENT END-->
     <div class="ui secondary segment">
-      <h4>Your Response</h4>
       <div class="ui comments">
       <!--MANAGEMENT RESPONSE ON TOP--> 
         <div class="comment">
@@ -201,7 +216,7 @@
             <img src="static/images/pic.svg">
           </a>
           <div class="content">
-            <a class="author">Farzi Café</a>
+            <a class="author">Your Response</a>
             <div class="metadata">
               <span class="date">5 days ago</span>
             </div>
@@ -227,7 +242,7 @@
         </div>
         <div class="ui divider"></div>
         <!--USER COMMENTS-->
-        <a href="#">View previous comments (2)</a>
+        <a href="#">View comments (2)</a>
         <div class="ui comments">
           <div class="comment">
             <a class="avatar">
@@ -240,9 +255,6 @@
               </div>
               <div class="text">
                 Can you please share your email ID?
-              </div>
-              <div class="actions">
-                <a>Like</a> <a>Comment</a> <a>Report</a> <a>Etc</a> 
               </div>
             </div>
           </div>
@@ -258,9 +270,6 @@
               <div class="text">
                 Of course!
               </div>
-              <div class="actions">
-                <a>Like</a> <a>Comment</a> <a>Report</a> <a>Etc</a> 
-              </div>
             </div>
           </div>
 
@@ -269,59 +278,113 @@
       </div>
     </div>
     <!--COMMENT ETC. - SECONDARY SEGMENT END-->
+
   </div>
 
+  <!---INDIVIDUAL REVIEW - END-->
+
+
+
+  <!---INDIVIDUAL REVIEW-->
+  <div class="ui segments">
+    <div class="ui secondary segment">
+      <div class="ui relaxed horizontal divided list">
+        <div class="item">
+          5 days ago
+        </div>
+        <div class="item">
+          <div class="ui green label">
+            Rated 3.5
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui sub blue header">
+            Replied
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="five wide column">
-      <div class="ui segment">
-        <h3>Overview</h3>
-        <div class="ui horizontal statistics">
-        <div class="statistic">
-          <div class="value">
-            55
-          </div>
-          <div class="label">
-            Total Reviews<br/>
-            <div class="extra">13 May 2016 to 13 Aug 2016</div>
-          </div>
-        </div>
+    <div class="ui segment">
 
-
-      <div class="statistic">
-        <div class="value">
-          12
+      <h5 class="ui header">
+      <img class="ui avatar mini image" src="static/images/pic.svg">
+        <div class="content">
+        Ashish Kumar Kanwar
+        <div class="sub header">Level 5 Foodie, 45 Followers, 45 Reviews</div>
         </div>
-        <div class="label">
-          Unanswered Reviews<br/>
-          13 May 2016 to 13 Aug 2016
-        </div>
+      </h5>
+      <p>
+         It's a decent place with loads of games to play. Its has got plenty of pool tables and few Carrom Boards. Also if you want to play darts and board games they are available here.  The Food served here is decent and add to the overall experience. The beer towers are nice so are the snacks. Its a nice place if you want to enjoy few games with your friends or if you want to enjoy an sports event on their large screens<a href="#">...more</a>
+      </p>
+        <div class="ui tiny images">
+        <img class="logo" src="/static/images/pic.svg">
+        <img class="logo" src="/static/images/pic.svg">
+        <img class="logo" src="/static/images/pic.svg">
+        <img class="logo" src="/static/images/pic.svg">
       </div>
 
 
+    </div>
 
-        </div>
-
-        <h3>Reviewer Breakdown</h3>
-        <a class="ui green empty circular label"></a> Connoisseur (9%) <br/>
-        <a class="ui red empty circular label"></a> Super Foodie (11%) <br/>
-        <a class="ui blue empty circular label"></a> Big Foodie (33%) <br/>
-        <a class="ui yellow empty circular label"></a> Foodie (47%) <br/>
-        <p>&nbsp;</p>
-        <img src="http://placehold.it/240x78"/> 
-      </div>
-
-
+    <!--COMMENT ETC. - SECONDARY SEGMENT END-->
+    <div class="ui secondary segment">
+      <div class="ui comments">
+      <!--MANAGEMENT RESPONSE ON TOP-->
           <div class="comment">
             <a class="avatar">
               <img src="static/images/pic.svg">
             </a>
             <div class="content">
             <div class="ui fluid action input">
-              <input type="text" placeholder="Add a comment">
+              <input type="text" placeholder="Add management response">
               <button class="ui button">Post Comment</button>
             </div>
             </div>
           </div>
+      </div>
+    </div>
+    <!--COMMENT ETC. - SECONDARY SEGMENT END-->
+
+  </div>
+
+  <!---INDIVIDUAL REVIEW - END-->
+
+
+
+
+    </div>
+    <div class="five wide column">
+      <div class="ui segment">
+        <h3>Overview</h3>
+        <div class="ui relaxed list">
+          <div class="item">
+            <div class="ui sub header">Total Reviews
+
+            </div>
+            <div class="ui orange header">
+            350
+            </div>
+            <div><small>13 May 2016 to 13 Aug 2016</small></div>
+          </div>
+          <div class="item">
+            <div class="ui sub header">Unanswered Reviews</div>
+            <div class="ui green header">
+            2204
+            </div>
+            <div><small>13 May 2016 to 13 Aug 2016</small></div>
+          </div>                       
+        </div>
+        <h3>Reviewer Breakdown</h3>
+        <div class="ui list">
+          <div class="item"><a class="ui green empty circular label"></a> Connoisseur (9%) </div>
+          <div class="item"><a class="ui red empty circular label"></a> Super Foodie (11%) </div>
+          <div class="item"><a class="ui blue empty circular label"></a> Big Foodie (33%) </div>
+          <div class="item"><a class="ui yellow empty circular label"></a> Foodie (47%) </div>
+          <div class="item"><img src="http://placehold.it/240x240"/> </div>
+        </div>
+      </div>
+
+
 
 
     </div>
