@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+{% block content %}      
+
+
+  <!--REVIEWS-->
+  <div class="ui segments">
+      <!--MAIN REVIEW - PRIMARY SEGMENT -->
+      <div class="ui segment attached">
+        <h1 class="ui header">User Reviews
+        <div class="sub header">See reviews posted by customers on your Zomato page</div>
+        </h1>
+      </div>
+
+  <div class = "ui segment attached">
+        <h3>Overview</h3>
+        <div class="ui relaxed horizontal list">
+          <div class="item top aligned">
+            <div class="ui sub header">Total Reviews
+            </div>
+            <div class="ui orange header">
+                350
+            </div>
+            <div><small>13 May 2016 to 13 Aug 2016</small></div>
+          </div>
+          <div class="item top aligned">
+            <div class="ui sub header">Unanswered Reviews</div>
+            <div class="ui green header">
+            2204
+            </div>
+            <div><small>13 May 2016 to 13 Aug 2016</small></div>
+          </div>  
+
+          <div class = "item top aligned">                     
+              <div class = "ui sub header">Reviewer Breakdown</div>
+              <div class="ui list">
+                <div class="item"><a class="ui green empty circular label"></a> Connoisseur (9%) </div>
+                <div class="item"><a class="ui red empty circular label"></a> Super Foodie (11%) </div>
+                <div class="item"><a class="ui blue empty circular label"></a> Big Foodie (33%) </div>
+                <div class="item"><a class="ui yellow empty circular label"></a> Foodie (47%) </div>
+              </div>
+          </div>
+          <div class = "item">
+          <img src="http://placehold.it/100x100"/>
+
+          </div>
+        </div>
+  </div>
+
+    <div class = "ui segment attached">
+              <div class="ui horizontal list">
+                  <a class="active item">
+                    Unanswered (197)
+                  </a> 
+                  <a class="item">
+                    Answered (0)
+                  </a>
+                  <a class="item">
+                    Starred (556)
+                  </a>
+                  <a class="item">
+                    View All (0)
+                  </a>
+              </div>  
+            </div>
+            <div class="four wide column">
+              <div class="ui dropdown">
+                <div class="text">Sort by Rating</div>
+                <i class="dropdown icon"></i>
+              </div>
+            </div>
+          </div>
+
+
+  <!---INDIVIDUAL REVIEW-->
+  <div class="ui segments">
+    <div class="ui secondary segment">
+      <div class="ui relaxed horizontal divided list">
+        <div class="item">
+          5 days ago
+        </div>
+        <div class="item">
+          <div class="ui green label">
+            Rated 3.5
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui sub blue header">
+            Replied
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui segment">
+
+      <h5 class="ui header">
+      <img class="ui avatar mini image" src="static/images/pic.svg">
+        <div class="content">
+        Ashish Kumar Kanwar
+        <div class="sub header">Level 5 Foodie, 45 Followers, 45 Reviews</div>
+        </div>
+      </h5>
+      <p>
+         It's a decent place with loads of games to play. Its has got plenty of pool tables and few Carrom Boards. Also if you want to play darts and board games they are available here.  The Food served here is decent and add to the overall experience. The beer towers are nice so are the snacks. Its a nice place if you want to enjoy few games with your friends or if you want to enjoy an sports event on their large screens<a href="#">...more</a>
+      </p>
+        <div class="ui tiny images">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+      </div>
+
+
+    </div>
+
+    <!--COMMENT ETC. - SECONDARY SEGMENT END-->
+    <div class="ui secondary segment">
+      <div class="ui comments">
+      <!--MANAGEMENT RESPONSE ON TOP--> 
+        <div class="comment">
+          <a class="avatar">
+            <img src="static/images/pic.svg">
+          </a>
+          <div class="content">
+            <a class="author">Your Response</a>
+            <div class="metadata">
+              <span class="date">5 days ago</span>
+            </div>
+            <div class="text">
+              Dear Ms. Anand,
+
+          Thank you so much for sharing your experience and feedback with us. It is feedback from our guests that enable us in taking cognizance of the areas of improvement, for us to offer a higher level of dining experience to our patrons. We have addressed your points of observation with the team and assure you that they are being worked on.
+          We hope you would give us another opportunity to serve you in future and look forward to welcoming you back.
+
+          Stay updated by following us on Facebook and Instagram - 
+          https://www.facebook.com/FarziCafeCP/ 
+          http://instagram.com/farzicafe/
+
+
+          Best Regards,
+          Team Farzi Café
+
+            </div>
+            <div class="actions">
+              <a class="reply">Edit</a> 
+            </div>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+        <!--USER COMMENTS-->
+        <a href="#">View comments (2)</a>
+        <div class="ui comments">
+          <div class="comment">
+            <a class="avatar">
+              <img src="static/images/pic.svg">
+            </a>
+            <div class="content">
+              <a class="author">Sakshi Gandhi</a>
+              <div class="metadata">
+                <span class="date">5 days ago</span>
+              </div>
+              <div class="text">
+                Can you please share your email ID?
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <a class="avatar">
+              <img src="static/images/pic.svg">
+            </a>
+            <div class="content">
+              <a class="author">Foodster</a>
+              <div class="metadata">
+                <span class="date">5 days ago</span>
+              </div>
+              <div class="text">
+                Of course!
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--USER COMMENTS END-->
+      </div>
+    </div>
+    <!--COMMENT ETC. - SECONDARY SEGMENT END-->
+
+  </div>
+
+  <!---INDIVIDUAL REVIEW - END-->
+
+
+
+  <!---INDIVIDUAL REVIEW-->
+  <div class="ui segments">
+    <div class="ui secondary segment">
+      <div class="ui relaxed horizontal divided list">
+        <div class="item">
+          5 days ago
+        </div>
+        <div class="item">
+          <div class="ui green label">
+            Rated 3.5
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui sub blue header">
+            Replied
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui segment">
+
+      <h5 class="ui header">
+      <img class="ui avatar mini image" src="static/images/pic.svg">
+        <div class="content">
+        Ashish Kumar Kanwar
+        <div class="sub header">Level 5 Foodie, 45 Followers, 45 Reviews</div>
+        </div>
+      </h5>
+      <p>
+         It's a decent place with loads of games to play. Its has got plenty of pool tables and few Carrom Boards. Also if you want to play darts and board games they are available here.  The Food served here is decent and add to the overall experience. The beer towers are nice so are the snacks. Its a nice place if you want to enjoy few games with your friends or if you want to enjoy an sports event on their large screens<a href="#">...more</a>
+      </p>
+        <div class="ui tiny images">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+        <img class="logo" src="{% static '/images/pic.svg' %}">
+      </div>
+
+
+    </div>
+
+    <!--COMMENT ETC. - SECONDARY SEGMENT END-->
+    <div class="ui secondary segment">
+      <div class="ui comments">
+      <!--MANAGEMENT RESPONSE ON TOP-->
+          <div class="comment">
+            <a class="avatar">
+              <img src="static/images/pic.svg">
+            </a>
+            <div class="content">
+            <div class="ui fluid action input">
+              <input type="text" placeholder="Add management response">
+              <button class="ui button">Post Comment</button>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!--COMMENT ETC. - SECONDARY SEGMENT END-->
+
+  </div>
+
+  <!---INDIVIDUAL REVIEW - END-->
+
+
+
+
+    </div>
+  </div>
+
+  
+
+{% endblock content%}
