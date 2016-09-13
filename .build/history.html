@@ -34,7 +34,7 @@
 	</div>
 		<div class = "right menu">
 				<a class = "ui label">	
-				    <img class="ui right spaced avatar image" src="/static/images/pic.svg">
+				    <img class="ui right spaced avatar image" src="/static/images/archit.jpg">
 				    
 				      Archit Garg <i class="dropdown icon"></i>
 				   
@@ -46,23 +46,38 @@
 	</div>
 </div>
 
-<div style="background:#FFFFFF; overflow:auto; box-shadow:0px 1px 2px 0 rgba(34, 36, 38, 0.15); padding:10px 0; margin-bottom:30px;">
-
-	<div class = "ui container">		
-		<div class="ui horizontal list">
-			<div class="item">
-			    <img class="ui mini rounded image" src="/static/images/pic.svg">
-			    <div class="content">
-			      <div class="header">Underdoggs Sports Bar &amp; Grill <i class="dropdown icon"></i></div>
-			      Golf Course Road
-			    </div>
-			</div>
-			<div class="item">
-			    <a href="#" class="ui mini basic red button">View on Zomato</a>
+<div style="background:#FFFFFF; box-shadow:0px 1px 2px 0 rgba(34, 36, 38, 0.15); padding:10px 0; margin-bottom:30px">
+	<div class = "ui grid">
+	  <div class = "two wide column"></div>
+		<div class = "seven wide column" style="padding-left: 90px">
+		  <div class = "ui container">		
+			<div class="ui horizontal list">
+				<div class="item">
+				    <img class="ui mini rounded image" src="/static/images/instapizza.jpg">
+				    <div class="content">
+				      <div class="header">Instapizza <i class="dropdown icon"></i></div>
+				      3 locations
+				    </div>
+				</div>
+				<div class="item">
+				    <a href="#" class="ui mini basic red button">View on Zomato</a>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	  </div>
+    <div class = "seven wide column" style="padding-left: 40px">
+	    <div class = "ui left icon input">
+	    	<i class = "calendar icon"></i>
+	    	<input type="text" value="July 16, 2016">
+	    </div>
+	      to  
+	    <div class = "ui left icon input">
+	    	<i class = "calendar icon"></i>
+	    	<input type="text" value="August 8, 2016">
+	    </div>
+	  </div>
+     </div>
+  </div>
 	    
 
 <!--<h1>Underdoggs Sports Bar &amp; Grill</h1>
@@ -80,8 +95,16 @@
 			<div class="item">
 				<div class="header">Performance</div>
 				<div class="menu">
-					<a class="item" href="performance.html"> Ad Performance</a>
-					<a class="item" href="performance2.html"> Ad Performance 2</a>
+					<a class="item" href="performance-v3.html"> Ad Perf v3</a>
+					<a class="item" href="performance-v2.html"> Ad Perf v2</a>
+					<a class="item" href="performance-vars.html"> Ad Perf Banner variations</a>
+					<a class="item" href="performance-v1.html"> Ad Perf v1</a>
+				</div>
+				</div>
+
+			<div class = "item">
+				<div class="header">Page Performance</div>
+				<div class = "menu">
 					<a class="item" href="analytics.html">Analytics</a>
 					<a class="item" href="transactions.html">Transactions</a>
 					<a class="item" href="reviews.html">Reviews</a>
@@ -142,7 +165,12 @@
 					<a class="item" href="paymenthistory.html">Payment History</a>
 					<a class="item">Whitelabel</a>
 					<a class="item">Analytics</a>	
-					<a class="item">Users</a>
+				</div>
+			</div>
+
+			<div class = "item">
+				<div class="header">Users</div>
+				<div class="menu">
 					<a class="item" href="accesscontrol.html">Access Control</a>
 					<a class="item" href="addremove.html">Add &amp; Remove</a>
 					<a class="item">View Business Blog</a>
@@ -460,6 +488,7 @@
 		$('.ui.checkbox')
 			  .checkbox()
 			;
+		$('.tabular.menu .item').tab();
 
 		</script>
 

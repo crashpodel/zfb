@@ -1,0 +1,894 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!--AD PERFORMANCE HEADER -->
+
+ <div class="ui yellow segment" style = "margin-top:0px;">
+      <h1 class="ui header">Performance of your advertisements
+        <div class="sub header">Analyze the performance of your advertising campaigns on Zomato.</div>
+      </h1>
+ </div>
+
+
+<!--<div class = "ui segment">
+      <div class = "ui items">
+        <div class = "item">
+          <div class = "header">
+            <div class = "subheader"><b> You are viewing a report for advertisements that were live between July 1 - 31, 2016.  <br> Advertisements are shown for their full duration and may be of the following types: live, inactive, or expired. </b></div>
+          </div>
+          
+          <div class = "middle aligned content">
+            <button class = "ui basic mini green button right floated middle aligned"> Change date range </button>
+            </div>            
+      </div>
+    </div>
+  </div>-->
+
+
+  <!--END AD PERFORMANCE HEADER -->
+
+  <!-- OVERVIEW TABLE-->
+  <div class = "ui yellow segment top attached">
+   <h3 class = "ui header">Results from 5 ads active in the time period
+   </h3>
+  </div>
+
+<table class="ui celled structured table attached">
+	<thead>
+        <tr>
+          <th class = "three wide">Duration</th> 
+          <th class="four wide">Views of all advertisements<i class="help circle outline icon"></i></th>
+          <th class="four wide">Clicks on all advertisements<i class="help circle outline icon"></i></th>
+          <th class="five wide">Transactions over 30 days from users <br> who clicked on an ad<i class="help circle outline icon"></i></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class = "top aligned">
+          <td>
+          <h3 class = "ui header">July 16, 2016 - August 8, 2016</h3>
+          </td>
+          <td>
+            <div class="ui items">
+              <div class="item">
+                <div class="content">                 
+                  <h3 class="ui header">1,73,903 ad views</h3> 
+                  <div class="description">
+                    <span><small>1,04,341 unique people viewed the ads</small></span>
+                  </div>
+                </div>
+              </div>
+             </div> 
+          </td>
+          <td>
+            <div class="ui items">
+              <div class="item">
+                <div class="content">                 
+                  <h3 class="ui header">476 ad clicks</h3>
+                  <div class="meta" style = "color:black;">
+                    <span><b>0.27% click through rate</b></span>
+                  </div>
+                  <div class="description">
+                    <span><small>429 unique people clicked on ads</small></span>
+                  </div>
+                </div>
+              </div>
+             </div> 
+          </td>
+          <td>
+            <div class="ui items">
+              <div class="item">
+                <div class="content">                 
+                  <h3 class="ui header">35 orders from clicks</h3>
+                  <h3 class="ui header">71 calls from clicks</h3>
+                  <div class="description">
+                    <p><i><small>1 in every 4 clicks usually converts to business at the restaurant over 30 days.</small></i></p>
+
+                    <!--<br><br> We expect "x to y" more transactions in the next 29 days from these clicks. (only to show when end date is less than 30 days from today)</i></p>-->
+                 
+                    <span><small><a href="#">See how Transactions have changed with ads <i class = "caret right icon"></i></a></small></span>
+                  </div>
+                </div>
+              </div>
+             </div> 
+          </td>
+        </tr>
+      </tbody>
+</table>
+
+
+<div class="ui vertical fluid accordion menu bottom attached">
+	<div class = "item">
+		<a class = "active title">
+		<i class = "dropdown icon"></i>
+		Performance of each ad between July 16, 2016 - August 8, 2016 </a>
+		
+	<div class = "content">
+		<table class = "ui celled compact structured striped table attached fluid">
+		<tbody>
+			<tr class = "top aligned">
+
+		          <td><small><a class="ui mini green empty circular label"></a><a href="#"> DLF Phase 4, <br>Delivery Slot 4 </a></small></td>
+		          <td><small> 60,345 ad views <small></td>
+		          <td> <small>78 ad clicks <br>0.13% click through rate<small></td>
+		          <td> <small>12 orders from clicks <br> 13 calls from clicks<small></td>		    
+		    </tr>
+		    <tr class = "top aligned" colspan="5">
+		          <td><small><a class="ui mini green empty circular label"></a><a href="#"> Sector 50, <br>Delivery Slot 3 </a></small></td>
+		          <td><small> 49,234 ad views<small></td>
+		          <td><small> 166 ad clicks <br>0.34% click through rate <small></td>
+		          <td><small> 9 orders from clicks <br> 4 calls from clicks <small></td>
+			</tr>
+		    <tr class = "top aligned" colspan="6">
+		          <td><small><a class="ui mini green empty circular label"></a><a href="#"> Kalkaji, <br>Delivery Slot 1 </a></small></td>
+		          <td><small> 61,324 ad views <small></td>
+		          <td><small> 229 ad clicks <br>0.37% click through rate <small></td>
+		          <td><small> 12 orders from clicks <br> 54 calls from clicks <small></td>		          
+		    </tr>
+		    <tr class = "top aligned" colspan="6">
+		          <td><small><a class="ui mini red empty circular label"></a><a href="#"> GK1, <br>Delivery Slot 2 </a></small></td>
+		          <td><small> 2,000 ad views <small></td>
+		          <td><small> 2 ad clicks <br>0.1% click through rate <small></td>
+		          <td><small> 1 orders from clicks<small></td>		          
+		    </tr>
+		    <tr class = "top aligned" colspan="6">
+		          <td><small><a class="ui mini red empty circular label"></a><a href="#"> GK2, <br>Delivery Slot 9 </a></small></td>
+		          <td><small> 1,000 ad views <small></td>
+		          <td><small> 1 ad click <br>0.1% click through rate <small></td>
+		          <td><small> 1 orders from clicks <small></td>		          
+		    </tr>
+		</tbody>
+		</table>
+	</div>
+	</div>
+</div>
+
+<!-- END OVERVIEW TABLE -->
+
+<br>
+<!--Campaigns header-->
+  <div class = "ui yellow segment top attached">
+  <div class = "ui items">
+	  <div class = "ui item">
+	  	<h3 class = "ui header"> Advertising Performance
+	  	<div class = "sub header"> 
+	  	Click on an advertisement that was live between July 16 - August 8, 2016 and view its entire history.
+	  	</div>
+	  	</h3>
+	  	<div class = "middle aligned content">
+		<button class = "ui basic mini green button right floated"> Expand all</button>
+	  	</div>
+	  </div>
+  </div>
+</div>
+
+ <!-- <div class = "ui segment bottom attached">
+  	<div class = "ui horizontal list">
+  		<div class = "item bottom aligned"> 		
+  			<a class="ui mini circular green label">3</a> live advertisements
+  		</div>
+  		<div class = "item bottom aligned"> 		
+  			<a class="ui mini red circular label">1</a> ended advertisements
+  		</div>
+  		<div class = "item bottom aligned"> 		
+  			<a class="ui mini orange circular label">1</a> paused advertisement
+  		</div>
+  	</div>
+  </div> -->
+
+<!--End campaigns header-->
+
+
+
+<!--=====================================================================-->
+<!--=====================================================================-->
+<!--BANNER 1-->
+
+<!-- ANNA NAGAR HEADER -->
+<div class = "ui vertical fluid accordion">
+<div class = "title">
+
+  <div class="ui segment">
+  	<div class = "ui items">
+  	  <div class = "item">
+  	    <div class = "ui tiny image">
+    		<img src="{% static '/images/instapizza1.png' %}">
+    	</div>
+      <div class = "content">
+      	  <a class = "header">
+		    <h2 class = "ui header middle aligned"><a href="#">DLF Phase 4, Delivery Slot 4</a><a class="ui mini green label">Live</a></h2>
+		    <div class = "meta">
+		    	Data for July 16 - September 13 (today)
+		    </div>
+
+		    <div class = "extra">
+		    <small>
+		    Total duration: July 16 - September 25, 2016</small>
+		    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+ </div>
+<!-- END ANNA NAGAR HEADER -->
+
+<div class = "content">
+  <div class = "content">
+  <div class = "ui secondary segment">
+	<!-- ANNA NAGAR RESULTS TABLE-->
+	<table class="ui celled structured unstackable table top attached">
+			<thead>
+		        <tr>
+		          <th class="five wide">Views of advertisement <i class="help circle outline icon"></i></th>
+		          <th class="five wide">Clicks on advertisement <i class="help circle outline icon"></i></th>
+		          <th class="six wide">Conversion from advertisement <i class="help circle outline icon"></i></th>
+		        </tr>
+		      </thead>
+
+		      <tbody>
+		        <tr class = "top aligned">
+		          <td>
+		            <div class="ui items">
+		              <div class="item">
+		                <div class="content">                 
+		                  <h2 class="ui header">8,17,481 ad views</h2> 
+		                  <div class="description">
+		                    <span><small>5,13,124 unique people viewed the ads</small></span>
+		                  </div>
+		                </div>
+		              </div>
+		             </div> 
+		          </td>
+		          <td>
+		            <div class="ui items">
+		              <div class="item">
+		                <div class="content">                 
+		                  <h2 class="ui header">3,136 ad clicks</h2> 
+		                  <div class="meta" style = "color:black;">
+		                    <span><b>0.32% click through rate</b></span><br><br>
+		                    <span style = "color:#21BA45"><small>Higher CTR than others advertising in DLF Phase 4, Delivery slots.  They are averaging 0.21% CTR.</small></span>
+		                  </div>
+		                  <div class="description">
+		                    <span><small>3,100 unique people clicked on ads</small></span>
+		                  </div>
+		                </div>
+		              </div>
+		             </div> 
+		          </td>
+		          <td>
+		            <div class="ui items">
+		              <div class="item">
+		                <div class="content">                 
+		                  <h2 class="ui header">3 orders from clicks</h2>
+		                  <h2 class="ui header">2 calls from clicks</h2>
+		                  <div class="description">
+		                    <span><small><a href="#">See how Transactions have changed with ads <i class = "caret right icon"></i></a></small></span>
+		                  </div>
+		                </div>
+		              </div>
+		             </div> 
+		          </td>
+		        </tr>
+		      </tbody>
+		</table>
+	<!-- ANNA NAGAR RESULTS TABLE-->
+
+	<!--CUMULATIVE GRAPHS FOR ANNA NAGAR -->
+	<div class = "ui segments">
+	    <div class = "ui segment attached">
+	          <div class="ui grey sub header">Ad views for DLF Phase 4, Delivery Slot 4
+	            </div>
+	    </div>
+
+	      <div class = "ui pointing menu attached">
+	              <a class="active item">Ad views</a>
+	              <a class="item">Ad clicks</a>
+	              <a class="item">Click through rate</a>
+
+	        <div class="right menu">
+	            <div class="ui dropdown item">
+	              Daily <i class="dropdown icon"></i>
+	              <div class="menu">
+	                <a class="item">Weekly</a>
+	                <a class="item">Monthly</a>
+	                <a class="item">Yearly</a>
+	              </div>
+	            </div>
+	      </div>
+	    </div>
+
+	    <div class = "ui segment bottom attached">
+	      <img src="{% static '/images/ad-views-graph.png' %}"/>
+	    </div>
+	</div>
+	<!--END CUMULATIVE GRAPHS FOR ANNA NAGAR-->
+
+		<!-- ANNA NAGAR HOURLY TABLE -->
+		<table class="ui celled structured tablet stackable table top attached">
+		   	<thead>
+		          <th colspan="16">Ad clicks and views during peak times<i class="help circle outline icon"></i></th>  
+		           
+		      </thead>
+		      <tbody>
+		        <tr class = "top aligned">
+		          <td>
+		            <div class="ui items">
+		              <div class="item">
+		                <div class="content">                 
+		                  <div class="description"><b>73% of ad views came during peak dining hours</b></div> 
+		                </div>
+		              </div>
+		             </div> 
+		          </td>
+
+		                    <td>
+		            <div class="ui items">
+		              <div class="item">
+		                <div class="content">                 
+		                  <div class="description"><b>69% of ad clicks came during peak dining hours</b></div> 
+		                </div>
+		              </div>
+		             </div> 
+		          </td>
+		        </tr>
+
+		      </tbody>
+		    </table>
+		<!-- END ANNA NAGAR HOURLY TABLE-->
+
+		<!--HOURLY GRAPHS FOR ANNA NAGAR -->
+	  <div class = "ui segments">
+		    <div class = "ui segment attached">
+		          <div class="ui grey sub header">Relevance of ad views (by the hour) for DLF Phase 4, Delivery Slot 4
+		            </div>
+		    </div>
+
+		      <div class = "ui pointing menu attached">
+		              <a class="active item">Ad views by the hour</a>
+		              <a class="item">Ad clicks by the hour</a>
+		    </div>
+
+		    <div class = "ui segment bottom attached">
+		      <img src="{% static '/images/ad-views-hourly-graph.png' %}"/>
+		    </div>
+	</div>
+	<!-- END HOURLY GRAPHS FOR ANNA NAGAR -->
+
+	<!-- ANNA NAGAR INVESTMENT TABLE -->
+	<table class="ui celled structured tablet stackable table">
+	   	<thead>
+	          <th class="five wide">Cost per thousand ad views <i class="help circle outline icon"></i></th>
+	          <th class="five wide">Cost per ad click <i class="help circle outline icon"></i></th>
+	          <th class="six wide">Total investment in ads <i class="help circle outline icon"></i></th>
+	        
+	      </thead>
+	      <tbody>
+	        <tr class = "top aligned">
+	          <td>
+	            <div class="ui items">
+	              <div class="item">
+	                <div class="content">                 
+	                  <a class="meta">Rs. 115 per thousand ad views</a> 
+	                </div>
+	              </div>
+	             </div> 
+	          </td>
+	          <td>
+	            <div class="ui items">
+	              <div class="item">
+	                <div class="content">                 
+	                  <a class="meta">Rs. 20 per ad click</a> 
+	                </div>
+	              </div>
+	             </div> 
+	          </td>
+	          <td>
+	            <div class="ui items">
+	              <div class="item">
+	                <div class="content">                 
+	                  <a class="meta">Rs. 21,00,500</a> 
+	                </div>
+	              </div>
+	             </div> 
+	          </td>
+	        </tr>
+
+	      </tbody>
+	    </table>
+	<!-- ANNA NAGAR INVESTMENT TABLE -->
+  </div>
+  </div>
+
+</div>
+</div>
+
+
+<!--======================================================================-->
+<!--======================================================================-->
+<!--BANNER 2-->
+
+<!-- ANNA NAGAR HEADER -->
+<div class = "ui vertical fluid accordion">
+<div class = "title">
+  <div class="ui segment">
+  	<div class = "ui items">
+  	  <div class = "item">
+  	    <div class = "ui tiny image">
+    		<img src="{% static '/images/instapizza1.png' %}">
+    	</div>
+      <div class = "content">
+      	  <a class = "header">
+		    <h2 class = "ui header middle aligned"><a href="#">Sector 50, Delivery Slot 3</a><a class="ui mini green label">Live</a></h2>
+		    <div class = "meta">
+		    Data for July 16 - September 13 (today)
+		    </div>
+
+		    <div class = "extra">
+		    <small>
+		    Total duration: July 16 - September 25, 2016</small>
+		    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+ </div>
+<!-- END ANNA NAGAR HEADER -->
+
+<div class = "content">
+	<div class="ui top attached tabular menu">
+	  <a class="active item" data-tab="first">Ad Performance</a>
+	  <a class="item" data-tab="second">Ad Relevance</a>
+	  <a class="item" data-tab="third">Ad Investment</a>
+	</div>
+
+
+	<div class="ui bottom attached active tab segment" data-tab="first">
+		<!-- ANNA NAGAR RESULTS TABLE-->
+			<table class="ui celled structured unstackable table top attached">
+				<thead>
+			        <tr>
+			          <th class="five wide">Views of all advertisements <i class="help circle outline icon"></i></th>
+			          <th class="five wide">Clicks on all advertisements <i class="help circle outline icon"></i></th>
+			          <th class="six wide">Conversion from all advertisements <i class="help circle outline icon"></i></th>
+			        </tr>
+			      </thead>
+
+			      <tbody>
+			        <tr class = "top aligned">
+			          <td>
+			            <div class="ui items">
+			              <div class="item">
+			                <div class="content">                 
+			                  <h2 class="ui header">1,14,879 ad views</h2> 
+			                  <div class="description">
+			                    <span><small>68,927 unique people viewed the ads</small></span>
+			                  </div>
+			                </div>
+			              </div>
+			             </div> 
+			          </td>
+			          <td>
+			            <div class="ui items">
+			              <div class="item">
+			                <div class="content">                 
+			                  <h2 class="ui header">332 ad clicks</h2> 
+			                  <div class="meta" style = "color:black;">
+			                    <span><b>0.28% click through rate</b></span>
+			                  </div>
+			                  <div class="description">
+			                    <span><small>299 unique people clicked on ads</small></span>
+			                  </div>
+			                </div>
+			              </div>
+			             </div> 
+			          </td>
+			          <td>
+			            <div class="ui items">
+			              <div class="item">
+			                <div class="content">                 
+			                  <h2 class="ui header">14 orders from clicks</h2>
+			                  <h2 class="ui header">6 calls from clicks</h2>
+			                  <div class="description">
+			                    <span><small><a href="#">See how Transactions have changed with ads <i class = "caret right icon"></i></a></small></span>
+			                  </div>
+			                </div>
+			              </div>
+			             </div> 
+			          </td>
+			        </tr>
+			      </tbody>
+			</table>
+			<!-- END ANNA NAGAR RESULTS TABLE -->
+
+		<!--CUMULATIVE GRAPHS FOR ANNA NAGAR-->
+			<br>
+			<div class = "ui segment top attached">
+					<div class="ui grey sub header">Ad views for Sector 50, Delivery Slot 3 
+				    </div>
+				</div>
+			<div class = "content">
+				<div class = "ui pointing menu attached">
+				                  <a class="active item">Ad views</a>
+				                  <a class="item">Ad clicks</a>
+				                  <a class="item">Click through rate</a>
+
+				            <div class="right menu">
+				                <div class="ui dropdown item">
+				                  Daily <i class="dropdown icon"></i>
+				                  <div class="menu">
+				                    <a class="item">Weekly</a>
+				                    <a class="item">Monthly</a>
+				                    <a class="item">Yearly</a>
+				                  </div>
+				                </div>
+				          </div>
+				</div>
+		        <div class = "ui segment bottom attached">
+		          	<img src="{% static '/images/ad-views-graph.png' %}"/>
+		        </div>
+			</div>
+		<!--END CUMULATIVE GRAPHS FOR ANNA NAGAR-->  
+	</div>
+
+</div>
+</div>
+
+
+<!--======================================================================-->
+<!--======================================================================-->
+<!--BANNER 3-->
+
+<!-- ANNA NAGAR HEADER -->
+<div class = "ui vertical fluid accordion">
+<div class = "title">
+
+    <div class="ui segment">
+  	<div class = "ui items">
+  	  <div class = "item">
+  	    <div class = "ui tiny image">
+    		<img src="{% static '/images/instapizza1.png' %}">
+    	</div>
+      <div class = "content">
+      	  <a class = "header">
+		    <h2 class = "ui header middle aligned"><a href="#">Kalkaji, Delivery Slot 1</a><a class="ui mini green label">Live</a></h2>
+		    <div class = "meta">
+		    Data for July 16 - September 13 (today)
+		    </div>
+
+		    <div class = "extra">
+		    <small>
+		    Total duration: July 16 - September 25, 2016</small>
+		    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+ </div>
+<!-- END ANNA NAGAR HEADER -->
+
+<div class = "content">
+	<div class="ui top attached tabular menu">
+	  <a class="active item" data-tab="first">Ad Performance</a>
+	  <a class="item" data-tab="second">Ad Relevance</a>
+	  <a class="item" data-tab="third">Ad Investment</a>
+	</div>
+
+
+	<div class="ui bottom attached active tab segment" data-tab="first">
+		<!-- ANNA NAGAR RESULTS TABLE-->
+			<table class="ui celled structured unstackable table top attached">
+				<thead>
+			        <tr>
+			          <th class="five wide">Views of all advertisements <i class="help circle outline icon"></i></th>
+			          <th class="five wide">Clicks on all advertisements <i class="help circle outline icon"></i></th>
+			          <th class="six wide">Conversion from all advertisements <i class="help circle outline icon"></i></th>
+			        </tr>
+			      </thead>
+
+			      <tbody>
+			        <tr class = "top aligned">
+			          <td>
+			            <div class="ui items">
+			              <div class="item">
+			                <div class="content">                 
+			                  <h2 class="ui header">1,43,088 ad views</h2> 
+			                  <div class="description">
+			                    <span><small>85,852 unique people viewed the ads</small></span>
+			                  </div>
+			                </div>
+			              </div>
+			             </div> 
+			          </td>
+			          <td>
+			            <div class="ui items">
+			              <div class="item">
+			                <div class="content">                 
+			                  <h2 class="ui header">458 ad clicks</h2> 
+			                  <div class="meta" style = "color:black;">
+			                    <span><b>0.32% click through rate</b></span>
+			                  </div>
+			                  <div class="description">
+			                    <span><small>412 unique people clicked on ads</small></span>
+			                  </div>
+			                </div>
+			              </div>
+			             </div> 
+			          </td>
+			          <td>
+			            <div class="ui items">
+			              <div class="item">
+			                <div class="content">                 
+			                  <h2 class="ui header">18 orders from clicks</h2>
+			                  <h2 class="ui header">81 calls from clicks</h2>
+			                  <div class="description">
+			                    <span><small><a href="#">See how Transactions have changed with ads <i class = "caret right icon"></i></a></small></span>
+			                  </div>
+			                </div>
+			              </div>
+			             </div> 
+			          </td>
+			        </tr>
+			      </tbody>
+			</table>
+			<!-- END ANNA NAGAR RESULTS TABLE -->
+
+		<!--CUMULATIVE GRAPHS FOR ANNA NAGAR-->
+			<br>
+			<div class = "ui segment top attached">
+					<div class="ui grey sub header">Ad views for Kalkaji, Delivery Slot 1 
+				    </div>
+				</div>
+			<div class = "content">
+				<div class = "ui pointing menu attached">
+				                  <a class="active item">Ad views</a>
+				                  <a class="item">Ad clicks</a>
+				                  <a class="item">Click through rate</a>
+
+				            <div class="right menu">
+				                <div class="ui dropdown item">
+				                  Daily <i class="dropdown icon"></i>
+				                  <div class="menu">
+				                    <a class="item">Weekly</a>
+				                    <a class="item">Monthly</a>
+				                    <a class="item">Yearly</a>
+				                  </div>
+				                </div>
+				          </div>
+				</div>
+		        <div class = "ui segment bottom attached">
+		          	<img src="{% static '/images/ad-views-graph.png' %}"/>
+		        </div>
+			</div>
+		<!--END CUMULATIVE GRAPHS FOR ANNA NAGAR-->  
+	</div>
+
+</div>
+</div>
+
+<!--======================================================================-->
+<!--======================================================================-->
+<!--DUMMY BANNER 4-->
+
+  <div class="ui segment">
+  	<div class = "ui items">
+  	  <div class = "item">
+  	    <div class = "ui tiny image">
+    		<img src="{% static '/images/tossin.png' %}">
+    	</div>
+      <div class = "content">
+      	  <a class = "header">
+		    <h2 class = "ui header middle aligned"><a href="#">GK1, Delivery Slot 2</a><a class="ui mini red label">Ended</a></h2>
+		    <div class = "meta">
+		    Data for June 1 - July 18
+		    </div>
+
+		    <div class = "extra">
+		    <small>
+		    Total duration: July 16 - September 25, 2016</small>
+		    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="ui segment">
+  	<div class = "ui items">
+  	  <div class = "item">
+  	    <div class = "ui tiny image">
+    		<img src="{% static '/images/tossin.png' %}">
+    	</div>
+      <div class = "content">
+      	  <a class = "header">
+		    <h2 class = "ui header middle aligned"><a href="#">GK2, Delivery Slot 9</a><a class="ui mini orange label">Paused</a></h2>
+		    <div class = "meta">
+		    Data for June 1 - July 18 
+		    </div>
+
+		    <div class = "extra">
+		    <small>
+		    Total duration: July 16 - September 25, 2016</small>
+		    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<!--======================================================================-->
+<!--======================================================================-->
+
+
+<!--STYLE-->
+<style>
+
+.ui.yellow.segment:not(.inverted) {
+    border-top: 2px solid #B49E62;
+}
+
+.ui.divider:not(.vertical):not(.horizontal) {
+    border-top: 8px solid rgba(34, 36, 38, 0.15);
+}
+
+.ui.basic.green.buttons .button, .ui.basic.green.button {
+    box-shadow: 0px 0px 0px 1px #B49E62 inset;
+    color: #B49E62;
+
+}
+
+.ui.table thead th {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+</style>
+
+<!--END STYLE-->
+
+
+<!-- EXTRA TABLES -->
+<!--
+<div class="ui vertical fluid accordion menu bottom attached">
+	<div class="item">
+		<a class = "title"><i class = "dropdown icon"></i>
+		See contribution of each ad
+		</a>
+		<div class = "content">
+			<div class = "ui grid">
+			 <div class = "five wide column">
+			  <table class="ui small compact basic table">
+					<thead>
+					<th><small>% of views </small></th>
+					<th><small> Advertisement </small></th>	
+					</thead>
+				      <tbody>
+				        <tr class = "top aligned">
+				          <td>
+		                    <span><small>40.3%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Chromepet, Delivery Slot 2</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>23.6%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Anna Nagar West, Delivery Slot 3</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>26.2%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Adyar, Delivery Slot 9</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>  
+				          <td>
+		                    <span><small>12.1%</small></span>
+				          </td>
+				          <td>
+				            <span><small><i>Others</i></small></span>
+				          </td>
+				        </tr>
+				       </tbody>
+				</table>
+			</div>
+			<div class = "five wide column">
+				<table class="ui small compact basic table">
+					<thead>
+					<th><small>% of clicks </small></th>
+					<th><small> Advertisement </small></th>	
+					</thead>
+				      <tbody>
+				        <tr class = "top aligned">
+				          <td>
+		                    <span><small>40.3%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Chromepet, Delivery Slot 2</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>23.6%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Anna Nagar West, Delivery Slot 3</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>26.2%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Adyar, Delivery Slot 9</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>  
+				          <td>
+		                    <span><small>12.1%</small></span>
+				          </td>
+				          <td>
+				            <span><small><i>Others</i></small></span>
+				          </td>
+				        </tr>
+				       </tbody>
+				</table>
+			</div>
+			<div class = "five wide column">
+				<table class="ui small compact basic table">
+					<thead>
+					<th><small>Conversions </small></th>
+					<th><small> Advertisement </small></th>	
+					</thead>
+				      <tbody>
+				        <tr class = "top aligned">
+				          <td>
+		                    <span><small>1 order</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Chromepet, Delivery Slot 2</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>1 order, 2 calls</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Anna Nagar West, Delivery Slot 3</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>2 calls</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Adyar, Delivery Slot 9</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>  
+				          <td>
+		                    <span><small>2 orders, 2 calls</small></span>
+				          </td>
+				          <td>
+				            <span><small><i>Others</i></small></span>
+				          </td>
+				        </tr>
+				       </tbody>
+				</table>
+			</div>
+		</div>
+			
+		</div>
+	</div>
+</div>
+-->
+<!-- END EXTRA TABLES-->
+
+
+{% endblock content%}
