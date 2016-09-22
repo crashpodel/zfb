@@ -1,0 +1,536 @@
+{% extends "base.html" %}
+
+{% block title %}Ad Performance - V7{% endblock %}
+
+{% block content %}
+
+<!--AD PERFORMANCE HEADER -->
+
+ <div class="ui yellow segment" style = "margin-top:0px;">
+      <h1 class="ui header">Performance of your advertisements
+        <!--<div class="sub header">Analyze the performance of your advertising campaigns on Zomato.</div>-->
+      </h1>
+ </div>
+
+  <!-- OVERVIEW TABLE-->
+  <div class = "ui yellow secondary segment top attached" id="sectionheader">
+	   <h3 class = "ui header" id="sectioncontent">You had 3 active ads for these 31 days (August 1 -31, 2016).
+	   <!--<div class = "sub header">Status: 3 ads are still live today, 2 ads have ended.</div>-->
+	   </h3>
+  </div>
+
+<!--OVERVIEW TABLE-->
+<table class="ui celled structured table bottom attached">
+	<thead>
+          <th style = "width:33%">
+          	<div class = "ui items">
+          		<div class = "item">
+          			Advertisements 
+          		<div class = "content" style = "font-weight:normal; padding-left:10px;">
+	          		
+	          	</div>
+	          </div>
+	         </div>
+	      </th> 
+          <th style = "width:33%">
+          	<div class = "ui items">
+          		<div class = "item">
+          			Views of all advertisements
+          		<div class = "content" style = "font-weight:normal; padding-left:10px">
+	          		<a class = "test2 button"><small><i>What's this?</i></small></a>
+	          	</div>
+	          </div>
+	         </div>
+          </th>
+          <th style = "width:33%">
+          <div class = "ui items">
+          		<div class = "item">
+          			Clicks on all advertisements
+          		<div class = "content" style = "font-weight:normal; padding-left:10px">
+	          		<a class = "test3 button"><small><i>What's this?</i></small></a>
+	          	</div>
+	          </div>
+	         </div>
+          </th>
+      </thead>
+
+      <tbody>
+        <tr class = "top aligned">
+          <td>
+          <div class="ui items">
+              <div class="item">
+                <div class="content">                 
+                  <h4 class="ui header"><b>3 active advertisements</b></h4>
+                  <!--<div class="description">
+                    <span><small>July 16, 2016 - August 8, 2016</small></span>
+                  </div>-->
+                  <div class="extra">
+                  <small><span style = "color:black">Ad spend during this time: Rs. 2,70,199  </span> <a class = "test4 button"><small><i>What's this?</i></small></a></small>
+                  </div>
+                </div>
+              </div>
+             </div> 
+          </td>
+          <td>
+            <div class="ui items">
+              <div class="item">
+                <div class="content">                 
+                  <h4 class="ui header"><b>2,92,715 total ad views</b></h4> 
+                  <div class="meta">
+                    <span><small>2,73,508 unique people viewed ads</small></span>
+                  </div>
+                  <div class="extra">
+                  <small><span style = "color:black">Cost per thousand ad views: Rs. 923 </span> <a class = "test5 button"><small><i>  What's this?</i></small></a></small>
+                  </div>
+                </div>
+              </div>
+             </div> 
+          </td>
+          <td>
+            <div class="ui items">
+              <div class="item">
+                <div class="content">                 
+                  <h4 class="ui header"><b>2385 total ad clicks</b></h4>
+                  <div class="meta" style = "color:black;">
+                    <span><b>0.81% click through rate</b></span>
+                  </div>
+                  <div class="meta">
+                    <span><small>2,160 unique people clicked on ads</small></span>
+                  </div>
+                  <div class="extra">
+                  <small><span style = "color:black">Cost per ad click: Rs. 113 </span><a class = "test6 button"><small><i>What's this?</i></small></a></small>
+                  </div>
+                   <div class="extra">
+                  <small><span style = "color:#2185D0"><a href="analytics.html" style = "color: #2185D0"> See how this impacted page views </a><i class = "caret right icon"></i> </span></small>
+                  </div>
+                </div>
+              </div>
+             </div> 
+          </td>
+     <!--<td>
+            <div class="ui items">
+              <div class="item">
+                <div class="content">                 
+                  <h3 class="ui header">46 orders from clicks</h3>
+                  <h3 class="ui header">113 calls from clicks</h3>
+                  <div class="extra">
+                    <p><i><small>1 in every 4 clicks usually converts to business over a 30 day period.  For example, between July 9 - August 8, 2016, this restaurant recieved 138 transactions from 557 ad clicks. <u>Minimize</u> <i class = "caret up icon"></i></small></p>
+
+                    <br><br> We expect "x to y" more transactions in the next 29 days from these clicks. (only to show when end date is less than 30 days from today)</i></p>
+                 
+                    <span><small><a href="#">See how Transactions have changed with ads <i class = "caret right icon"></i></a></small></span>
+                  </div>
+                </div>
+              </div>
+             </div> 
+          </td>-->
+      </tr>
+      </tbody>
+</table>
+<!--OVERVIEW TABLE-->
+
+
+<!--====================================================================================-->
+<!--====================================================================================-->
+
+
+<!--CONTRIBUTION TABLE-->
+
+  <div class = "ui yellow secondary segment top attached" id="sectionheader">
+	   <h4 class = "ui header" id="sectioncontent">Contribution of each advertisement for these 31 days
+	   <!--<div class = "sub header">Status: 3 ads are still live today, 2 ads have ended.</div>-->
+	   </h4>
+  </div>
+
+
+	<table class = "ui celled compact structured striped table bottom attached fluid">
+		<thead>
+	      <th style = "width:33%">
+	       	<div class = "ui items">
+          		<div class = "item">
+          			Advertisement
+          		<div class = "content" style = "font-weight:normal; padding-left:5px">
+	          	</div>
+	          </div>
+	         </div>
+	       </th> 
+
+	      <th style = "width:33%">
+	      	<div class = "ui items">
+          		<div class = "item">
+          			Views per advertisement 
+          		<div class = "content" style = "font-weight:normal; padding-left:5px">
+	          		<a class = "test2 button"><small><i>What's this?</i></small></a>
+	          	</div>
+	          </div>
+	         </div> 
+	      </th>
+	      <th style = "width:33%">
+	      	<div class = "ui items">
+          		<div class = "item">
+          			Clicks per advertisement 
+          		<div class = "content" style = "font-weight:normal; padding-left:5px">
+	          		<a class = "test3 button"><small><i>What's this?</i></small></a>
+	          	</div>
+	          </div>
+	         </div>
+	      </th>
+	   </thead>
+		<tbody>
+			<tr class = "top aligned">
+		          <td><small><a href="#"> Sector 29, Nightlife, Row 1 Left  </a><br><span style = "color:#1ca93d">Ongoing in selected time period</span><br><span> Ad spend during this time: Rs. 1,13,836<br><div class= "ui basic teal mini label middle left aligned">Banner</div> </small></td>
+		          <td><small><span id = "contribution-title">2,82,537 ad views</span> <br> <span id = "views-detail">2,64,450 unique people viewed the ad</span> <br> Cost per thousand ad views: Rs. 403</small></td>
+		          <td><small><span id = "contribution-title">2122 ad clicks<br>0.75% click through rate </span><br> <span id = "views-detail">1936 unique people clicked on the ad </span> <br> Cost per ad click: Rs. 54</small>
+		          </td>		    
+		    </tr>
+		    <tr class = "top aligned" colspan="5">
+		          <td><small><a href="#"> Cyber City, Mobile Showcase, Slot 1 </a><br><span style = "color:#1ca93d">Ongoing in selected time period</span><br>Ad spend during this time: Rs. 97,088<br><div class= "ui basic yellow mini label left middle aligned">Premium Slider</div></small></td>
+		          <td><small> <span id = "contribution-title">8952 ad views</span><br> <span id = "views-detail">8,323 unique people viewed the ad</span> <br> Cost per thousand ad views: Rs. 10,845</small></td>
+		          <td> <small><span id = "contribution-title">235 ad clicks <br>2.63% click through rate </span><br> <span id = "views-detail">207 unique people clicked on the ad </span><br> Cost per ad click: Rs. 413</small>
+		          </td>	
+			</tr>
+		    <tr class = "top aligned" colspan="6">
+		          <td><small><a href="#"> Summer Cocktails, Slot 1 </a><br><span style = "color:#1ca93d">Ongoing in selected time period</span><br>Ad spend during this time: Rs. 59,275<br><div class= "ui basic violet mini label middle aligned">Collection</div></small></td>
+		          <td><small><span id = "contribution-title">1226 ad views </span> <br> <span id = "views-detail">735 unique people viewed the ad</span> <br> Cost per thousand ad views: Rs. 48,348</small></td>
+		          <td> <small><span id = "contribution-title">28 ad clicks <br>2.28% click through rate </span><br><span id = "views-detail">17 unique people clicked on the ad</span> <br> Cost per ad click: Rs. 2,117</small>
+		          </td>		          
+		    </tr>
+		</tbody>
+	</table>
+	
+
+<!--END CONTRIBUTION TABLE-->
+
+  <div class="ui pointing blue menu" id="ad-selector">
+      <a class="item">
+        <h4>Detailed view:</h4>
+      </a>
+      <a class="item active" data-tab="first">
+        Sector 29, Nightlife, Row 1 Left
+      </a>
+      <a class="item"   data-tab="second">
+        Cyber City, Mobile Showcase, Slot 1
+      </a>
+      <a class="item" data-tab="third">
+        Summer Cocktails, Slot 1
+      </a>
+
+      <div class = "right menu">
+        <div class = "item">
+          <i class="caret right icon"></i>
+        </div>
+      </div>
+
+  </div>
+<div class = "active ui tab segments" data-tab="first">
+	<div class = "ui yellow segment top attached">
+
+		<div class = "ui items">
+	  	  <div class = "item">
+	  	    <div class = "ui tiny image">
+	    		<img src="{% static '/images/molecule.png' %}">
+	    	</div>
+	      <div class = "content">
+			    <h3 class = "ui header middle aligned test button"><a>Sector 29, Nightlife, Row 1 Left</a> <div class= "ui basic teal mini label middle aligned">Banner</div></h3>
+			    <!--<h3 class = "ui header middle aligned"><a>Sector 29, Nightlife, Row 1 Left</a> <div class= "ui basic teal mini label middle aligned">Banner</div></h3>-->
+			    <div class = "meta">
+			    	<span style = "color:#1ca93d">Ongoing in the selected time period (31 days)</span> <br>
+			    	 
+			    </div>
+
+			    <div class = "description">
+			    <small>
+			    Overall ad duration: July 16, 2016 - October 18, 2016 </small>
+			    </div>
+	      </div>
+	    </div>
+	    </div>
+	</div>
+	<div class = "ui segment attached">
+
+		<img style = "width:884px; height:432px" src="{% static '/images/molecule/performance-graph-banner@2x.png' %}"/>
+
+		<img style = "width:884px; height:432px" src="{% static '/images/molecule/performance-hourly-graph-banner@2x.png' %}"/>
+
+	</div>
+</div>
+
+<div class = "ui tab segments" data-tab="second">
+	<div class = "ui yellow segment top attached" id="sectionheader">
+
+		<div class = "ui items">
+	  	  <div class = "item">
+	  	    <div class = "ui tiny image">
+	    		<img src="{% static '/images/molecule.png' %}">
+	    	</div>
+	      <div class = "content">
+			    <!--<h3 class = "ui header middle aligned test button"><a>Cyber City, Mobile Showcase, Slot 1</a><div class= "ui basic yellow mini label middle aligned">Premium Slider</div></h3>-->
+			    <h3 class = "ui header middle aligned"><a>Cyber City, Mobile Showcase, Slot 1</a><div class= "ui basic yellow mini label middle aligned">Premium Slider</div></h3>
+			    <div class = "meta">
+			    	<span style = "color:#1ca93d">Ongoing in the selected time period (31 days)</span> <br>
+			    	 
+			    </div>
+
+			    <div class = "description">
+			    <small>
+			    Overall ad duration: June 1 - August 31, 2016 </small>
+			    </div>
+	      </div>
+	    </div>
+	    </div>
+	</div>
+	<div class = "ui segment attached">
+
+		<img style = "width:884px; height:432px" src="{% static '/images/molecule/performance-graph-mobile@2x.png' %}"/>
+
+		<img style = "width:884px; height:432px" src="{% static '/images/molecule/performance-hourly-graph-mobile@2x.png' %}"/>
+	</div>
+</div>
+
+<div class = "ui tab segments" data-tab="third">
+	<div class = "ui yellow segment top attached" id="sectionheader">
+
+		<div class = "ui items">
+	  	  <div class = "item">
+	  	    <div class = "ui tiny image">
+	    		<img src="{% static '/images/molecule.png' %}">
+	    	</div>
+	      <div class = "content">
+			    <!--<h3 class = "ui header middle aligned test button"><a>Summer Cocktails, Slot 1 </a><div class= "ui basic violet mini label middle aligned">Collection</div></h3>-->
+			    <h3 class = "ui header middle aligned"><a>Summer Cocktails, Slot 1 </a><div class= "ui basic violet mini label middle aligned">Collection</div></h3>
+			    <div class = "meta">
+			    	<span style = "color:#1ca93d">Ongoing in the selected time period (31 days)</span> <br>
+			    	 
+			    </div>
+
+			    <div class = "description">
+			    <small>
+			    Overall ad duration: June 16 - September 15, 2016 </small>
+			    </div>
+	      </div>
+	    </div>
+	    </div>
+	</div>
+	<div class = "ui segment attached">
+
+		<img style = "width:884px; height:432px" src="{% static '/images/molecule/performance-graph-collection@2x.png' %}"/>
+
+		<img style = "width:884px; height:432px" src="{% static '/images/molecule/performance-hourly-graph-collection@2x.png' %}"/>
+	</div>
+</div>
+
+<!--BANNER IMAGES TEXT MODAL-->
+<div class="ui standard test modal scrolling transition hidden" style="top: 2825px;">
+  <i class="close icon"></i>
+  <h3 class="ui header">
+	    Sector 29, Nightlife, Row 1 Left
+	    <div class = "sub header">Placement and visual of your advertisement on Zomato</div>
+  </h3>
+
+  <div class="content">
+  	<img src="{% static '/images/molecule/banner-preview.png' %}"/>
+  	
+
+
+  	<!--<div id = "context1">
+	  	<div class="ui two item menu">
+			  <a class="active item" data-tab="first">Advertisement images</a>
+			  <a class="item" data-tab = "second">Advertisement text</a>
+		</div>
+		<div class="ui active tab" data-tab="first">
+		  	<div class="ui small images">
+			  <img src="{% static '/images/wireframe/image.png' %}"/>
+			  <img src="{% static '/images/wireframe/image.png' %}"/>
+			  <img src="{% static '/images/wireframe/image.png' %}"/>
+			  <img src="{% static '/images/wireframe/image.png' %}"/>
+			</div>
+		</div>
+		<div class="ui tab" data-tab="second">
+			<div class="ui segments">
+				  <div class="ui segment">
+				    <p>This pizza is so good it will knock your shirt off.</p>
+				  </div>
+				  <div class="ui segment">
+				    <p>This pizza is so good it will knock your shirt off.</p>
+				  </div>
+				  <div class="ui segment">
+				    <p>This pizza is so good it will knock your shirt off.</p>
+				  </div>
+				  <div class="ui segment">
+				    <p>This pizza is so good it will knock your shirt off.</p>
+				  </div>
+				  <div class="ui segment">
+				    <p>This pizza is so good it will knock your shirt off.</p>
+				  </div>
+			</div>
+		</div>
+	</div>-->
+  </div>
+  <div class="actions" style="text-align:left">
+  <p><small>For changes to banner images or text, please contact your Zomato relationship manager.</small></p>
+  </div>
+</div>
+<!--END BANNER IMAGES TEXT MODAL-->
+
+
+<!--HELP AD VIEW MODAL-->
+<div class="ui standard test2 small modal scrolling transition hidden" style="top: 2825px;">
+  <i class="close icon"></i>
+  <h3 class="ui header"> What is an ad view? </h3>
+  	<div class = "image content">
+  		<div class = "ui large image top align"><img src="{% static '/images/help-ad-view@2x.png' %}"/></div>
+  	<div class = "description top align">
+  		<p><b>Ad view is counted each time a customer views your ad on the Zomato website or app.  It is also known as an impression. </b></p>
+  		<p><b>Why do ad views (impressions) matter?</b><br>  More ad views mean greater awareness and exposure of your restaurant to customers. </p>
+  		<p><b>Unique people who viewed the ad </b> <br>If the same user views the ad multiple times in the selected time period, they are counted as one user. </p>
+  		<p>In the image, three advertisements got an additional ad view.  Ad 1, ad 2, and ad 3 each got one ad view.</p>
+  	 </div>
+   </div>	
+ </div>
+<!--END HELP AD VIEW MODAL-->
+
+<!--HELP AD CLICK MODAL-->
+<div class="ui standard test3 small modal scrolling transition hidden" style="top: 2825px;">
+  <i class="close icon"></i>
+  <h3 class="ui header"> What is an ad click? </h3>
+  	<div class = "image content">
+  		<div class = "ui huge image top align"><img src="{% static '/images/help-ad-click@2x.png' %}"/></div>
+  	<div class = "description top align">
+  		<p><b>Ad click is counted each time a customer clicks on your ad on the app or website. </b></p>
+  		<p><b>Why do clicks matter?</b><br>  A click means that a customer was attracted by your ad, wants to learn more about your restaurant, and has good probability to convert to business.  Recent studies show that 1 in every 4 clicks on an ad converts into business for your restaurant.  </p>
+  		<p><b>Unique people who viewed the ad </b> <br>If the same user views the ad multiple times in the selected time period, they are counted as one user. </p>
+  		<p><b>Click through rate (CTR)</b><br>
+  		Click through rate measures the effectiveness of your ad.  It is a percentage displaying the number of times your ad was clicked compared to the number of times your ad was viewed.</p>
+  		<p><b>CTR = (Number of ad clicks) / (Number of ad views)</b>
+  		<p><b>How can you increase your CTR?</b><br> Changing your banner images or banner text can increase your click through rate.  Speak to your Sales representative at Zomato to make these changes. </p>
+  		<p><a href="#">See the industry standards for CTR</a></p>
+  	 </div>
+   </div>	
+ </div>
+<!--END HELP AD CLICK MODAL-->
+
+<!--AD INVESTMENT MODAL-->
+<div class="ui standard test4 small modal scrolling transition hidden" style="top: 2825px;">
+  <i class="close icon"></i>
+  <h3 class="ui header"> Ad spend during this time </h3>
+  	<div class = "content">
+  	<div class = "description">
+  		<p><b>This is the amount you are paying for active ads.  It is prorated for the selected time period. </b></p>
+  		<p><b>How is the total investment generated?</b><br>  Ad prices are determined by demand for the slot, which is affected by traffic to that category and subzone on Zomato.  If you paid for several ads together, we show the split of investment by ad, varying by slot position and dining category in an advertising zone.  </p>
+  	 </div>
+   </div>	
+ </div>
+<!--END AD INVESTMENT MODAL-->
+
+<!--CPM MODAL-->
+<div class="ui standard test5 small modal scrolling transition hidden" style="top: 2825px;">
+  <i class="close icon"></i>
+  <h3 class="ui header"> Cost per thousand ad views </h3>
+  	<div class = "content">
+  	<div class = "description">
+  		<p><b>Cost per thousand ad views - or cost per thousand impressions (CPM) - is the cost of exposure, for every 1000 ad views on the Zomato platform.  It is another way to represent your ad spend in the selected time period.</b></p>
+  		<p>Cost per thousand ad views = (Ad spend in selected time period) / (Total impressions/1000)</p>
+  		<p><a href = "#">See the industry standards for CPM</a>
+  	 </div>
+   </div>	
+ </div>
+<!--END CPM MODAL-->
+
+<!--CPC MODAL-->
+<div class="ui standard test6 small modal scrolling transition hidden" style="top: 2825px;">
+  <i class="close icon"></i>
+  <h3 class="ui header"> Cost per click </h3>
+  	<div class = "content">
+  	<div class = "description">
+  		<p><b>Cost per ad click (CPC) is the cost for every ad click on the Zomato platform.  It is another way to represent your ad investment.</b></p>
+  		<p>Cost per ad click = (Ad spend in selected time period) / (Total ad clicks)</p>
+  		<p><a href = "#">See the industry standards for CPC</a>
+  	 </div>
+   </div>	
+ </div>
+<!--END CPC MODAL-->
+
+
+<!--=====================================================-->
+<!--=======================================s==============-->
+
+
+<!--STYLE-->
+<style>
+
+body {
+	font-family: 'Lato' !important;
+}
+.ui.header {
+	font-family: 'Lato'!important;
+}
+
+.ui.yellow.segment:not(.inverted) {
+    border-top: 2px solid #B49E62;
+}
+
+.ui.menu {
+	font-family: 'Lato'!important;
+}
+
+
+
+.ui.basic.green.buttons .button, .ui.basic.green.button {
+    box-shadow: 0px 0px 0px 1px #B49E62 inset;
+    color: #B49E62;
+}
+
+.ui.table {
+	font-family: 'Lato' !important;
+}
+.ui.table thead th {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+a {
+	color: #676767;
+}
+
+.ui.basic.yellow.label, .ui.basic.yellow.labels .label {
+    border-color: #c3ac67!important;
+    color:#c3ac67!important;
+}
+
+/*#ad-selector .ui.menu{
+    border: 1px solid #B49E62;
+}
+
+
+#ad-selector .ui.pointing.menu:not(.tabular) {
+    border: 2px solid #B49E62;
+}
+
+#ad-selector .ui.pointing.menu .item:after {
+    border-bottom: 1px solid #B49E62;
+    border-right: 1px solid #B49E62;
+}*/
+
+.ui.mini.label {
+    font-size: 0.54285714rem;
+}
+
+#views-detail{
+	color:rgba(0, 0, 0, 0.6);
+}
+
+#contribution-title{
+	font-weight:600;
+}
+
+</style>
+
+
+
+
+<!--END STYLE-->
+
+
+
+
+
+{% endblock content%}

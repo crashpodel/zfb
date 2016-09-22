@@ -1,0 +1,659 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!--AD PERFORMANCE HEADER -->
+
+ <div class="ui yellow segment" style = "margin-top:0px;">
+      <h1 class="ui header">Performance of your advertisements
+        <div class="sub header">Analyze the performance of your advertising campaigns on Zomato.</div>
+      </h1>
+ </div>
+
+
+<!--<div class = "ui segment">
+      <div class = "ui items">
+        <div class = "item">
+          <div class = "header">
+            <div class = "subheader"><b> You are viewing a report for advertisements that were live between July 1 - 31, 2016.  <br> Advertisements are shown for their full duration and may be of the following types: live, inactive, or expired. </b></div>
+          </div>
+          
+          <div class = "middle aligned content">
+            <button class = "ui basic mini green button right floated middle aligned"> Change date range </button>
+            </div>            
+      </div>
+    </div>
+  </div>-->
+
+
+  <!--END AD PERFORMANCE HEADER -->
+
+  <!-- OVERVIEW TABLE-->
+  <div class = "ui yellow segment top attached" id="sectionheader">
+   <h3 class = "ui header" id="sectioncontent">You bought 5 ads in the selected time period between July 16 - August 8, 2016.
+   <div class = "sub header">Status: 3 ads are still live today, 2 ads have ended.</div>
+   </h3>
+  </div>
+
+<table class="ui celled structured table bottom attached">
+	<thead>
+        <tr>
+          <th class = "three wide">Selected duration</th> 
+          <th class="four wide">Views of all advertisements<i class="help circle outline icon"></i></th>
+          <th class="four wide">Clicks on all advertisements<i class="help circle outline icon"></i></th>
+          <th class="five wide">Transactions from ad clicks<i class="help circle outline icon"></i></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class = "top aligned">
+          <td>
+          <div class="ui items">
+              <div class="item">
+                <div class="content">                 
+                  <h3 class="ui header">23 days</h3>
+                  <div class="meta" style = "color:black;">
+                    <span><b>July 16, 2016 - <br>August 8, 2016</b></span>
+                  </div>
+                  <div class="extra">
+                  <small> Investment: Rs. 3,02,802 </small>
+                  </div>
+                </div>
+              </div>
+             </div> 
+          </td>
+          <td>
+            <div class="ui items">
+              <div class="item">
+                <div class="content">                 
+                  <h3 class="ui header">4,01,772 ad views</h3> 
+                  <div class="description">
+                    <span><small>2,41,062 unique people viewed the ads</small></span>
+                  </div>
+                  <div class="extra">
+                  <small> Cost per million ad views: Rs. 725 </small>
+                  </div>
+                </div>
+              </div>
+             </div> 
+          </td>
+          <td>
+            <div class="ui items">
+              <div class="item">
+                <div class="content">                 
+                  <h3 class="ui header">949 clicks</h3>
+                  <div class="meta" style = "color:black;">
+                    <span><b>0.23% click through rate</b></span>
+                  </div>
+                  <div class="description">
+                    <span><small>854 unique people clicked on ads</small></span>
+                  </div>
+                  <div class="extra">
+                  <small> Cost per ad click: Rs. 201 </small>
+                  </div>
+                </div>
+              </div>
+             </div> 
+          </td>
+          <td>
+            <div class="ui items">
+              <div class="item">
+                <div class="content">                 
+                  <h3 class="ui header">46 orders from clicks</h3>
+                  <h3 class="ui header">113 calls from clicks</h3>
+                  <div class="extra">
+                    <p><i><small>1 in every 4 clicks usually converts to business over a 30 day period.  For example, between July 9 - August 8, 2016, this restaurant recieved 138 transactions from 557 ad clicks. <u>Minimize</u> <i class = "caret up icon"></i></small></p>
+
+                    <!--<br><br> We expect "x to y" more transactions in the next 29 days from these clicks. (only to show when end date is less than 30 days from today)</i></p>-->
+                 
+                    <span><small><a href="#">See how Transactions have changed with ads <i class = "caret right icon"></i></a></small></span>
+                  </div>
+                </div>
+              </div>
+             </div> 
+          </td>
+        </tr>
+      </tbody>
+</table>
+
+<!--
+<div class="ui vertical fluid accordion menu bottom attached">
+	<div class = "item">
+		<a class = "active title">
+		<i class = "dropdown icon"></i>
+		Performance of each ad between July 16, 2016 - August 8, 2016 </a>
+		
+	<div class = "content">
+		<table class = "ui celled compact structured striped table attached fluid">
+		<tbody>
+			<tr class = "top aligned">
+
+		          <td><small><a class="ui mini green empty circular label"></a><a href="#"> DLF Phase 4, <br>Delivery Slot 4 </a></small></td>
+		          <td><small> 60,345 ad views </small></td>
+		          <td> <small>78 ad clicks <br>0.13% click through rate</small></td>
+		          <td> <small>12 orders from clicks <br> 13 calls from clicks</small></td>		    
+		    </tr>
+		    <tr class = "top aligned" colspan="5">
+		          <td><small><a class="ui mini green empty circular label"></a><a href="#"> Sector 50, <br>Delivery Slot 3 </a></small></td>
+		          <td><small> 49,234 ad views<small></td>
+		          <td><small> 166 ad clicks <br>0.34% click through rate </small></td>
+		          <td><small> 9 orders from clicks <br> 4 calls from clicks </small></td>
+			</tr>
+		    <tr class = "top aligned" colspan="6">
+		          <td><small><a class="ui mini green empty circular label"></a><a href="#"> Kalkaji, <br>Delivery Slot 1 </a></small></td>
+		          <td><small> 61,324 ad views </small></td>
+		          <td><small> 229 ad clicks <br>0.37% click through rate </small></td>
+		          <td><small> 12 orders from clicks <br> 54 calls from clicks </small></td>		          
+		    </tr>
+		    <tr class = "top aligned" colspan="6">
+		          <td><small><a class="ui mini red empty circular label"></a><a href="#"> GK1, <br>Delivery Slot 2 </a></small></td>
+		          <td><small> 2,000 ad views </small></td>
+		          <td><small> 2 ad clicks <br>0.1% click through rate </small></td>
+		          <td><small> 1 orders from clicks</small></td>		          
+		    </tr>
+		    <tr class = "top aligned" colspan="6">
+		          <td><small><a class="ui mini red empty circular label"></a><a href="#"> GK2, <br>Delivery Slot 9 </a></small></td>
+		          <td><small> 1,000 ad views </small></td>
+		          <td><small> 1 ad click <br>0.1% click through rate </small></td>
+		          <td><small> 1 orders from clicks </small></td>		          
+		    </tr>
+		</tbody>
+		</table>
+	</div>
+	</div>
+</div>
+-->
+<br>
+<!--Campaigns header-->
+  <div class = "ui yellow segment" id = "sectionheader">
+  <div class = "ui items">
+	  <div class = "ui item">
+	  	<h3 class = "ui header" id="sectioncontent"> Advertising Performance
+	  	<div class = "sub header" id = "sectioncontent"> 
+	  	View all banners live during this time period by performance, relevance, and investment
+	  	</div>
+	  	</h3>
+	  </div>
+  </div>
+</div>
+
+<!--  <div class = "ui segment bottom attached">
+  	<div class = "ui horizontal list">
+  		<div class = "item bottom aligned"> 		
+  			<a class="ui mini circular green label">3</a> live advertisements
+  		</div>
+  		<div class = "item bottom aligned"> 		
+  			<a class="ui mini red circular label">1</a> ended advertisements
+  		</div>
+  		<div class = "item bottom aligned"> 		
+  			<a class="ui mini orange circular label">1</a> paused advertisement
+  		</div>
+  	</div>
+  </div>
+  -->
+<!--End campaigns header-->
+
+
+
+<!--=====================================================================-->
+<!--=====================================================================-->
+
+ <div class="ui three item pointing blue menu" id = "ad-selector">
+  <a class="active item" data-tab="first">Performance</a>
+  <a class="item" data-tab="second">Relevance</a>
+  <a class="item" data-tab="third">Investment</a>
+</div>
+
+
+<div class = "ui bottom active tab segments" data-tab="first">
+	<!--AD PERFORMANCE-->
+	<div class = "ui segment top attached" data-tab="first"><p><i>The effectiveness of ads can be measured in terms of views, clicks, and transactions from clicks.</i></p></div>			
+	<div class = "ui segment bottom attached">
+	<table class = "ui celled compact structured striped table fluid">
+			<thead>
+				<th class = "three wide">Advertisement <i class="help circle outline icon"></i></th>
+				<th class = "two wide">Ad views <i class="fitted help circle outline icon"></i>  <i class = "fitted blue long arrow down icon"></i></th>
+				<th class = "two wide">Unique ad viewers <i class="help circle outline icon"></i></th>
+				<th class = "two wide"> Ad clicks <i class="help circle outline icon"></i></th>
+				<th class = "two wide"> Unique ad clickers <i class="help circle outline icon"></i></th>
+				<th class = "two wide"> Click through rate (CTR) <i class="help circle outline icon"></i></th>
+				<th class = "three wide"> Transactions over 30 days from users who clicked on an ad <i class="help circle outline icon"></i></th>
+			</thead>
+			<tbody>
+				<tr class = "top aligned">
+			          <td><small>All advertisements <br> <i style = "color:gray">June 1 - Sept 25, 2016</i></small></td>
+			          <!--<td><small> June 1 - September 25, 2016<small></td>-->
+			          <td><small> 4,01,772 ad views </small></td>
+			          <td><small> 2,41,062 people viewed</small></td>
+			          <td><small> 949 clicks </small></td>
+			          <td><small> 854 people clicked </small></td>
+			          <td> <small>0.23% click through rate</small></td>
+			          <td> <small>46 orders from clicks <br> 113 calls from clicks</small></td>	    
+			    </tr>
+				<tr class = "top aligned active">
+			          <td><small></i><a class="ui mini green label">Live</a><a href="#">  DLF Phase 4, Delivery <br> Slot 4  </a> <br><i style = "color:gray">July 16 - Sept 25, 2016</i></small></td>
+			          <!--<td><small> July 16 - September 25, 2016<small></td>-->
+			          <td><small> 1,40,805 ad views </small></td>
+			          <td><small> 84,483 people viewed</small></td>
+			          <td><small> 156 clicks </small></td>
+			          <td><small> 140 people clicked </small></td>
+			          <td> <small>0.11% click through rate</small></td>
+			          <td> <small>18 orders from clicks <br> 20 calls from clicks</small></td>	   
+			    </tr>
+			    <tr class = "top aligned" colspan="5">
+			          <td><small><a class="ui mini green label">Live</a><a href="#"> Sector 50, Delivery Slot 3 </a><br> <i style = "color:gray">July 16 - Sept 25, 2016  </i></small></td>
+			          <!--<td><small> July 16 - September 25, 2016<small></td>-->
+			          <td><small> 1,14,879 ad views </small></td>
+			          <td><small> 68,927 people viewed</small></td>
+			          <td><small> 332 clicks </small></td>
+			          <td><small> 299 people clicked </small></td>
+			          <td> <small>0.28% click through rate</small></td>
+			          <td> <small>14 orders from clicks <br> 6 calls from clicks</small></td>
+				</tr>
+			    <tr class = "top aligned" colspan="6">
+			          <td><small><a class="ui mini green label">Live</a><a href="#"> Kalkaji, Delivery Slot 1 </a><br><i style = "color:gray">July 16 - Sept 25, 2016</i></small></td>
+			          <!--<td><small> July 16 - September 25, 2016<small></td>-->
+			          <td><small> 1,43,088 ad views </small></td>
+			          <td><small> 85,852 people viewed</small></td>
+			          <td><small> 458 clicks </small></td>
+			          <td><small> 412 people clicked </small></td>
+			          <td> <small>0.32% click through rate</small></td>
+			          <td> <small>18 orders from clicks <br> 81 calls from clicks</small></td>		          
+			    </tr>
+			    <tr class = "top aligned" colspan="6">
+			          <td><small><a class="ui mini red label">Ended</a><a href="#"> GK1, Delivery Slot 2 </a><br><i style = "color:gray">May 1 - July 18, 2016</i></small></td>
+			          <!--<td><small> May 1 - July 18, 2016<small></td>-->
+			          <td><small> 2,000 ad views </small></td>
+			          <td><small> 1,200 people viewed</small></td>
+			          <td><small> 2 ad clicks </small></td>
+			          <td><small> 2 people clicked </small></td>
+			          <td><small>0.1% click through rate </small></td>
+			          <td><small> 1 order from click </small></td>		          
+			    </tr>
+			    <tr class = "top aligned" colspan="6">
+			          <td><small><a class="ui mini red label">Ended</a><a href="#"> GK2, Delivery Slot 9 </a><br><i style = "color:gray">May 1 - July 18, 2016</i></small></td>
+			          <!--<td><small> May 1 - July 18, 2016<small></td>-->
+			          <td><small> 1,000 ad views </small></td>
+			          <td><small> 600 people viewed </small></td>
+			          <td><small> 1 ad click </small></td>
+			          <td><small> 1 person clicked </small></td>
+			          <td><small>0.1% click through rate </small></td>
+			          <td><small> 1 order from click</small></td>		          
+			    </tr>
+			</tbody>
+	</table>
+	<br>
+	<!--END AD PERFORMANCE TABLE-->
+	<div class = "ui yellow segment top attached" id="sectionheader">
+				<div class="ui sub header">Ad views for DLF Phase 4, Delivery Slot 4
+			    </div>
+	</div>
+		<div class = "content">
+			<div class = "ui pointing menu attached">
+			                  <a class="active item">Ad views</a>
+			                  <a class="item">Ad clicks</a>
+			                  <a class="item">Click through rate</a>
+
+			            <div class="right menu">
+			                <div class="ui dropdown item">
+			                  Daily <i class="dropdown icon"></i>
+			                  <div class="menu">
+			                    <a class="item">Weekly</a>
+			                    <a class="item">Monthly</a>
+			                    <a class="item">Yearly</a>
+			                  </div>
+			                </div>
+			          </div>
+			</div>
+	        <div class = "ui segment bottom attached">
+	          	<img src="{% static '/images/ad-views-graph.png' %}"/>
+	        </div>
+		</div>
+</div>
+</div>
+
+
+<div class = "ui bottom tab segments" data-tab="second">
+<!--AD RELEVANCE -->
+	<div class = "ui segment top attached" data-tab="first"><p><i>Advertisements are highly relevant during peak lunch and dinner hours on Zomato from 11am-3pm and 7pm-11pm.</i></p></div>
+	
+	<div class = "ui segment bottom attached">
+		<table class = "ui celled compact structured striped table fluid">
+			<thead>
+				<th class = "four wide">Advertisement <i class="help circle outline icon"></i></th>
+				<th class = "six wide">Relevance of ad views in a day<i class="fitted help circle outline icon"></i>    <i class = "fitted blue long arrow down icon"></i></th>
+				<th class = "six wide">Relevance of ad clicks in a day<i class="help circle outline icon"></i></th>
+
+			</thead>
+			<tbody>
+				<tr class = "top aligned">
+			          <td><small>All advertisements <br> <i style = "color:gray"> June 1 - Sept 25, 2016</i></small></td>
+			          <!--<td><small> June 1 - September 25, 2016<small></td>-->
+			          <td><small> 73% of ad views came during peak dining hours </small></td>
+			          <td><small> 69% of ad clicks came during peak dining hours</small></td>    
+			    </tr>
+			    <tr class = "top aligned active">
+			          <td><small><a class="ui mini green label">Live</a><a href="#"> DLF Phase 4, Delivery Slot 4 </a> <br><i style = "color:gray">July 16 - Sept 25, 2016</i></small></td>
+			          <!--<td><small> June 1 - September 25, 2016<small></td>-->
+			          <td><small> 73% of ad views came during peak dining hours </small></td>
+			          <td><small> 69% of ad clicks came during peak dining hours</small></td>    
+			    </tr>
+			    <tr class = "top aligned">
+			          <td><small><a class="ui mini green label">Live</a><a href="#"> Sector 50, Delivery Slot 3 </a><br> <i style = "color:gray">July 16 - Sept 25, 2016</i></small></td>
+			          <!--<td><small> June 1 - September 25, 2016<small></td>-->
+			          <td><small> 73% of ad views came during peak dining hours </small></td>
+			          <td><small> 69% of ad clicks came during peak dining hours</small></td>    
+			    </tr>
+			    <tr class = "top aligned">
+			          <td><small><a class="ui mini green label">Live</a><a href="#"> Kalkaji, Delivery Slot 1 </a><br><i style = "color:gray">July 16 - Sept 25, 2016</i></small></td>
+			          <!--<td><small> June 1 - September 25, 2016<small></td>-->
+			          <td><small> 73% of ad views came during peak dining hours </small></td>
+			          <td><small> 69% of ad clicks came during peak dining hours</small></td>    
+			    </tr>
+			    <tr class = "top aligned">
+			          <td><small><a class="ui mini red label">Ended</a><a href="#"> GK1, Delivery Slot 2 </a><br><i style = "color:gray">May 1 - July 18, 2016</i></small></td>
+			          <!--<td><small> June 1 - September 25, 2016<small></td>-->
+			          <td><small> 73% of ad views came during peak dining hours </small></td>
+			          <td><small> 69% of ad clicks came during peak dining hours</small></td>    
+			    </tr>
+			    <tr class = "top aligned">
+			          <td><small><a class="ui mini red label">Ended</a><a href="#"> GK2, Delivery Slot 9 </a><br><i style = "color:gray">May 1 - July 18, 2016</i></small></td>
+			          <!--<td><small> June 1 - September 25, 2016<small></td>-->
+			          <td><small> 73% of ad views came during peak dining hours </small></td>
+			          <td><small> 69% of ad clicks came during peak dining hours</small></td>    
+			    </tr>
+			</tbody>
+		</table>
+<br>
+<!--AD RELEVANCE GRAPHS-->	
+	<div class = "ui yellow segment top attached" id="sectionheader">
+			<div class="ui sub header">Relevance of ad views (by the hour) for DLF Phase 4, Delivery Slot 4
+		    </div>
+	</div>
+	<div class = "content">
+		<div class = "ui pointing menu attached">
+		                  <a class="active item">Ad views by the hour</a>
+		                  <a class="item">Ad clicks by the hour</a>
+
+		            <div class="right menu">
+		                <div class="ui dropdown item">
+		                  Daily <i class="dropdown icon"></i>
+		                  <div class="menu">
+		                    <a class="item">Weekly</a>
+		                    <a class="item">Monthly</a>
+		                    <a class="item">Yearly</a>
+		                  </div>
+		                </div>
+		          </div>
+		</div>
+		<br>
+        <div class = "ui segment bottom attached">
+          	<img src="{% static '/images/ad-views-hourly-graph.png' %}"/>
+        </div>
+	</div>
+
+</div>
+</div>
+
+
+<div class = "ui bottom tab segments" data-tab="third">
+<!-- AD INVESTMENT-->
+
+	<div class = "ui segment top attached" data-tab="first"><p><i>Summary of your investment in advertising.  Investment is represented in three ways: cost per thousand ad views, cost per ad click, and lump sum.</i></p></div>			
+	<div class = "ui segment bottom attached">
+	<table class = "ui celled compact structured striped table fluid">
+			<thead>
+				<th class = "four wide">Advertisement <i class="help circle outline icon"></i></th>
+				<th class = "four wide">Cost per thousand ad views (CPM) <i class="fitted help circle outline icon"></i>  <i class = "fitted blue long arrow down icon"></i></th>
+				<th class = "four wide">Cost per ad click <i class="help circle outline icon"></i></th>
+				<th class = "four wide"> Ad Investment <i class="help circle outline icon"></i></th>
+				</th>
+
+			</thead>
+			<tbody>
+				<tr class = "top aligned">
+			          <td><small>All advertisements <br> <i style = "color:gray">June 1 - Sept 25, 2016</i></small></td>
+			          <!--<td><small> June 1 - September 25, 2016<small></td>-->
+			          <td><small> Rs. 725 </small></td>
+			          <td><small> Rs. 201</small></td>
+			          <td><small> Rs. 3,02,802 </small></td>
+			    </tr>
+				<tr class = "top aligned active">
+			          <td><small><a href="#"></i><a class="ui mini green label">Live</a><a href="#"> DLF Phase 4, Delivery <br> Slot 4 </a> <br><i style = "color:gray">July 16 - Sept 25, 2016</i></small></td>
+			          <!--<td><small> July 16 - September 25, 2016<small></td>-->
+			          <td><small> Rs. 512 </small></td>
+			          <td><small> Rs. 207</small></td>
+			          <td><small> Rs. 94,062 (60% paid off)</small></td>   
+			    </tr>
+			    <tr class = "top aligned" colspan="5">
+			          <td><small><a href="#"><a class="ui mini green label">Live</a><a href="#"> Sector 50, Delivery Slot 3 </a><br> <i style = "color:gray">July 16 - Sept 25, 2016</i></small></td>
+			          <!--<td><small> July 16 - September 25, 2016<small></td>-->
+			          <td><small> Rs. 684 </small></td>
+			          <td><small> Rs. 188</small></td>
+			          <td><small> Rs. 91,527 (60% paid off)</small></td>
+				</tr>
+			    <tr class = "top aligned" colspan="6">
+			          <td><small><a href="#"><a class="ui mini green label">Live</a><a href="#"> Kalkaji, Delivery Slot 1 </a><br><i style = "color:gray">July 16 - Sept 25, 2016</i></small></td>
+			          <!--<td><small> July 16 - September 25, 2016<small></td>-->
+			          <td><small> Rs. 978 </small></td>
+			          <td><small> Rs. 209</small></td>
+			          <td><small> Rs. 1,17,212 (60% paid off)</small></td>	          
+			    </tr>
+			    <tr class = "top aligned" colspan="6">
+			          <td><small><a class="ui mini red label">Ended</a><a href="#"> GK1, Delivery Slot 2 </a><br><i style = "color:gray">May 1 - July 18, 2016</i></small></td>
+			          <!--<td><small> May 1 - July 18, 2016<small></td>-->
+			          <td><small> Rs. 684 </small></td>
+			          <td><small> Rs. 188</small></td>
+			          <td><small> Rs. 91,527 (fully paid)</small></td>          
+			    </tr>
+			    <tr class = "top aligned" colspan="6">
+			          <td><small><a class="ui mini red label">Ended</a><a href="#"> GK2, Delivery Slot 9 </a><br><i style = "color:gray">May 1 - July 18, 2016</i></small></td>
+			          <!--<td><small> May 1 - July 18, 2016<small></td>-->
+			          <td><small> Rs. 684 </small></td>
+			          <td><small> Rs. 188</small></td>
+			          <td><small> Rs. 91,527 (fully paid)</small></td>		          
+			    </tr>
+			</tbody>
+	</table>
+</div>
+</div>
+
+
+
+<!--======================================================================-->
+<!--======================================================================-->
+
+
+<!--STYLE-->
+<style>
+
+.ui.yellow.segment:not(.inverted) {
+    border-top: 2px solid #B49E62;
+}
+
+#sectionheader {
+	background-color: #e0e0e0;
+}
+
+
+.ui.basic.green.buttons .button, .ui.basic.green.button {
+    box-shadow: 0px 0px 0px 1px #B49E62 inset;
+    color: #B49E62;
+
+}
+
+.ui.table thead th {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.ui.menu{
+    border: 1px solid #B49E62;
+}
+
+
+#ad-selector .ui.pointing.menu:not(.tabular) {
+    border: 1px solid #B49E62;
+}
+
+.ui.pointing.menu .item:after {
+    border-bottom: 1px solid #B49E62;
+    border-right: 1px solid #B49E62;
+}
+
+.ui.mini.label {
+    font-size: 0.54285714rem;
+}
+
+</style>
+
+
+
+
+<!--END STYLE-->
+
+
+<!-- EXTRA TABLES -->
+<!--
+<div class="ui vertical fluid accordion menu bottom attached">
+	<div class="item">
+		<a class = "title"><i class = "dropdown icon"></i>
+		See contribution of each ad
+		</a>
+		<div class = "content">
+			<div class = "ui grid">
+			 <div class = "five wide column">
+			  <table class="ui small compact basic table">
+					<thead>
+					<th><small>% of views </small></th>
+					<th><small> Advertisement </small></th>	
+					</thead>
+				      <tbody>
+				        <tr class = "top aligned">
+				          <td>
+		                    <span><small>40.3%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Chromepet, Delivery Slot 2</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>23.6%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Anna Nagar West, Delivery Slot 3</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>26.2%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Adyar, Delivery Slot 9</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>  
+				          <td>
+		                    <span><small>12.1%</small></span>
+				          </td>
+				          <td>
+				            <span><small><i>Others</i></small></span>
+				          </td>
+				        </tr>
+				       </tbody>
+				</table>
+			</div>
+			<div class = "five wide column">
+				<table class="ui small compact basic table">
+					<thead>
+					<th><small>% of clicks </small></th>
+					<th><small> Advertisement </small></th>	
+					</thead>
+				      <tbody>
+				        <tr class = "top aligned">
+				          <td>
+		                    <span><small>40.3%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Chromepet, Delivery Slot 2</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>23.6%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Anna Nagar West, Delivery Slot 3</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>26.2%</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Adyar, Delivery Slot 9</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>  
+				          <td>
+		                    <span><small>12.1%</small></span>
+				          </td>
+				          <td>
+				            <span><small><i>Others</i></small></span>
+				          </td>
+				        </tr>
+				       </tbody>
+				</table>
+			</div>
+			<div class = "five wide column">
+				<table class="ui small compact basic table">
+					<thead>
+					<th><small>Conversions </small></th>
+					<th><small> Advertisement </small></th>	
+					</thead>
+				      <tbody>
+				        <tr class = "top aligned">
+				          <td>
+		                    <span><small>1 order</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Chromepet, Delivery Slot 2</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>1 order, 2 calls</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Anna Nagar West, Delivery Slot 3</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>
+				          <td>
+		                    <span><small>2 calls</small></span>
+				          </td>
+				          <td>
+				            <span><small><a><i>Adyar, Delivery Slot 9</i></a></small></span>
+				          </td>
+				        </tr>
+				        <tr>  
+				          <td>
+		                    <span><small>2 orders, 2 calls</small></span>
+				          </td>
+				          <td>
+				            <span><small><i>Others</i></small></span>
+				          </td>
+				        </tr>
+				       </tbody>
+				</table>
+			</div>
+		</div>
+			
+		</div>
+	</div>
+</div>
+-->
+<!-- END EXTRA TABLES-->
+
+
+{% endblock content%}
