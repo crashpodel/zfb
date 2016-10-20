@@ -92,10 +92,10 @@
         	<img class="logo" src="/static/images/zfb-logo.jpg">
       	</a>-->
 			<div class="item" style="background-color:#FFFFFF">
-				<div class="header">Listing Performance</div>
+				<div class="header">Performance</div>
 				<div class="menu">
-					<a class="active item" href="performance-v7.html"> Ad Performance</a>
-					<a class="item" href="analytics.html">Page Performance</a>
+					<a class="active item" href="performance-v8.html"> Ad Performance</a>
+					<a class="item" href="analytics.html">Analytics</a>
 				</div>
 			</div>
 
@@ -110,7 +110,7 @@
 			</div> -->
 
 			<div class = "item">
-				<div class="header">Page Activity</div>
+				<div class="header">Activity</div>
 				<div class = "menu">
 					<a class="item" href="transactions.html">Transactions</a>
 					<a class="item" href="reviews.html">Reviews</a>
@@ -118,7 +118,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<div class="header">Listing</div>
+				<div class="header">Content</div>
 				<div class="menu">
 					<a class="item" href="info.html">Information</a>
 					<a class="item" href="hours.html">Hours</a>
@@ -439,11 +439,12 @@
 	    </div>
 	</div>
 	<div class = "ui segment attached">
+			<img style = "width:884px; height:432px" src="/static/images/molecule/performance-graph-banner@2x.png"/>
+			<!--<a class = "test7 button"><small><i>What's this?</i></small></a>-->
+		
 
-		<img style = "width:884px; height:432px" src="/static/images/molecule/performance-graph-banner@2x.png"/>
-
-		<img style = "width:884px; height:432px" src="/static/images/molecule/performance-hourly-graph-banner@2x.png"/>
-
+			<img style = "width:884px; height:432px" src="/static/images/molecule/performance-hourly-graph-banner@2x.png"/>
+			<!--<a class = "test8 button"><small><i>What's this?</i></small></a>-->
 	</div>
 </div>
 
@@ -650,6 +651,48 @@ Ad prices are determined by demand for the slot, which is affected by traffic to
  </div>
 <!--END CPC MODAL-->
 
+<!--PERFORMANCE OF THE AD-->
+<div class="ui standard test7 small modal scrolling transition hidden" style="top: 2825px;">
+  <i class="close icon"></i>
+  <h3 class="ui header"> Performance of the ad </h3>
+  	<div class = "content">
+  	<div class = "description">
+  		<p>Performance of the ad can be viewed in terms of ad views, ad clicks, and click through rate (CTR).</p>
+  		<p><b>Ad views</b>
+  		<br>We provide a split of ad views by weekday (Monday - Thursday) and weekend (Friday - Sunday), given variation in customer traffic during these times.  For more detail, explore the graph of ad views for the selected time period.
+  		</p>
+  		<p><b>Ad clicks</b>
+  		<br>
+  		We provide a split of ad clicks by weekday (Monday - Thursday) and weekend (Friday - Sunday), given variation in customer traffic during these times.  For more detail, explore the graph of ad clicks for the selected time period.
+  		</p>
+  		<p><b>Click through rate (CTR) comparison</b>
+  		<br>
+  		In addition to your banner CTR, we provide a comparison of the other advertisers in the same category and zone.  For more detail, explore the graph of CTR for the selected time period.
+  		</p>
+  	 </div>
+   </div>	
+ </div>
+<!--PERFORMANCE OF THE AD-->
+
+<!--RELEVANCE OF THE AD-->
+<div class="ui standard test8 small modal scrolling transition hidden" style="top: 2825px;">
+  <i class="close icon"></i>
+  <h3 class="ui header"> Relevance of the ad </h3>
+  	<div class = "content">
+  	<div class = "description">
+  		<p>Relevance of the ad refers to how many ad views and clicks come during peak hours of traffic to the restaurant. </p>
+  		<p><b>How are peak hours defined?</b>
+  		<br>We studied the pattern of hourly page views for all restaurants in your category and city.  Hours of the day with highest page view volume were picked as relevant hours.  
+  		</p>
+  		<p><b>Relevance of ad views and clicks</b>
+  		<br>
+  		Once peak hours were determined, we measured the contribution of ad views and ad clicks to those peak hours.  This was averaged over the selected time period. 
+  		</p>
+  	 </div>
+   </div>	
+ </div>
+<!--PERFORMANCE OF THE AD-->
+
 
 <!--=====================================================-->
 <!--=======================================s==============-->
@@ -834,6 +877,24 @@ a {
 		$('.test6.small.modal')
 		  .modal('attach events', '.test6.button', 'show')
 		;
+		/*$('.test7.small.modal')
+		  .modal('attach events', '.test7.button', 'show')
+		;
+		$('.test8.small.modal')
+		  .modal('attach events', '.test8.button', 'show')
+		;
+		*/
+		$('.test9.small.modal')
+		  .modal('attach events', '.test9.button', 'show')
+		;
+
+		$('.test10.small.modal')
+		  .modal('attach events', '.test10.button', 'show')
+		;
+		$('.test11.small.modal')
+		  .modal('attach events', '.test11.button', 'show')
+		;
+
 
 		$('.ui.dropdown')
 			.dropdown()

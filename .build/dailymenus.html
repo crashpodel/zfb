@@ -92,10 +92,10 @@
         	<img class="logo" src="/static/images/zfb-logo.jpg">
       	</a>-->
 			<div class="item" style="background-color:#FFFFFF">
-				<div class="header">Listing Performance</div>
+				<div class="header">Performance</div>
 				<div class="menu">
-					<a class="active item" href="performance-v7.html"> Ad Performance</a>
-					<a class="item" href="analytics.html">Page Performance</a>
+					<a class="active item" href="performance-v8.html"> Ad Performance</a>
+					<a class="item" href="analytics.html">Analytics</a>
 				</div>
 			</div>
 
@@ -110,7 +110,7 @@
 			</div> -->
 
 			<div class = "item">
-				<div class="header">Page Activity</div>
+				<div class="header">Activity</div>
 				<div class = "menu">
 					<a class="item" href="transactions.html">Transactions</a>
 					<a class="item" href="reviews.html">Reviews</a>
@@ -118,7 +118,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<div class="header">Listing</div>
+				<div class="header">Content</div>
 				<div class="menu">
 					<a class="item" href="info.html">Information</a>
 					<a class="item" href="hours.html">Hours</a>
@@ -366,14 +366,15 @@
 		<!--end of the data entry section-->
 
 		<div class = "ui grid">
-			<div class = "four wide column">
+			<!--<div class = "four wide column">
 				<div class="ui grey button">Edit collectively</div>
-			</div>
-			<div class = "four wide column">
-				<div class="ui submit green button">Save all</div>
-			</div>
+			</div>-->
 			<div class = "six wide column">
-			<div class="ui submit blue button right floated">Print menu</div>
+				<div class="ui submit green button">Save all changes to Daily Menus</div>
+			</div>
+			<div class = "six wide column"></div>
+			<div class = "four wide column">
+			<div class="ui basic blue button right floated">Revert changes</div>
 			</div>
 
 		</div>
@@ -719,13 +720,13 @@
 
     <div class = "ui bottom attached segment" data-tab="third">
     	<div class = "field">
-    	<p><i>Your daily menu will be imported from the XML link every day at <b>0900 hrs</b>. Please refer to the format given at </i><a href="https://www.zomato.com/daily_menu_import_sample.xml">https://www.zomato.com/daily_menu_import_sample.xml</a></p>.
+    	<p><i>Your daily menu will be imported from the XML link every day at <b>0900 hrs</b>. Please refer to the format given at </i><a href="https://www.zomato.com/daily_menu_import_sample.xml">https://www.zomato.com/daily_menu_import_sample.xml</a>. In order to edit items manually, please turn off XML import.</p>
     	</div>
     	<div class="ui positive message">
 		  <div class="header">
 		    XML import status
 		  </div>
-		  <p>Last updated on 30 May, 2016</p>
+		  <p>Currently importing daily menus via XML.  Last update was at 09:35AM on 30 May, 2016</p>
 		</div>
     	<div class = "field">
     		<div class = "ui segment">
@@ -950,6 +951,24 @@
 		$('.test6.small.modal')
 		  .modal('attach events', '.test6.button', 'show')
 		;
+		/*$('.test7.small.modal')
+		  .modal('attach events', '.test7.button', 'show')
+		;
+		$('.test8.small.modal')
+		  .modal('attach events', '.test8.button', 'show')
+		;
+		*/
+		$('.test9.small.modal')
+		  .modal('attach events', '.test9.button', 'show')
+		;
+
+		$('.test10.small.modal')
+		  .modal('attach events', '.test10.button', 'show')
+		;
+		$('.test11.small.modal')
+		  .modal('attach events', '.test11.button', 'show')
+		;
+
 
 		$('.ui.dropdown')
 			.dropdown()
