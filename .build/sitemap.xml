@@ -116,6 +116,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/performance-v9.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/performance-vars.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>

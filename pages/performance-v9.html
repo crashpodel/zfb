@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Ad Performance - V8{% endblock %}
+{% block title %}Ad Performance - V9{% endblock %}
 
 {% block content %}
 
@@ -35,7 +35,7 @@
           <th style = "width:33%">
           	<div class = "ui items">
           		<div class = "item">
-          			Unique views of all ads
+          			Total unique ad views
           		<div class = "content" style = "font-weight:normal; padding-left:10px">
 	          		<a class = "test2 button"><small><i>What's this?</i></small></a>
 	          	</div>
@@ -45,7 +45,7 @@
           <th style = "width:33%">
           <div class = "ui items">
           		<div class = "item">
-          			Unique clicks on all ads
+          			Total unique ad clicks
           		<div class = "content" style = "font-weight:normal; padding-left:10px">
 	          		<a class = "test3 button"><small><i>What's this?</i></small></a>
 	          	</div>
@@ -66,7 +66,7 @@
                   </div>-->
                   <div class="extra">
                   <!--<small><span style = "color:black">Ad spend during this time: Rs. 2,70,199 of total <br>Rs. 5,34,204 </span> <a class = "test4 button"><small><i>What's this?</i></small></a></small><br>-->
-                  <small><span style = "color:black">Prorated ad spend from August 1-31, 2016: Rs. 2,70,199</span><br> <a class = "test4 button"><small><i>What's this?</i></small></a></small>
+                  <small><span style = "color:black">Ad spend from August 1-31, 2016: Rs. 2,70,199</span><br> <a class = "test4 button"><small><i>What's this?</i></small></a></small>
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@
                 <div class="content">   
                   <h4 class="ui header"><b>2,73,508 unique people viewed ads</b></h4>
                   <div class="extra">
-                  <small><span style = "color:black">Cost per thousand unique ad views: Rs. 923 </span> <a class = "test5 button"><small><i>  What's this?</i></small></a>
+                  <small><span style = "color:black">Cost per unique ad view: Rs. 0.92 </span> <a class = "test5 button"><small><i>  What's this?</i></small></a>
                   </div>
                 </div>
               </div>
@@ -89,9 +89,9 @@
               <div class="item">
                 <div class="content">                 
                   <h4 class="ui header"><b>2,160 unique people clicked on ads</b></h4>
-                  <div class="meta" style = "color:black;">
+                  <!--<div class="meta" style = "color:black;">
                     <span><b>0.79% click through rate</b></span><a class = "test9 button"><small><i>  What's this?</i></small></a>
-                  </div>
+                  </div>-->
                   <div class="extra">
                   <small><span style = "color:black">Cost per unique ad click: Rs. 113 </span><a class = "test6 button"><small><i>What's this?</i></small></a></small>
                   </div>
@@ -153,7 +153,7 @@
 	      <th style = "width:33%">
 	      	<div class = "ui items">
           		<div class = "item">
-          			Unique views for the ad
+          			Unique ad views
           		<div class = "content" style = "font-weight:normal; padding-left:5px">
 	          		<a class = "test2 button"><small><i>What's this?</i></small></a>
 	          	</div>
@@ -163,7 +163,7 @@
 	      <th style = "width:33%">
 	      	<div class = "ui items">
           		<div class = "item">
-          			Unique clicks for the ad 
+          			Unique ad clicks 
           		<div class = "content" style = "font-weight:normal; padding-left:5px">
 	          		<a class = "test3 button"><small><i>What's this?</i></small></a>
 	          	</div>
@@ -173,21 +173,39 @@
 	   </thead>
 		<tbody>
 			<tr class = "top aligned">
-		          <td><small><span style = "color:#000000"> Sector 29, Nightlife, Slot 1  </span> </a><div class= "ui basic teal mini label middle aligned">Banner</div><br><span style = "color:#1ca93d">Ongoing for all 31 days in selected time period</span><br><span id="views-detail"> Ad spend for selected time period: Rs. 1,13,836</span></small></td>
-		          <td><small><span id = "contribution-title">2,64,450 unique people viewed the ad</span> <br> <span id = "views-detail">Cost per thousand unique ad views: Rs. 403</span></td>
-		          <td><small><span id = "contribution-title">1936 unique people clicked on the ad<br>0.75% click through rate </span><br> <span id = "views-detail">Cost per unique ad click: Rs. 54</span></small>
+		          <td><small><span style = "color:#000000"> Sector 29, Nightlife, Slot 1  </span> </a><br><span id="views-detail"> Ad spend from August 1-31, 2016: Rs. 1,13,836</span><br><span style = "color:#1ca93d">Live for all 31 days in selected time period</span></small><br><div class= "ui basic teal mini label middle aligned">Banner</div></td>
+		          <td><small><span id = "contribution-title">2,64,450 unique people viewed the ad</span> <br> <span id = "views-detail">Cost per unique ad view: Rs. 0.40</span></td>
+		          <td><small><span id = "contribution-title">1936 unique people clicked on the ad<!--<br>0.75% click through rate --></span><br> <span id = "views-detail">Cost per unique ad click: Rs. 54</span></small>
 		          </td>		    
 		    </tr>
 		    <tr class = "top aligned" colspan="5">
-		          <td><div class= "ui basic yellow mini label left middle aligned">Mobile Showcase</div><br><small><span style = "color:#000000"> Cyber City, Mobile Showcase, Slot 1 </span></a><br><span style = "color:#1ca93d">Ongoing for all 31 days in selected time period</span><br><span id="views-detail">Ad spend for selected time period: Rs. 97,088</span></small></td>
-		          <td><small> <span id = "contribution-title">8,323 unique people viewed the ad</span><br> <span id = "views-detail">Cost per thousand unique ad views: Rs. 10,845</span></small></td>
-		          <td> <small><span id = "contribution-title">207 unique people clicked on the ad<br>2.63% click through rate </span><br> <span id = "views-detail">Cost per unique ad click: Rs. 413</span></small>
+		          <td><small><span style = "color:#000000"> Cyber City, Mobile Showcase, Slot 1 </span></a><br><span id="views-detail">Ad spend from August 1-31, 2016: Rs. 97,088</span><br><span style = "color:#1ca93d">Live for all 31 days in selected time period</span></small><br><div class= "ui basic yellow mini label left middle aligned">Mobile Showcase</div></td>
+		          <td><small> <span id = "contribution-title">8,323 unique people viewed the ad</span><br> <span id = "views-detail">Cost per unique ad view: Rs. 10.84</span></small></td>
+		          <td> <small><span id = "contribution-title">207 unique people clicked on the ad<!--<br>2.63% click through rate --></span><br> <span id = "views-detail">Cost per unique ad click: Rs. 413 </span></small>
+		          <i class="blue idea icon"
+		          	data-html="<div class='ui mini info message'>
+					  <div class='header'>
+					    How can you reduce the cost per unique click? 
+					  </div>
+					  <p>Your cost per unique ad click is impacted by your click through rate (CTR), currently 0.63%.  You can reduce cost per unique ad click by working on your CTR.  One way to do this is to update your ad creatives.</p>
+					  <p><small>You can learn more about your CTR in the chart below.</small></p>
+					</div>" data-variation="basic" data-position ="bottom left">
+		          </i>
 		          </td>	
 			</tr>
 		    <tr class = "top aligned" colspan="6">
-		          <td><div class= "ui basic violet mini label middle aligned">Collection</div><br><small><span style = "color:#000000"> Summer Cocktails, Slot 1 </span></a><br><span style = "color:#CB202D">Ongoing for 5 days in selected time period</span><br><span id="views-detail">Ad spend for selected time period: Rs. 59,275</span></small></td>
-		          <td><small><span id = "contribution-title">735 unique people viewed the ad</span> <br> <span id = "views-detail">Cost per thousand unique ad views: Rs. 48,348</span></small></td>
-		          <td> <small><span id = "contribution-title">17 unique people clicked on the ad<br>2.28% click through rate </span><br><span id = "views-detail">Cost per unique ad click: Rs. 2,117</span></small>
+		          <td><small><span style = "color:#000000"> Summer Cocktails, Slot 1 </span></a><br><span id="views-detail">Ad spend from August 1-31, 2016: Rs. 59,275</span><br><span style = "color:#CB202D">Live for 5 days in selected time period</span></small><br><div class= "ui basic violet mini label middle aligned">Collection</div></td>
+		          <td><small><span id = "contribution-title">735 unique people viewed the ad</span> <br> <span id = "views-detail">Cost per unique ad view: Rs. 48.34</span></small></td>
+		          <td> <small><span id = "contribution-title">17 unique people clicked on the ad<!--<br>2.28% click through rate--> </span><br><span id = "views-detail">Cost per unique ad click: Rs. 2,117</span></small>
+		          <i class="blue idea icon"
+		          	data-html="<div class='ui mini info message'>
+					  <div class='header'>
+					    How can you reduce the cost per unique ad click?
+					  </div>
+					  <p>Your cost per unique ad click is impacted by your click through rate (CTR), currently 0.63%.  You can reduce cost per unique ad click by working on your CTR.  One way to do this is to update your ad creatives.</p>
+					  <p><small>You can learn more about your CTR in the chart below.</small></p>
+					</div>" data-variation="basic" data-position ="bottom left">
+		          </i>
 		          </td>		          
 		    </tr>
 		</tbody>
@@ -218,6 +236,11 @@
 
   </div>
 <div class = "active ui tab segments" data-tab="first">
+		<div class = "ui negative message">
+		<i class = "refresh icon"></i>
+		This advertisement is expiring in 30 days.  Get in touch with your Zomato relationship manager to continue advertising.
+	</div>
+	
 	<div class = "ui yellow segment top attached">
 
 		<div class = "ui items">
@@ -226,34 +249,35 @@
 	    		<a class = "test button"><img src="{% static '/images/molecule.jpg' %}"></a>
 	    	</div>
 	      <div class = "content">
-			    <h3 class = "ui header middle aligned test button"><a><u>Sector 29, Nightlife, Row 1 Left</u></a> <div class= "ui basic teal mini label middle aligned test button">Banner</div></h3>
+			    <h3 class = "ui header middle aligned test button"><a><u>Sector 29, Nightlife, Row 1 Left</u></a> <div class= "ui basic teal mini label middle aligned">Banner</div></h3>
 			    <!--<h3 class = "ui header middle aligned"><a>Sector 29, Nightlife, Row 1 Left</a> <div class= "ui basic teal mini label middle aligned">Banner</div></h3>-->
 			    <div class = "meta">
-			    	<span style = "color:#1ca93d">Ongoing for all 31 days in selected time period</span> <br>
+			    	<span style = "color:#1ca93d">Live for all 31 days in selected time period</span> <br>
 			    	 
 			    </div>
 
 			    <div class = "description">
 			    <small>
 			    Total ad duration: July 16, 2016 - October 18, 2016 <br>
-			    Total ad spend for entire duration: Rs. 3,41,508</small>
+			    Total ad spend for entire duration: Rs. 2,23,345</small>
 			    </div>
 	      </div>
 	    </div>
 	    </div>
 	</div>
 
-	<div class = "ui secondary segment attached">
+	<div class = "ui segment attached">
+
+	<div class = "ui message">
 		<i class = "announcement icon"></i>
 		The banner lands on <a href="#"><u>this chain page</u></a>.  Every restaurant on the chain page will show the advertising results for this banner.  
 	</div>
 
-	<div class = "ui segment attached">
-			<img style = "width:884px; height:432px" src="{% static '/images/molecule-v2/performance-graph-banner-unique-views@2x.png' %}"/>
+			<img style = "width:884px; height:432px" src="{% static '/images/molecule-v2/v9/performance-graph-banner-unique-views@2x.png' %}"/>
 			<!--<a class = "test7 button"><small><i>What's this?</i></small></a>-->
 		
 
-			<img style = "width:884px; height:432px" src="{% static '/images/molecule-v2/relevance-hourly-weekday-weekend-views@2x.png' %}"/>
+			<img style = "width:884px; height:432px" src="{% static '/images/molecule-v2/v9/relevance-hourly-weekday-weekend@2x.png' %}"/>
 			<!--<a class = "test8 button"><small><i>What's this?</i></small></a>-->
 	</div>
 </div>
@@ -270,14 +294,14 @@
 			    <!--<h3 class = "ui header middle aligned test button"><a>Cyber City, Mobile Showcase, Slot 1</a><div class= "ui basic yellow mini label middle aligned">Premium Slider</div></h3>-->
 			    <h3 class = "ui header middle aligned test10 button"><a>Cyber City, Mobile Showcase, Slot 1</a><div class= "ui basic yellow mini label middle aligned">Premium Slider</div></h3>
 			    <div class = "meta">
-			    	<span style = "color:#1ca93d">Ongoing from Oct 1-10 in selected time period</span> <br>
+			    	<span style = "color:#1ca93d">Live for 5 days in selected time period</span> <br>
 			    	 
 			    </div>
 
 			    <div class = "description">
 			    <small>
 			    Total ad duration: June 1 - August 31, 2016 <br>
-			    Total ad spend: Rs. 3,41,508 </small>
+			    Total ad spend: Rs. 1,23,344 </small>
 			    </div>
 	      </div>
 	    </div>
@@ -285,9 +309,9 @@
 	</div>
 	<div class = "ui segment attached">
 
-		<img style = "width:884px; height:432px" src="{% static '/images/molecule-v2/performance-graph-mobile-unique-clicks@2x.png' %}"/>
+		<img style = "width:884px; height:475px" src="{% static '/images/molecule-v2/v9/performance-graph-mobile-unique-clicks@2x.png' %}"/>
 
-		<img style = "width:884px; height:432px" src="{% static '/images/molecule-v2/relevance-hourly-weekday-weekend-clicks@2x.png' %}"/>
+		<img style = "width:884px; height:432px" src="{% static '/images/molecule-v2/v9/relevance-hourly-weekday-weekend@2x.png' %}"/>
 	</div>
 </div>
 
@@ -303,14 +327,14 @@
 			    <!--<h3 class = "ui header middle aligned test button"><a>Summer Cocktails, Slot 1 </a><div class= "ui basic violet mini label middle aligned">Collection</div></h3>-->
 			    <h3 class = "ui header middle aligned test11 button"><a>Summer Cocktails, Slot 1 </a><div class= "ui basic violet mini label middle aligned">Collection</div></h3>
 			    <div class = "meta">
-			    	<span style = "color:#1ca93d">Ongoing from Oct 1-5 in selected time period</span> <br>
+			    	<span style = "color:#1ca93d">Live for 5 days in selected time period</span> <br>
 			    	 
 			    </div>
 
 			    <div class = "description">
 			    <small>
 			    Total ad duration: June 16 - September 15, 2016 <br>
-			    Total ad spend: Rs. 3,41,508</small>
+			    Total ad spend: Rs. 2,02,234</small>
 			    </div>
 	      </div>
 	    </div>
@@ -318,9 +342,9 @@
 	</div>
 	<div class = "ui segment attached">
 
-		<img style = "width:884px; height:432px" src="{% static '/images/molecule-v2/performance-graph-collection-unique-ctr@2x.png' %}"/>
+		<img style = "width:884px; height:432px" src="{% static '/images/molecule-v2/v9/performance-graph-collection-unique-ctr@2x.png' %}"/>
 
-		<img style = "width:884px; height:432px" src="{% static '/images/molecule-v2/relevance-hourly-weekday-weekend-views@2x.png' %}"/>
+		<img style = "width:884px; height:432px" src="{% static '/images/molecule-v2/v9/relevance-hourly-weekday-weekend@2x.png' %}"/>
 	</div>
 </div>
 
@@ -330,17 +354,17 @@
   <div class = "header">
 	  <h3 class="ui header">
 		    Sector 29, Nightlife, Slot 1
-		    <div class = "sub header">Placement of your banner creative on Zomato </div>
+		    <div class = "sub header">Placement of your ad creative on Zomato </div>
 	  </h3>
-	  <div class = "ui mini basic blue button">View on Zomato search page</div>
-	  <div class = "ui mini basic blue button">View on Zomato subzone page</div>
+	  <!--<div class = "ui mini basic blue button">View on Zomato search page</div>
+	  <div class = "ui mini basic blue button">View on Zomato subzone page</div>-->
   </div>
 
   <div class="content">
-  	<img src="{% static '/images/molecule/banner-preview.png' %}"/>
+  	<img src="{% static '/images/molecule-v2/v9/banner-preview.png' %}"/>
   </div>
   <div class="actions" style="text-align:left">
-  <p><small>For changes to banner creative, please contact your Zomato relationship manager.</small></p>
+  <p><small>For changes to ad creatives, please contact your Zomato relationship manager.</small></p>
   </div>
 </div>
 <!--END BANNER IMAGES TEXT MODAL-->
@@ -360,7 +384,7 @@
   	<img src="{% static '/images/mobile-showcase.jpg' %}"/>
   </div>
   <div class="actions" style="text-align:left">
-  <p><small>For changes to advertisement images or text, please contact your Zomato relationship manager.</small></p>
+  <p><small>For changes to ad creatives, please contact your Zomato relationship manager.</small></p>
   </div>
 </div>
 <!--END MPS IMAGE TEXT MODAL-->
@@ -389,14 +413,14 @@
 <!--HELP AD VIEW MODAL-->
 <div class="ui standard test2 small modal scrolling transition hidden" style="top: 2825px;">
   <i class="close icon"></i>
-  <h3 class="ui header"> What is a unique ad view? </h3>
-  	<div class = "image content">
-  		<div class = "ui large image top align"><img src="{% static '/images/help-ad-view@2x.png' %}"/></div>
+  <h3 class="ui header"> What are unique ad views? </h3>
+  	<div class = "content">
+  		<!--<div class = "ui large image top align"><img src="{% static '/images/help-ad-view@2x.png' %}"/></div>-->
   	<div class = "description top align">
-  		<p><b>A unique ad view is counted every time a new customer views your ad on the Zomato website or app within a day.</b></p>
-  		<p><b>How is a unique ad view measured? </b> <br>Within a day (between 00:00 and 23:59), every new customer that views the ad is counted as a unique ad view.  Even if a customer views your ad multiple times within the same day, they are still counted as one unique ad view. </p>
-  		<p><b>Why do unique ad views matter?</b><br>  More unique ad views mean greater number of customers have seen your ad and are exposed to your restaurant. </p>
-  		<p>(CAPTION)In the image, each advertisement got an additional unique ad view from a customer in a day.</p>
+  		<!--<p><b>A unique ad view is counted every time a new customer views your ad on the Zomato website or app within a day.</b></p>
+  		<p><b>What are unique ad views? </b> <br>-->The number of unique people who viewed your ad within a day (between 00:00 and 23:59).  Even if a person viewed your ad multiple times within the same day, it is still counted as one unique ad view. </p>
+  		<p><b>Why do unique ad views matter?</b><br>  Unique ad views tell you how many unique people saw your ad and got to know about your restaurant.  <!--More unique ad views mean greater number of people have seen your ad and are exposed to your restaurant.--> </p>
+  		<!--<p>(CAPTION)In the image, the ad got an additional unique ad view from a customer.</p>-->
   	 </div>
    </div>	
  </div>
@@ -405,14 +429,15 @@
 <!--HELP AD CLICK MODAL-->
 <div class="ui standard test3 small modal scrolling transition hidden" style="top: 2825px;">
   <i class="close icon"></i>
-  <h3 class="ui header"> What is a unique ad click? </h3>
-  	<div class = "image content">
-  		<div class = "ui huge image top align"><img src="{% static '/images/help-ad-click@2x.png' %}"/></div>
+  <h3 class="ui header"> What are unique ad clicks? </h3>
+  	<div class = "content">
+  		<!--<div class = "ui huge image top align"><img src="{% static '/images/help-ad-click@2x.png' %}"/></div>-->
   	<div class = "description top align">
-  		<p><b>What is a unique ad click and how is it measured? </b> <br>Within a day (between 00:00 and 23:59), every new customer that clicks on the ad is counted as a unique ad click.  This can happen on the Zomato app or website.  Even if a customer clicks your ad multiple times within the same day, they are still counted as one unique ad view. </p>
-  		<p><b>Why do unique ad clicks matter? </b><br>  A click indicates interest in your ad and leads the customer to your Zomato restaurant page.</p>
+  		<p>The number of unique people who clicked on your ad within a day (between 00:00 and 23:59).  Even if a person clicked on your ad multiple times within the same day, it is still counted as one unique ad click.</p>
+  		<p><b>Why do unique ad clicks matter? </b><br>  Unique ad clicks indicate the number of people who showed intent to visit or order from your restaurant.  </p>
+  		<p><i class="blue idea icon"></i>Tip: Updated photos, menus, and information on your restaurant page leads to a better chance of this intent converting to business. </p>   <!--bring the person to the restaurant page and they are one step closer to generating business for your restaurant. Unique ad clicks indicate interest in your ad and lead people to your Zomato restaurant page.--> </p>
 
-  		<p>(CAPTION)In the image, when a unique customer clicks an ad, it is counted as a unique ad click.
+  		<!--<p>(CAPTION)In the image, when a unique customer clicks an ad, it is counted as a unique ad click.</p>-->
   		
   	 </div>
    </div>	
@@ -440,9 +465,11 @@
   <h3 class="ui header"> What is the ad spend during this time? </h3>
   	<div class = "content">
   	<div class = "description">
-  		<p><b>This is the amount you are paying for all of your active ads on Zomato in the selected time period. </b></p> 
   		<!--<p>The ad spend is prorated for this time period and is derived from your total predicted ad spend for this campaign.  </p>-->
-  		<p> Ad spend during this time = (Total investment for all ads)* [(Number of days in selected time period)/(Total duration)] </p>
+  		<p> This is the amount that you spent during the selected time period of August 1-31, 2016.  This is not the total spend for all ads.  Your total spend for all ads is Rs. 5,39,493 for the entire duration of June 1 - November 1, 2016. </p> 
+
+  		<!--<p>It is the fraction of your total campaign amount spent in the selected time period.  For Aug 1-31, 2016, you spent Rs. 2,30,400 out of total campaign amount of Rs. 5,39,493*.  </p>
+  		<p><small>*The total campaign amount is for the entire ad duration of June 1 - November 1, 2016. </small> </p>-->
   	 </div>
    </div>	
  </div>
@@ -451,11 +478,10 @@
 <!--CPM MODAL-->
 <div class="ui standard test5 small modal scrolling transition hidden" style="top: 2825px;">
   <i class="close icon"></i>
-  <h3 class="ui header"> What is cost per thousand unique ad views? </h3>
+  <h3 class="ui header"> What is cost per unique ad view? </h3>
   	<div class = "content">
   	<div class = "description">
-  		<p><b>Cost per thousand unique ad views is the cost of exposure for every 1000 unique ad views on Zomato. </b></p>
-  		<p>Cost per thousand ad unique views = (Ad spend in selected time period) / (Unique ad views/1000) </p>
+  		<p>Cost per unique ad view = (Ad spend in selected time period) / (Number of unique ad views) </p>
   		
   	 </div>
    </div>	
@@ -469,7 +495,7 @@
   	<div class = "content">
   	<div class = "description">
   		<!--<p><b>Cost per unique ad click is the cost of every unique ad click on the Zomato platform. It is another way to represent your ad spend in the selected time period. </b></p>-->
-  		<p>Cost per unique ad click = (Ad spend in selected time period) / (Total unique ad clicks)</p>
+  		<p>Cost per unique ad click = (Ad spend in selected time period) / (Number of unique ad clicks)</p>
   	 </div>
    </div>	
  </div>
