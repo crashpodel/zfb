@@ -1,0 +1,1025 @@
+{% extends "base.html" %}
+
+{% block title %}Ad Performance - ROI{% endblock %}
+
+{% block content %}
+
+<!--AD PERFORMANCE HEADER -->
+
+ <div class="ui yellow segment" style = "margin-top:0px;">
+      <h1 class="ui header">Insights into advertising
+        <!--<div class="sub header">Analyze the performance of your advertising campaigns on Zomato.</div>-->
+      </h1>
+
+ </div>
+
+
+ <!--CALCUATOR MODAL-->
+
+ <div class="ui standard test14 small modal scrolling transition hidden">
+	  <i class="close icon"></i>
+	  <h3 class="ui header"> Calculate your return on investment </h3>
+	  	<div class = "content">
+	  	<div class = "description">
+  					 		  <div class = "ui segments">
+			 			<div class = "ui segment top attached">
+
+			 			<div class = "row">
+					 		<div class = "sixteen wide column">
+					 			<div class="ui mini horizontal statistic">
+					 			<div class = "label">ROI Calculator </div>
+					 			</div>
+					 		</div>
+					 	</div>
+
+					 
+			 			<div class = "row">
+			 			  <div class = "sixteen wide column">
+			 				<div class="ui right fluid labeled input">
+								  <input type="text" value = "482">
+								  <div class="ui label">
+								    clicks
+								  </div>
+							</div>
+						  </div>
+						</div>
+						<div class = "row">
+					 		<div class = "sixteen wide column">
+					 			<small><i> Total unique ad clicks between August 1-31, 2016</i></small>
+					 		</div>
+					 	</div>
+					 	<br>
+
+					 	<div class = "row">
+					 		<div class = "sixteen wide column">
+					 			  <div class="ui right fluid labeled input">
+								  <input type="text" value = "25">
+								  <div class="ui label">
+								    %
+								  </div>
+							</div>
+					 		</div>
+					 	</div>
+					 	<div class = "row">
+					 		<div class = "sixteen wide column">
+					 			<small><i> 1 in 4 clicks usually converts to business</i></small>
+					 		</div>
+					 	</div>
+
+					 	<br>
+
+					 	<div class = "row">
+					 		<div class = "sixteen wide column">
+					 			  <div class="ui fluid labeled input">
+								  <div class="ui label">
+								    Rs.
+								  </div>
+								  <input type="text" value = "500">
+							</div>
+					 		</div>
+					 	</div>
+					 	<div class = "row">
+					 		<div class = "sixteen wide column">
+					 			<small><i> Cost for Two at the restaurant listed on Zomato</i></small>
+					 		</div>
+					 	</div>
+			 			</div>
+
+			 			<div class = "ui segment attached">
+			 			<div class = "row">
+					 		<div class = "sixteen wide column">
+					 			<small><i> Estimated revenue from clicks</i></small>
+					 		</div>
+					 	</div>
+			 			
+			 				<div class = "row">
+			 					<div class = "sixteen wide column">
+			 						<h3> Rs. 3,52,125</h3>
+			 					</div>
+			 				</div>
+			 			</div>
+
+			 			<div class = "ui secondary segment bottom attached">
+			 			<div class = "row">
+					 		<div class = "sixteen wide column">
+					 			<small><i> ROI = Estimated revenue / Investment </i></small><br>
+					 			<small><span style = "color: black"> ROI = Rs. 3,52, 125 / Rs. 1,75,122 </span></small>
+					 		</div>
+					 	  </div>	 			
+			 				<div class = "row">
+			 					<div class = "sixteen wide column">
+			 						<h3 style = "color: #1CA93D"> ROI = 2.1 times </h3>
+			 					</div>
+			 				</div>
+
+			 			 </div>
+			 		  </div>
+  	 </div>
+   </div>	
+ </div>
+
+ <!--END CALCULATOR MODAL-->
+
+ <!--ROI 5?-->
+
+	<div class = "ui segment">
+		<h4> How to think about advertising </h4>
+		<img class="ui image" src="{% static '/images/modals/overview.png' %}">
+	</div>
+
+<div class = "ui segments">
+
+	<div class = "ui segment top attached">
+		<h3><i class = "blue industry icon"></i>Measure return on investment (ROI)</h3>
+	</div>
+	<div class = "ui segment bottom attached">
+		<div class = "ui grid">
+		<div class = "eight wide column">
+		<p>Our data shows that 1 in every 4 unique ad clicks converts to a transaction (order, table booking) at the restaurant.  Typically, each transaction is for at least 2 covers.  Walk-ins account for additional traffic.</p>
+		</div>
+		<div class = "four wide column"></div>
+		<div class = "four wide column right aligned">
+			<button class = "ui blue test14 button"><i class = "external icon"></i>Calculate the return on your investment</button>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class = "ui segments">
+
+	<div class = "ui segment top attached">
+		<h3 class="ui header"> <i class = "blue mouse pointer icon"></i> Increase ROI with clicks</h3>
+	</div>
+	<div class = "ui segment bottom attached">
+		<div class = "ui grid">
+		<div class = "eight wide column">
+		<p>In last 3 months, the highest CTR observed for your category and ad location was 2.1%.  Your CTR in this time period was 1.63%.  Improve your CTR to increase the number of clicks.</p>
+		 <p>Changing ad creatives (banner image and text) can go along way to attract new customers.</p> 
+		</div>
+		<div class = "two wide column"></div>
+		<div class = "six wide column right aligned">
+			<img class="ui medium image" src="{% static '/images/modals/ctr-graph.png' %}">
+		</div>
+	</div>
+</div>
+</div>
+
+<div class = "ui segments">
+
+	<div class = "ui segment top attached">
+		<h3 class="ui header"><i class = "blue money icon"></i> Increase conversion of clicks to transactions</h3>
+	</div>
+	<div class = "ui segment bottom attached">
+		<div class = "ui grid">
+		<div class = "eight wide column">
+			<p>Updated information on your restaurant page better engages customers and leads to more transactions on Zomato.</p>  
+			<p>Revisit the content on your restaurant page today.</p> 
+		</div>
+		<div class = "eight wide column">
+			 <div class = "ui small warning message">	
+	 			 <p><i class = "idea icon"></i><b>What you can do: </b></p>
+				  <div class="ui bulleted list">
+				    <div class = "item">Update your menus.  The last time you updated menus was on January 2, 2016, almost 10 months ago.</div>
+					<div class = "item"> Change your <u><a href="#">OBP image</a></u>.  Freshen the look!  It hasn't changed since February 1, 2016. </div>
+				    <div class = "item"> Reply to reviews on the platform.  You have replied to 45% of total reviews written by customers. </div>
+				 </div>
+			 </div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class = "ui segments">
+	<div class = "ui segment">
+		<h3 class="ui header"> <i class = "blue users icon"></i>Reach more people on Zomato</h3>
+	</div>
+	<div class = "ui segment">
+		<p> You can reach 4x more people by advertising in a higher slot in your category and location. Get in touch with your Zomato relationship manager for next steps.</p>
+	</div>
+</div>
+
+ <!--ROI 5?-->
+
+<br>
+
+ <!-- POP-UP CALCULATOR-->
+
+
+  		<div class = "ui segments">
+			 			<div class = "ui segment top attached">
+			 				<div class = "ui grid">
+			 			<div class = "row">
+					 		<div class = "sixteen wide column">
+					 			<h3 class = "ui header">ROI Calculator </h3>
+					 		</div>
+					 	</div>
+
+					 <br>
+			 			<div class = "row">
+			 			 <div class = "ten wide column">
+			 			  <p> How many total unique ad clicks did you recieve in the selected time period?<br>
+			 			  <span style = "color:rgba(0, 0, 0, 0.6)"><small><i>You recieved a total of 482 clicks between August 1-31, 2016.</i></small></span></p>
+			 			 </div>
+			 			  <div class = "six wide column right aligned">
+			 				<div class="ui right labeled fluid input">
+								  <input type="text" value = "482">
+								  <div class="ui label">
+								    clicks
+								  </div>
+							</div>
+						  </div>
+						</div>
+					 	<br>
+
+					 	<div class = "row">
+					 		<div class = "ten wide column">
+				 			  <p> What percentage of clicks usually convert to business? <br>
+				 			  <span style = "color:rgba(0, 0, 0, 0.6)"><small><i>Typically 1 in 4 clicks usually converts to business on Zomato </i></small></span></p>
+				 			 </div>
+					 		<div class = "six wide column right aligned">
+					 			  <div class="ui right labeled input">
+					 			  <div class="ui label">1 in every</div>
+								  <input type="text" value = "4">
+								  <div class = "ui label">clicks</div>
+							</div>
+					 		</div>
+					 	</div>
+
+					 	<br>
+
+					 	<div class = "row">
+					 		<div class = "ten wide column">
+				 			  <p> What is the average order value at the restaurant? <br>
+				 			  <span style = "color:rgba(0, 0, 0, 0.6)"><small><i>The cost for two listed on Zomato is Rs. 500. </i></small></span></p>
+				 			 </div>
+					 		<div class = "six wide column right aligned">
+					 			  <div class="ui fluid labeled input">
+								  <div class="ui label">
+								    Rs.
+								  </div>
+								  <input type="text" value = "500">
+							</div>
+					 		</div>
+					 	</div>
+			 			</div>
+			 		</div>
+
+			 			<div class = "ui segment attached">
+			 			  <div class = "ui grid">
+				 			<div class = "row">
+						 		<div class = "ten wide column"><h3> Estimated incremental revenue from clicks</h3></div>
+						 		<div class = "six wide column right aligned">
+			 						<h3> Rs. 3,52,125</h3></p>
+			 					</div>
+			 				</div>
+			 			  </div>
+			 			</div>
+
+			 			<div class = "ui secondary segment bottom attached">
+			 			  <div class = "ui grid">
+				 			<div class = "row">
+						 		<div class = "ten wide column"><h3 style = "color:black">ROI = Estimated revenue / Investment</h3>
+						 			<p><small><i> ROI = Rs. 3,52, 125 / Rs. 1,75,122 </i></small></p></div>
+							 		<div class = "six wide column right aligned">
+				 						<h3 style = "color: #1CA93D"> ROI = 2.1 </h3>
+				 					</div>
+				 				</div>
+				 			  </div>
+				 			 </div>
+			 		  </div>
+ <!--POP-UP CALCULATOR -->
+
+
+ <!--======================================================-->
+<!--======================================================-->
+<!--======================================================-->
+
+<!-- ROI 2-->
+<h3> ROI version 2 </h3>
+
+		<div class = "ui three horizontal segments">
+			
+				<div class = "ui segment top attached" style = "width:253px !important">
+					<img class="ui centered image" src="{% static '/images/modals/overview-part1.png' %}">
+					<p>By advertising, you increase your visibility to foodies on Zomato.</p>
+					<div class = "ui divider"></div>
+					<p style = "color:#2185D0">You recieved 3,40,324 unique ad views between August 1-31, 2016. </p>
+				</div>
+			<div class = "ui segment" style = "width:306px !important">
+			<img class="ui centered image" src="{% static '/images/modals/overview-part2.png' %}">
+			<p>Foodies click on the ad and land on your restaurant page.</p>
+			<div class = "ui divider"></div>
+			<p style = "color:#2185D0">You recieved 482 unique ad clicks between August 1-31, 2016. </p>
+			</div>
+			<div class = "ui segment" style = "width:347px !important">
+			<img class="ui centered image" src="{% static '/images/modals/overview-part3.png' %}">
+			<p>Typically, 1 in every 4 unique ad clicks results in a transaction (order, table booking) of at least 2 covers at the restaurant.  Walk-ins provide additional traffic.</p>
+			<div class = "ui divider"></div>
+			<!--<p style = "color:#2185D0">Your estimated incremental business from advertising is Rs. 3,52,125 from August 1-31, 2016. </p>-->
+	 	 		<button class = "ui blue button"><i class = "external icon"></i>Calculate the return on your investment</button>
+			</div>
+
+		</div>
+		<div class = "ui three horizontal segments">
+
+		  <div class="ui segment" style = "width:253px">
+		 	<div class = "ui grid">
+		 	  <div class = "row">
+		 	  <div class = "sixteen wide column">
+	 	  		<h3 class="ui header"> <i class = "blue users icon"></i>Reach more people on Zomato</h3>
+	 	  		</div>
+		 	  	<!--<div class = "sixteen wide column">
+		 	  		<h3 class="ui header"> <i class = "blue industry icon"></i>Measure return on investment (ROI)</h3>
+		 	  	</div>-->
+		 	  </div>
+
+		 	  <div class = "row">	
+		 			 <div class = "sixteen wide column">
+		  					<!--<p>Our data shows that 1 in every 4 unique ad clicks converts to a transaction (order, table booking) at the restaurant.  Typically, each transaction is for at least 2 covers.  Walk-ins account for additional traffic.</p>  -->
+
+		  					<p> You can reach 4x more people by advertising in a higher slot in your category and location. </p>
+		  					<p> Get in touch with your Zomato relationship manager for next steps.</p>
+		  			 </div>
+		 		</div>
+
+				</div><!--end ui grid-->
+			  </div> <!-- end ui segment-->
+
+
+		 	<div class="ui segment" style = "width:306px">
+		 	  <div class = "ui grid">
+
+			 	  <div class = "row">
+			 	  	<div class = "sixteen wide column">
+			 	  		<h3 class="ui header"> <i class = "blue mouse pointer icon"></i> Increase ROI with clicks</h3>
+			 	  	</div>
+			 	  </div>
+
+			 	  <div class = "row">
+			 		<div class = "sixteen wide column">	
+		  					<p>In last 3 months, the highest CTR observed for your category and ad location was 2.1%.  Your CTR in this time period was 1.63%.  Improve your CTR to increase the number of clicks.</p>
+		  					<p>Changing ad creatives (banner image and text) can go along way to attract new customers.</p>  
+			 		</div>
+			 	 </div>
+
+			 	 <!--<div class = "row">
+			 	 	<div class = "sixteen wide column">
+			 	 		<img class="ui medium image" src="{% static '/images/modals/ctr-graph.png' %}">
+			 	 	</div>
+			 	 </div>-->
+
+			 </div>
+			</div>
+
+			<div class = "ui segment" style = "width:347px">
+				<div class = "ui grid">
+
+				<div class = "row">
+			 	  	<div class = "sixteen wide column">
+			 	  		<h3 class="ui header"> <i class = "blue money icon"></i>Increase conversion of clicks to transactions</h3>
+			 	  	</div>
+			 	  </div>
+
+			 	  <div class = "row">
+			 		<div class = "sixteen wide column">	
+		  					<p>Updated information on your restaurant page better engages customers and leads to more transactions on Zomato.  Revisit the content on your restaurant page today.</p>  
+			 		</div>
+			 	 </div>
+
+			 	 			 <div class = "row">
+			 		<div class = "sixteen wide column">
+			 			<div class = "ui small warning message">	
+				 			 <p><i class = "idea icon"></i><b>What you can do: </b></p>
+							  <div class="ui bulleted list">
+							    <div class = "item">Update your menus.  The last time you updated menus was on January 2, 2016, almost 10 months ago.</div>
+								<div class = "item"> Change your <u><a href="#">OBP image</a></u>.  Freshen the look!  It hasn't changed since February 1, 2016. </div>
+							    <div class = "item"> Reply to reviews on the platform.  You have replied to 45% of total reviews written by customers. </div>
+							 </div>
+						 </div>
+			 		  </div>
+		    		</div>
+
+		    	</div>
+		    	</div>
+		</div>
+
+
+
+<!-- ROI 2-->
+
+
+<!-- ROI 2-->
+<h3> ROI version 2.1 </h3>
+
+		<div class = "ui three horizontal segments">
+			<div class = "ui segment" style = "width:253px !important">
+				<img class="ui image" src="{% static '/images/modals/overview-part1.png' %}">
+			</div>
+			<div class = "ui segment" style = "width:306px !important">
+			<img class="ui image" src="{% static '/images/modals/overview-part2.png' %}">
+			</div>
+			<div class = "ui segment" style = "width:347px !important">
+			<img class="ui image" src="{% static '/images/modals/overview-part3.png' %}">
+			</div>
+
+		</div>
+		<div class = "ui three horizontal segments">
+
+		  <div class="ui segment" style = "width:253px">
+		 	<div class = "ui grid">
+		 	  <div class = "row">
+		 	  	<div class = "sixteen wide column">
+		 	  	<p style = "color:#2185D0">You recieved 3,40,324 unique ad views between August 1-31, 2016. </p>
+		 	  	</div>
+		 	  </div>
+		 	  <div class = "ui divider"></div>
+		 	  <div class = "row">
+		 	  <div class = "sixteen wide column">
+	 	  		<h3 class="ui header"> <i class = "blue users icon"></i>Reach more people on Zomato</h3>
+	 	  		</div>
+		 	  	<!--<div class = "sixteen wide column">
+		 	  		<h3 class="ui header"> <i class = "blue industry icon"></i>Measure return on investment (ROI)</h3>
+		 	  	</div>-->
+		 	  </div>
+
+		 	  <div class = "row">	
+		 			 <div class = "sixteen wide column">
+		  					<!--<p>Our data shows that 1 in every 4 unique ad clicks converts to a transaction (order, table booking) at the restaurant.  Typically, each transaction is for at least 2 covers.  Walk-ins account for additional traffic.</p>  -->
+
+		  					<p> You can reach 4x more people by advertising in a higher slot in your category and location. Get in touch with your Zomato relationship manager for next steps.</p>
+		  			 </div>
+		 		</div>
+
+				</div><!--end ui grid-->
+			  </div> <!-- end ui segment-->
+
+
+		 	<div class="ui segment" style = "width:306px">
+		 	  <div class = "ui grid">
+
+		 	  	<div class = "row">
+		 	  	<div class = "sixteen wide column">
+		 	  	<p style = "color:#2185D0">You recieved 482 unique ad clicks between August 1-31, 2016. </p>
+		 	  	</div>
+		 	  </div>
+
+		 	  <div class = "ui divider"></div>
+
+			 	  <div class = "row">
+			 	  	<div class = "sixteen wide column">
+			 	  		<h3 class="ui header"> <i class = "blue mouse pointer icon"></i> Increase ROI with clicks</h3>
+			 	  	</div>
+			 	  </div>
+
+			 	  <div class = "row">
+			 		<div class = "sixteen wide column">	
+		  					<p>In last 3 months, the highest CTR observed for your category and ad location was 2.1%.  Your CTR in this time period was 1.63%.  Improve your CTR to increase the number of clicks.</p>
+		  					<p>Changing ad creatives (banner image and text) can go along way to attract new customers.</p>  
+			 		</div>
+			 	 </div>
+
+			 	 <!--<div class = "row">
+			 	 	<div class = "sixteen wide column">
+			 	 		<img class="ui medium image" src="{% static '/images/modals/ctr-graph.png' %}">
+			 	 	</div>
+			 	 </div>-->
+
+			 </div>
+			</div>
+
+			<div class = "ui segment" style = "width:347px">
+				<div class = "ui grid">
+
+			<div class = "row">
+		 	  	<div class = "sixteen wide column">
+		 	  	<p style = "color:#2185D0">Your estimated incremental business from advertising is Rs. 3,52,125 from August 1-31, 2016. </p>
+		 	  	</div>
+		 	  </div>
+
+		 	   <div class = "ui divider"></div>
+
+				<div class = "row">
+			 	  	<div class = "sixteen wide column">
+			 	  		<h3 class="ui header"> <i class = "blue industry icon"></i>Measure your ROI</h3>
+			 	  	</div>
+			 	  </div>
+
+			 	  <div class = "row">
+			 		<div class = "sixteen wide column">	
+		  					<p>Our data shows that 1 in every 4 unique ad clicks converts to a transaction (order, table booking) at the restaurant.  Typically, each transaction is for at least 2 covers.  Walk-ins account for additional traffic. </p>  
+			 		</div>
+			 	 </div>
+
+			 	 <div class = "row">
+			 	 	<div class = "sixteen wide column">
+			 	 		<button class = "ui blue button"><i class = "external icon"></i>Calculate the return on your investment</button>
+			 	 	</div>
+			 	 </div>
+		    	</div>
+		    	</div>
+		</div>
+
+		<div class = "ui segment">
+					    <div class = "row">
+
+			 		<div class = "sixteen wide column">
+		  					<h3 class="ui header"> <i class = "blue money icon"></i> Increase conversion of clicks to transactions</h3>
+		  					<p>Updated information on your restaurant page better engages customers and leads to more transactions on Zomato.  Revisit the content on your restaurant page today.</p> 
+			 		</div>
+			 </div>
+			 <br>
+			 <div class = "row">
+			 		<div class = "sixteen wide column">
+			 			<div class = "ui small warning message">	
+				 			 <p><i class = "idea icon"></i><b>What you can do: </b></p>
+							  <div class="ui bulleted list">
+							    <div class = "item">Update your menus.  The last time you updated menus was on January 2, 2016, almost 10 months ago.</div>
+								<div class = "item"> Change your <u><a href="#">OBP image</a></u>.  Freshen the look!  It hasn't changed since February 1, 2016. </div>
+							    <div class = "item"> Reply to reviews on the platform.  You have replied to 45% of total reviews written by customers. </div>
+							 </div>
+						 </div>
+			 		  </div>
+		    		</div>
+
+		</div>
+
+
+
+<!-- ROI 2-->
+
+
+
+<br>
+
+<h2> Benchmarking card </h2>
+
+
+<!--BENCHMARKING 1-->
+
+<div class = "ui segments">
+	<div class = "ui segment top attached">
+	  	<h3> Relatable ad performance benchmarks on Zomato </h3>
+	</div>
+  <div class = "ui segment attached">
+	  <span>
+	  <h4 class="ui header">Select benchmarks for:</h4>
+	  <div class = "ui grid">
+		  <div class = "fourteen wide column">
+		  <div class="ui multiple fluid search selection dropdown">
+			  <input name="tags" type="hidden">
+			  <i class="dropdown icon"></i>
+			  <div class="default text">Select criteria</div>
+			  <div class="menu">
+			    <div class="item" data-value="default">Dine-out, Sector 29, Delhi NCR</div>
+			<div class="item" data-value="css">Dine-out, Delhi NCR</div>
+			<div class="item" data-value="design">Sector 29, Delhi NCR</div>
+			  </div>
+			</div>
+			</div>
+			<div class = "two wide column">
+			<div class = "ui button">Apply </div>
+			</div>
+		</div>
+	</span>
+  </div>
+
+	<div class = "ui segment bottom attached">
+
+	  	<div class = "description">
+
+  	  	<h4>Advertisers in Sector 29, Dine-out, Gurgaon between August 1-31, 2016 </h4>
+
+		<table class="ui celled fixed padded table">
+		  <thead>
+		    <tr>
+		    <th>Click through rate (CTR)</th>
+		    <th>Number of calls</th>		    
+		    <th>Number of online orders</th>
+		    <th>Number of online table bookings</th>
+		  </tr></thead>
+		  <tbody>
+		    <tr>
+		      
+		      <td>
+		        You: 1.1% CTR <br> <small>Average: 1.5% CTR <br> Highest: 2.1% CTR</small>
+		      </td>
+		      <td>
+		        You: 200 calls <br> <small>Average: 194 calls <br> Highest: 221 calls</small>
+		      </td>
+		      <td>
+		        You: 66 orders <br> <small>Average: 55 orders <br> Highest: 66 orders</small>
+		      </td>
+		      <td>
+		        You: 13 bookings<br> <small>Average: 15 bookings <br> Highest: 23 bookings</small>
+		      </td>
+		    </tr>
+		  </tbody>		  
+		  <tfoot>
+		  	<tr>
+		  	<th><small><i class = "red caret down icon"></i><span style= "color:#DB2828">You are lower than average.</span></small></th>
+		  	<th><small><i class = "green caret up icon"></i><span style= "color:#1CA93D">You are higher than average.</span></small></th>
+		  	<th><small><i class = "large yellow trophy icon"></i><span style= "color:#1CA93D">You are #1 in online orders in Sector 29, Dine-out, Gurgaon!</span></small></th>
+		  	<th><small><i class = "red caret down icon"></i><span style= "color:#DB2828">You are lower than average.</span></small></th>
+		  	</tr>
+		  </tfoot>
+		</table>
+
+  	<h4>Advertisers in Sector 29, Gurgaon between August 1-31, 2016</h4>
+
+		<table class="ui celled fixed padded table">
+		  <thead>
+		    <tr>
+		    <th>Click through rate (CTR)</th>
+		    <th>Number of calls</th>		    
+		    <th>Number of online orders</th>
+		    <th>Number of online table bookings</th>
+		  </tr></thead>
+		  <tbody>
+		    <tr>
+		      
+		      <td>
+		        You: 1.1% CTR <br> <small>Average: 1.5% CTR <br> Highest: 2.1% CTR</small>
+		      </td>
+		      <td>
+		        You: 200 calls <br> <small>Average: 194 calls <br> Highest: 221 calls</small>
+		      </td>
+		      <td>
+		        You: 66 orders <br> <small>Average: 55 orders <br> Highest: 66 orders</small>
+		      </td>
+		      <td>
+		        You: 13 bookings<br> <small>Average: 15 bookings <br> Highest: 23 bookings</small>
+		      </td>
+		    </tr>
+		  </tbody>		  
+		  <tfoot>
+		  	<tr>
+		  	<th><small><i class = "red caret down icon"></i><span style= "color:#DB2828">You are lower than average.</span></small></th>
+		  	<th><small><i class = "green caret up icon"></i><span style= "color:#1CA93D">You are higher than average.</span></small></th>
+		  	<th><small><i class = "red caret down icon"></i><span style= "color:#DB2828">You are lower than average.</span></small></th>
+		  	<th><small><i class = "red caret down icon"></i><span style= "color:#DB2828">You are lower than average.</span></small></th>
+		  	</tr>
+		  </tfoot>
+		</table>
+
+		<h4>Advertisers in Dine-out, Gurgaon between August 1-31, 2016</h4>
+			<table class="ui celled fixed padded table">
+		  <thead>
+		    <tr>
+		    <th>Click through rate (CTR)</th>
+		    <th>Number of calls</th>		    
+		    <th>Number of online orders</th>
+		    <th>Number of online table bookings</th>
+		  </tr></thead>
+		  <tbody>
+		    <tr>
+		      
+		      <td>
+		        You: 1.1% CTR <br> <small>Average: 1.5% CTR <br> Highest: 2.1% CTR</small>
+		      </td>
+		      <td>
+		        You: 200 calls <br> <small>Average: 194 calls <br> Highest: 221 calls</small>
+		      </td>
+		      <td>
+		        You: 66 orders <br> <small>Average: 55 orders <br> Highest: 66 orders</small>
+		      </td>
+		      <td>
+		        You: 13 bookings<br> <small>Average: 15 bookings <br> Highest: 23 bookings</small>
+		      </td>
+		    </tr>
+		  </tbody>		  
+		  <tfoot>
+		  	<tr>
+		  	<th><small><i class = "red caret down icon"></i><span style= "color:#DB2828">You are lower than average.</span></small></th>
+		  	<th><small><i class = "large yellow trophy icon"></i><span style= "color:#1CA93D">You are #1 in calls in Dine-out, Gurgaon!</span></small></th>
+		  	<th><small><i class = "green caret up icon"></i><span style= "color:#1CA93D">You are lower than average.</span></small></th>
+		  	<th><small><i class = "red caret down icon"></i><span style= "color:#DB2828">You are lower than average.</span></small></th>
+		  	</tr>
+		  </tfoot>
+		</table>
+
+    </div>
+    </div>
+
+</div>
+<!--BENCHMARKING 1-->
+
+
+<!--BENCHMARKING 2-->
+<div class = "ui segment">
+  	<div class = "ui grid">
+  	 <div class = "row">
+  	  <div class = "eight wide column">
+	  	<h3> Benchmarks for CTR </h3>
+		<table class="ui small celled collapsing padded structured table">
+		  <thead>
+		    <tr>
+		    <th>CTR in Sector 29, <br>Dine-out, Gurgaon</th>
+		    <th>CTR in Sector 29, Gurgaon</th>		    
+		    <th>CTR in Dine-out, Gurgaon</th>
+		  </tr></thead>
+		  <tbody>
+		    <tr>
+		      
+		      <td>
+		        You: 1.1% CTR <br> <small>Average: 1.5% CTR <br> Highest: 2.1% CTR</small>
+		      </td>
+		      <td>
+		        You: 1.1% CTR <br> <small>Average: 1.5% CTR <br> Highest: 2.1% CTR</small>
+		      </td>
+		      <td>
+		        You: 1.1% CTR <br> <small>Average: 1.5% CTR <br> Highest: 2.1% CTR</small>
+		      </td>
+		    </tr>
+		    <tr>
+		    	<td colspan = "3">
+		    	<img class="ui image" src="{% static '/images/modals/benchmark-ctr-bubble.png' %}">
+		    	</td>
+		    </tr>
+		  </tbody>
+		</table>
+	  </div>
+
+	<div class = "eight wide column">
+		<h3> Benchmarks for call volumes </h3>
+		<table class="ui small celled collapsing padded structured table">
+		  <thead>
+		    <tr>
+		    <th>Calls in Sector 29, <br>Dine-out, Gurgaon</th>
+		    <th>Calls in Sector 29, Gurgaon</th>		    
+		    <th>Calls in Dine-out, Gurgaon</th>
+		  </tr></thead>
+		  <tbody>
+		    <tr>
+		      
+		      <td>
+		        Your calls: 60 <br> <small>Average calls: 100 <br> Highest calls: 130</small>
+		      </td>
+		      <td>
+		        Your calls: 60 <br> <small>Average calls: 44 <br> Highest calls: 66</small>
+		      </td>
+		      <td>
+		        Your calls: 60 <br> <small>Average calls: 84 <br> Highest calls: 102</small>
+		      </td>
+		    </tr>
+		    <tr>
+		    	<td colspan = "3">
+		    	<img class="ui image" src="{% static '/images/modals/benchmark-calls-bubble.png' %}">
+		    	</td>
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+   </div>
+	<div class = "row">
+	<div class = "eight wide column">
+		<h3> Benchmarks for online orders </h3>
+		<table class="ui small celled collapsing padded structured table">
+		  <thead>
+		    <tr>
+		    <th>Online orders in Sector 29, <br>Dine-out, Gurgaon</th>
+		    <th>Online orders in Sector 29, Gurgaon</th>		    
+		    <th>Online orders in Dine-out, Gurgaon</th>
+		  </tr></thead>
+		  <tbody>
+		    <tr>
+		      
+		      <td>
+		        Your orders: 60 <br> <small>Average orders: 100 <br> Highest orders: 130</small>
+		      </td>
+		      <td>
+		        Your orders: 60 <br> <small>Average orders: 44 <br> Highest orders: 66</small>
+		      </td>
+		      <td>
+		        Your orders: 60 <br> <small>Average orders: 84 <br> Highest orders: 102</small>
+		      </td>
+		    </tr>
+		    <tr>
+		    	<td colspan = "3">
+		    	<img class="ui image" src="{% static '/images/modals/benchmark-orders-bubble.png' %}">
+		    	</td>
+		    </tr>
+		  </tbody>
+		</table>
+
+	 </div>
+
+	<div class = "eight wide column">
+		<h3> Benchmarks for table bookings </h3>
+		<table class="ui small  celled collapsing padded structured table">
+		  <thead>
+		    <tr>
+		    <th>Table bookings in Sector 29, <br>Dine-out, Gurgaon</th>
+		    <th>Table bookings in Sector 29, Gurgaon</th>		    
+		    <th>Table bookings in Dine-out, Gurgaon</th>
+		  </tr></thead>
+		  <tbody>
+		    <tr>
+		      
+		      <td>
+		        Your bookings: 60 <br> <small>Average bookings: 100 <br> Highest bookings: 130</small>
+		      </td>
+		      <td>
+		        Your bookings: 60 <br> <small>Average bookings: 44 <br> Highest bookings: 66</small>
+		      </td>
+		      <td>
+		        Your bookings: 60 <br> <small>Average bookings: 84 <br> Highest bookings: 102</small>
+		      </td>
+		    </tr>
+		    <tr>
+		    	<td colspan = "3">
+		    	<img class="ui image" src="{% static '/images/modals/benchmark-orders-bubble.png' %}">
+		    	</td>
+		    </tr>
+		  </tbody>
+		</table>
+
+	 </div>
+    </div>
+</div>
+</div>
+<!--BENCHMARKING 2 -->
+
+
+<!--BENCHMARKING 3-->
+<div class = "ui segment">
+
+  	<div class = "content">
+	  	<h3> Relatable ad performance benchmarks on Zomato </h3>
+	  	<div class = "description">
+
+  	  	<h4>Advertisers in Sector 29, Dine-out, Gurgaon between August 1-31, 2016 </h4>
+
+  	  	<div class = "ui two cards">
+  	  		<div class  = "ui basic card">
+  	  			<div class = "content">
+  	  			  <div class = "ui segments">
+  	  				<div class = "ui three horizontal segments">
+  	  					<div class = "ui segment">
+  	  						<div class = "header"> Your CTR: 1.63%</div>
+  	  					</div>
+  	  					<div class = "ui segment"> Average CTR: 1.72%
+  	  					</div>
+  	  					<div class = "ui segment"> Highest CTR: 2.21%
+  	  					</div>
+  	  				</div>
+  	  				<div class = "ui segment">
+  	  					<img class="ui image" src="{% static '/images/modals/benchmark-ctr.png' %}">
+
+  	  				</div>
+  	  				</div>
+  	  			</div>
+  	  		</div>
+
+  	  		<div class  = "ui card">
+  	  			<div class = "content">
+  	  			  <div class = "ui segments">
+  	  				<div class = "ui three horizontal segments">
+  	  					<div class = "ui segment">
+  	  						<div class = "header"> Your calls: 80</div>
+  	  					</div>
+  	  					<div class = "ui segment"> Average calls: 82
+  	  					</div>
+  	  					<div class = "ui segment"> Highest calls: 103
+  	  					</div>
+  	  				</div>
+  	  				<div class = "ui segment">
+  	  					<img class="ui image" src="{% static '/images/modals/benchmark-calls.png' %}">
+
+  	  				</div>
+  	  				</div>
+  	  			</div>
+  	  		</div>
+  	  	</div>
+
+  	  	<div class = "ui two cards">
+  	  		<div class  = "ui basic card">
+  	  			<div class = "content">
+  	  			  <div class = "ui segments">
+  	  				<div class = "ui three horizontal segments">
+  	  					<div class = "ui segment">
+  	  						<div class = "header"><!--<span style = "color:#4A90E2">--> Your online orders: 60 <!--</span>--></div>
+  	  					</div>
+  	  					<div class = "ui segment"><!--<span style = "color:#F38558">--> Average online orders: 66 <!--</span>-->
+  	  					</div>
+  	  					<div class = "ui segment"><!--<span style = "color: #099E44">--> Highest online orders: 76 <!--</span>-->
+  	  					</div>
+  	  				</div>
+  	  				<div class = "ui segment">
+  	  					<img class="ui image" src="{% static '/images/modals/benchmark-orders.png' %}">
+
+  	  				</div>
+  	  				</div>
+  	  			</div>
+  	  		</div>
+
+  	  		<div class  = "ui card">
+  	  			<div class = "content">
+  	  			  <div class = "ui segments">
+  	  				<div class = "ui three horizontal segments">
+  	  					<div class = "ui segment">
+  	  						<div class = "header"> Your table bookings: 12</div>
+  	  					</div>
+  	  					<div class = "ui segment"> Average table bookings: 10
+  	  					</div>
+  	  					<div class = "ui segment"> Highest table bookings: 16
+  	  					</div>
+  	  				</div>
+  	  				<div class = "ui segment">
+  	  					<img class="ui image" src="{% static '/images/modals/benchmark-bookings.png' %}">
+
+  	  				</div>
+  	  				</div>
+  	  			</div>
+  	  		</div>
+  	  	</div>
+    </div>
+    </div>
+</div>
+<!--BENCHMARKING 3 -->
+
+
+
+
+<!--=====================================================-->
+<!--=======================================s==============-->
+
+
+<!--STYLE-->
+<style>
+
+body {
+	font-family: 'Lato' !important;
+}
+.ui.header {
+	font-family: 'Lato'!important;
+}
+
+.ui.yellow.segment:not(.inverted) {
+    border-top: 2px solid #B49E62;
+}
+
+.ui.menu {
+	font-family: 'Lato'!important;
+}
+
+
+
+.ui.basic.green.buttons .button, .ui.basic.green.button {
+    box-shadow: 0px 0px 0px 1px #B49E62 inset;
+    color: #B49E62;
+}
+
+.ui.table {
+	font-family: 'Lato' !important;
+}
+.ui.table thead th {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+a {
+	color: #676767;
+}
+
+.ui.basic.yellow.label, .ui.basic.yellow.labels .label {
+    border-color: #c3ac67!important;
+    color:#c3ac67!important;
+}
+
+/*#ad-selector .ui.menu{
+    border: 1px solid #B49E62;
+}
+
+
+#ad-selector .ui.pointing.menu:not(.tabular) {
+    border: 2px solid #B49E62;
+}
+
+#ad-selector .ui.pointing.menu .item:after {
+    border-bottom: 1px solid #B49E62;
+    border-right: 1px solid #B49E62;
+}*/
+
+.ui.mini.label {
+    font-size: 0.54285714rem;
+}
+
+#views-detail{
+	color:rgba(0, 0, 0, 0.6);
+}
+
+#contribution-title{
+	font-weight:600;
+}
+
+</style>
+
+
+
+
+<!--END STYLE-->
+
+
+
+
+
+{% endblock content%}
