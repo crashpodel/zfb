@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="ui segments">
+	<div class="ui segment attached">
+		<h1 class="ui header">Table Bookings Statement of Accounts
+			<p class="sub header">Statement of accounts for your table reservations.</p>
+		</h1>
+		
+	</div>
+
+	<div class = "ui segment attached">
+	  <div class = "inline fields">
+	  	<div class = "field">
+		<div class="ui labeled input">
+			<div class = "ui label">
+			From
+			</div>
+	          <input type="text" placeholder= "Enter start date">
+
+	   </div>
+	   <div class="ui labeled input">
+	   	  <div class = "ui label">
+	   	  To
+	   	  </div>
+	      <input type="text" placeholder= "Enter end date">
+
+	   </div>
+			<a class="ui green button">Filter</a>
+			<a class="ui right floated blue button">Download CSV</a>
+
+	   </div>
+	</div>
+	</div>
+
+	<div class = "ui segment attached">			
+			<p>	
+				<a class="ui green empty circular label"></a> Individual booking &nbsp;&nbsp;
+				<a class="ui yellow empty circular label"></a> Invoice &nbsp;&nbsp;
+				<a class="ui red empty circular label"></a> NEFT Transfers &nbsp;&nbsp;
+				<a class="ui blue empty circular label"></a> Reverse Entry &nbsp;&nbsp;
+			</p>
+	</div>
+
+
+		<table class="ui celled structured striped table attached">
+		  <thead class>
+		    <tr>
+		    	<th>Transaction ID</th>
+		    	<th>Date</th>
+		    	<th> Commission Rate </th>
+		    	<th> Commission Amount </th>
+		    	<th>Debit</th>
+		    	<th>Credit</th>
+		    	<th>Balance</th>
+		    </tr>
+		  </thead>
+		  <tbody class>
+		    <tr class>
+		    	<td style = "color:#21BA45">ZB-16-03554D</td>
+		    	<td>26 Aug 2016 7:00 PM</td>
+		    	<td> 7.3% </td>
+		    	<td> ₹30 </td>
+		    	<td>-</td>
+		    	<td>₹50,000</td>
+		    	<td>₹50,000</td>
+		    </tr>	
+		    <tr>
+		    	<td style = "color:#FBBD08">ZR/16-17/21/00018 <i class = "external icon"></i></td>
+		    	<td>26 Aug 2016 7:00 PM</td>
+		    	<td> 7.3% </td>
+		    	<td> ₹30 </td>
+		    	<td>₹45,000</td>
+		    	<td>-</td>
+		    	<td>₹15,384</td>
+		    </tr>
+		    <tr>
+		    	<td style = "color:#21BA45">ZB-16-03554D</td>
+		    	<td> 7.3% </td>
+		    	<td> ₹30 </td>
+		    	<td>-</td>
+		    	<td>₹50,000</td>
+		    	<td>₹50,000</td>
+		    </tr>	    
+		  </tbody>
+		</table>
+  </div>
+
+ <div class="ui center aligned segment">Load More</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content%}

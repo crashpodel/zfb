@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="ui segments">
+	<div class="ui segment attached">
+		<h1 class="ui header">Table Booking Details
+			<p class="sub header">View the details for every table booking made at your restaurant.</p>
+		</h1>
+		
+	</div>
+
+
+<div class="ui segment attached">
+	<h2 class>Account Summary</h2>
+</div>
+
+<div class="ui segment attached">
+	<h2 class>Dispute Summary for October and November 2016</h2>
+</div>
+
+
+	<!--Bookings table-->
+	<div class="ui segment attached">
+		<h2 class>Bookings list</h2>
+		<p>Report a booking in case of no-shows or to dispute the party size.  Disputes are allowed until the 3rd day of the next month, after which bookings will be frozen for final invoicing. </p>
+
+		<p small>Have questions?  You can reach us at <span style = "color: #4183C4"> +91 11 33105520 </span> (between 11AM - 10PM) or write to us at <span style = "color: #4183C4">bookfeedback@zomato.com</span>.  </p>
+		
+	</div><!--end bookings table-->
+
+		<table class="ui celled structured striped table attached">
+		  <thead>
+		    <tr>
+		    	<th>Diner name</th>
+		    	<th>Booking status</th>
+		    	<th>Date and time of booking</th>
+		    	<th>Covers</th>
+		    	<th>Status</th>
+		    	<th>Action</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		    	<td>Aiswarya Kolisetty</td>
+		    	<td style = "color:#21BA45">Confirmed</td>
+		    	<td>26 Aug 2016 7:00 PM</td>
+		    	<td>2</td>
+		    	<td>Disputed: No show</td>
+		    	<td><span style = "color:#C4C4C4">Reported</span></td>
+		    </tr>	
+		    <tr>
+		    	<td>Aiswarya Kolisetty</td>
+		    	<td style = "color:#DB2828">Declined</td>
+		    	<td>26 Aug 2016 7:00 PM</td>
+		    	<td>5</td>
+		    	<td></td>
+		    	<td><a class="ui basic mini red button">Report</a></td>
+		    </tr>
+		    <tr>
+		    	<td>Aiswarya Kolisetty</td>
+		    	<td style = "color:#21BA45">Confirmed</td>
+		    	<td>26 Aug 2016 7:00 PM</td>
+		    	<td>6</td>
+		    	<td>Disputed: 3 guests</td>
+		    	<td><a class="ui basic mini red button">Report</a></td>
+		    </tr>	    
+		  </tbody>
+		</table>
+  </div>
+
+ <div class="ui center aligned segment">Load More</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content%}

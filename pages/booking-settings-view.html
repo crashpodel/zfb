@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="ui segments">
+		<div class="ui segment">
+			<h1 class="ui header">Table Booking Settings
+				<p class="sub header">View your table booking settings.</p>
+			</h1>
+		</div>
+		<div class="ui secondary segment attached">
+			<p> To make any changes to these contact <a href="#">nishanth@zomato.com</a></p>
+		</div>
+		<div class="ui segment attached">
+			<h2>Merchant Details</h2>
+
+			<div class = "ui message">
+			<p style = "color:green"><i class = "checkmark icon"></i> Details are verified.</p>
+			<p>Notifications regarding new orders will be sent to the manager email and mobile provided.</p>
+			</div>	
+			<div class="ui equal width grid">
+				<div class="column">
+					<h3 class="ui sub header">Legal entity name</h3> 
+					<div>Pink Dragons Pvt. Ltd.</div>
+
+					<h3 class="ui sub header">Legal entity address</h3>
+					<div class="content">
+						<p>DLF Phase 4, Gurgaon, Haryana</p>
+					</div>
+
+				</div>
+				<div class="column ">
+					<h3 class="ui sub header">Merchant POC Name (Manager)</h3>
+					<div>Nishanth Pais</div>
+
+					<h3 class="ui sub header">Contact number</h3>
+					<div>+91880000007</div>
+				</div>
+				<div class="column">
+					<h3 class="ui sub header">Contact email ID</h3>
+
+					<div>lifepais@zomato.com</div>
+
+					<h3 class="ui sub header">Uploaded MIF</h3>
+					<div><a href = "#">View contract details <i class = "external icon"></i></a></div>					
+				</div>
+			</div>		
+		</div>
+		<div class="ui segment attached">
+			<h2>Fee Structure</h2>
+			<div class="ui equal width grid">
+				<div class="column ">
+					<h3 class="ui sub header">Start date</h3>
+							<div class="content">
+								<p>January 1, 2017</p>
+							</div>
+					</div>
+					<div class="column ">
+						<h3 class="ui sub header">Payment type</h3>
+						<div class="content">
+							<p>Prepaid</p>
+						</div>
+					</div>
+					<div class="column ">
+						<h3 class="ui sub header">Uploaded MEF</h3>
+								<div><a href = "#">View details <i class = "external icon"></i></a></div>
+					</div>
+				</div>
+			<table class="ui very basic collapsing single line table">
+				<tr>
+					<td>Per cover charge</td>
+					<td>₹100</td>
+				</tr>
+				<tr>
+					<td>Maximum covers per booking</td>
+					<td>454</td>
+				</tr>
+				<tr>
+					<td>Maximum covers per month</td>
+					<td>4454</td>
+				</tr>
+				<tr>
+					<td>Fixed amount per month</td>
+					<td>₹0</td>
+				</tr>
+			</table>	
+		</div>
+
+		<div class="ui segment attached">
+			<h2>Contact numbers</h2>
+			<h3 class="ui sub header">Primary phone numbers</h3>
+				<div class="content">
+					<p>+919876657666<br>
+					+919876667676</p>
+				</div>
+
+		</div>
+
+		<div class="ui segment attached">
+			<h2>Past contracts</h2>
+		</div>
+
+		<table class="ui celled structured striped table attached">
+		  <thead class>
+		    <tr>
+		    	<th>Start date</th>
+		    	<th>End date</th>
+		    	<th> Per cover charge </th>
+		    	<th> Max covers per booking </th>
+		    	<th>Max covers per month</th>
+		    	<th>Max monthly bill</th>
+		    	<th>Fixed amount per month</th>
+		    	<th>Payment type</th>
+		    </tr>
+		  </thead>
+		  <tbody class>
+		    <tr class>
+		    	<td>26 Aug 2016 7:00 PM</td>
+		    	<td>28 Aug 2016 7:00 PM</td>
+		    	<td> ₹30 </td>
+		    	<td> 8 </td>
+		    	<td>-688</td>
+		    	<td>₹50,000</td>
+		    	<td>₹50,000</td>
+		    	<td>Prepaid</td>
+		    </tr>	
+		    <tr>
+		    	<td>26 Aug 2016 7:00 PM</td>
+		    	<td>28 Aug 2016 7:00 PM</td>
+		    	<td> ₹30 </td>
+		    	<td> 8 </td>
+		    	<td>-688</td>
+		    	<td>₹50,000</td>
+		    	<td>₹50,000</td>
+		    	<td>Prepaid</td>
+		    </tr>
+		    <tr>
+		    	<td>26 Aug 2016 7:00 PM</td>
+		    	<td>28 Aug 2016 7:00 PM</td>
+		    	<td> ₹30 </td>
+		    	<td> 8 </td>
+		    	<td>-688</td>
+		    	<td>₹50,000</td>
+		    	<td>₹50,000</td>
+		    	<td>Prepaid</td>
+		    </tr>	    
+		  </tbody>
+		</table>
+	</div>
+
+{% endblock content%}
