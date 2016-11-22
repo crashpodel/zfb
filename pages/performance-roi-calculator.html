@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+
+{% block title %}Ad Performance - ROI{% endblock %}
+
+{% block content %}
+
+<!--AD PERFORMANCE HEADER -->
+
+ <div class="ui yellow segment" style = "margin-top:0px;">
+      <h1 class="ui header">Insights into advertising
+        <!--<div class="sub header">Analyze the performance of your advertising campaigns on Zomato.</div>-->
+      </h1>
+
+ </div>
+
+
+
+ <!-- POP-UP CALCULATOR-->
+
+
+  		<div class = "ui segments">
+			 			<div class = "ui segment top attached">
+			 				<div class = "ui grid">
+			 			<div class = "row">
+					 		<div class = "sixteen wide column">
+					 			<h3 class = "ui header">ROI Calculator </h3>
+					 		</div>
+					 	</div>
+
+					 <br>
+			 			<div class = "row">
+			 			 <div class = "ten wide column">
+			 			  <p> How many total unique ad clicks did you recieve in the selected time period?<br>
+			 			  <span style = "color:rgba(0, 0, 0, 0.6)"><small><i>You recieved a total of 482 clicks between August 1-31, 2016.</i></small></span></p>
+			 			 </div>
+			 			  <div class = "six wide column right aligned">
+			 				<div class="ui right labeled fluid input">
+								  <input type="text" value = "482">
+								  <div class="ui label">
+								    clicks
+								  </div>
+							</div>
+						  </div>
+						</div>
+					 	<br>
+
+					 	<div class = "row">
+					 		<div class = "ten wide column">
+				 			  <p> What percentage of clicks usually convert to business? <br>
+				 			  <span style = "color:rgba(0, 0, 0, 0.6)"><small><i>Typically 1 in 4 clicks usually converts to business on Zomato </i></small></span></p>
+				 			 </div>
+					 		<div class = "six wide column right aligned">
+					 			  <div class="ui right labeled input">
+					 			  <div class="ui label">1 in every</div>
+								  <input type="text" value = "4">
+								  <div class = "ui label">clicks</div>
+							</div>
+					 		</div>
+					 	</div>
+
+					 	<br>
+
+					 	<div class = "row">
+					 		<div class = "ten wide column">
+				 			  <p> What is the average order value at the restaurant? <br>
+				 			  <span style = "color:rgba(0, 0, 0, 0.6)"><small><i>The cost for two listed on Zomato is Rs. 500. </i></small></span></p>
+				 			 </div>
+					 		<div class = "six wide column right aligned">
+					 			  <div class="ui fluid labeled input">
+								  <div class="ui label">
+								    Rs.
+								  </div>
+								  <input type="text" value = "500">
+							</div>
+					 		</div>
+					 	</div>
+			 			</div>
+			 		</div>
+
+			 			<div class = "ui segment attached">
+			 			  <div class = "ui grid">
+				 			<div class = "row">
+						 		<div class = "ten wide column"><h3> Estimated incremental revenue from clicks</h3></div>
+						 		<div class = "six wide column right aligned">
+			 						<h3> Rs. 3,52,125</h3></p>
+			 					</div>
+			 				</div>
+			 			  </div>
+			 			</div>
+
+			 			<div class = "ui secondary segment bottom attached">
+			 			  <div class = "ui grid">
+				 			<div class = "row">
+						 		<div class = "ten wide column"><h3 style = "color:black">ROI</h3>
+						 			<p><small><i> ROI = Estimated revenue / Investment
+						 			<br>ROI = Rs. 3,52, 125 / Rs. 1,75,122 </i></small></p></div>
+							 		<div class = "six wide column right aligned">
+				 						<h3 style = "color: #1CA93D"> 2.1x </h3>
+				 					</div>
+				 				</div>
+				 			  </div>
+				 			 </div>
+			 		  </div>
+ <!--CALCULATOR -->
+
+
+<!--=====================================================-->
+<!--=======================================s==============-->
+
+
+<!--STYLE-->
+<style>
+
+body {
+	font-family: 'Lato' !important;
+}
+.ui.header {
+	font-family: 'Lato'!important;
+}
+
+.ui.yellow.segment:not(.inverted) {
+    border-top: 2px solid #B49E62;
+}
+
+.ui.menu {
+	font-family: 'Lato'!important;
+}
+
+
+
+.ui.basic.green.buttons .button, .ui.basic.green.button {
+    box-shadow: 0px 0px 0px 1px #B49E62 inset;
+    color: #B49E62;
+}
+
+.ui.table {
+	font-family: 'Lato' !important;
+}
+.ui.table thead th {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+a {
+	color: #676767;
+}
+
+.ui.basic.yellow.label, .ui.basic.yellow.labels .label {
+    border-color: #c3ac67!important;
+    color:#c3ac67!important;
+}
+
+/*#ad-selector .ui.menu{
+    border: 1px solid #B49E62;
+}
+
+
+#ad-selector .ui.pointing.menu:not(.tabular) {
+    border: 2px solid #B49E62;
+}
+
+#ad-selector .ui.pointing.menu .item:after {
+    border-bottom: 1px solid #B49E62;
+    border-right: 1px solid #B49E62;
+}*/
+
+.ui.mini.label {
+    font-size: 0.54285714rem;
+}
+
+#views-detail{
+	color:rgba(0, 0, 0, 0.6);
+}
+
+#contribution-title{
+	font-weight:600;
+}
+
+</style>
+
+
+
+
+<!--END STYLE-->
+
+
+
+
+
+{% endblock content%}
