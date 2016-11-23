@@ -2,20 +2,20 @@
 {% block content %}
 	<div class="ui segments">
 		<div class="ui segment">
-			<h1 class="ui header">Table Booking Settings
+			<h1 class="ui header">View settings for table bookings
 				<p class="sub header">View your table booking settings.</p>
 			</h1>
 		</div>
 		<div class="ui secondary segment attached">
-			<p> To make any changes to these contact <a href="#">nishanth@zomato.com</a></p>
+			<p> To make any changes to these details, please contact <a href="#">nishanth@zomato.com</a></p>
 		</div>
 		<div class="ui segment attached">
 			<h2>Merchant Details</h2>
 
 			<div class = "ui message">
-			<p style = "color:green"><i class = "checkmark icon"></i> Details are verified.</p>
-			<p>Notifications regarding new orders will be sent to the manager email and mobile provided.</p>
-			</div>	
+			<p><span style = "color:orange"><i class = "warning sign icon"></i> Details are yet to be verified.</span> They will be approved or rejected by the Zomato team.</p>
+			</div>
+
 			<div class="ui equal width grid">
 				<div class="column">
 					<h3 class="ui sub header">Legal entity name</h3> 
@@ -44,6 +44,18 @@
 				</div>
 			</div>		
 		</div>
+
+		<div class="ui segment attached">
+			<h2>Contact numbers</h2>
+			<h3 class="ui sub header">Primary phone numbers</h3>
+				<div class="content">
+					<p>+919876657666<br>
+					+919876667676</p>
+				</div>
+
+		</div>
+
+
 		<div class="ui segment attached">
 			<h2>Fee Structure</h2>
 			<div class="ui equal width grid">
@@ -77,21 +89,11 @@
 					<td>Maximum covers per month</td>
 					<td>4454</td>
 				</tr>
-				<tr>
+				<tr class = "disabled">
 					<td>Fixed amount per month</td>
 					<td>₹0</td>
 				</tr>
 			</table>	
-		</div>
-
-		<div class="ui segment attached">
-			<h2>Contact numbers</h2>
-			<h3 class="ui sub header">Primary phone numbers</h3>
-				<div class="content">
-					<p>+919876657666<br>
-					+919876667676</p>
-				</div>
-
 		</div>
 
 		<div class="ui segment attached">

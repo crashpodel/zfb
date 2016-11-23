@@ -202,50 +202,64 @@
 		
 	<div class="ui segments">
 		<div class="ui segment">
-			<h1 class="ui header">View settings for table bookings
-				<p class="sub header">View your table booking settings.</p>
+			<h1 class="ui header">Edit settings for table bookings
+				<p class="sub header">Make changes to settings for table bookings. </p>
 			</h1>
 		</div>
-		<div class="ui secondary segment attached">
-			<p> To make any changes to these details, please contact <a href="#">nishanth@zomato.com</a></p>
-		</div>
+
 		<div class="ui segment attached">
-			<h2>Merchant Details</h2>
+		  <div class = "ui basic segment">
+				<div class = "ui left floated header"><h2>Merchant Details</h2></div>
+				<div class = "ui right floated header"><button class = "ui basic green button">Edit details </button></div>
+		  </div>	
+		  <br>
+			<div class = "ui message">
+			<p><span style = "color:green"><i class = "checkmark icon"></i> Details are verified.</span>  Notifications regarding new bookings will be sent to the manager email and mobile provided.</p>
+			</div>	
 
 			<div class = "ui message">
-			<p><span style = "color:orange"><i class = "warning sign icon"></i> Details are yet to be verified.</span> They will be approved or rejected by the Zomato team.</p>
-			</div>
+			<p><span style = "color:orange"><i class = "warning sign icon"></i> Details need to be verified.</span> </p>
+			<div class = "ui right floated green button">Approve </div><div class = "ui right floated red button">Reject</div>
+			</div>	
 
-			<div class="ui equal width grid">
-				<div class="column">
-					<h3 class="ui sub header">Legal entity name</h3> 
-					<div>Pink Dragons Pvt. Ltd.</div>
 
-					<h3 class="ui sub header">Legal entity address</h3>
-					<div class="content">
-						<p>DLF Phase 4, Gurgaon, Haryana</p>
-					</div>
+			<form class="ui form">
+				  <div class="required field">
+				    <label>Legal entity name</label>
+				    <input type="text" name="first-name" placeholder="Enter legal entity name..">
+				  </div>
+				  <div class="required field">
+				    <label>Legal entity address</label>
+				    <input type="text" placeholder="Enter entity address..">
+				  </div>
+				  <div class="required field">
+				    <label>Merchant POC Name (manager)</label>
+				    <input type="text" placeholder="Enter manager's name..">
+	  			  </div>
+	  			  <div class="required field">
+				    <label>Contact number</label>
+				    <input type="text" placeholder="Enter contact number..">
+	  			  </div>
+	  			  <div class="required field">
+				    <label>Email address</label>
+				    <input type="text" placeholder="Enter email address..">
+	  			  </div>
+	  			  <div class="field">
+				    <label>Upload MIF</label>
+				    <button class="ui basic button">
+					  <i class="upload icon"></i>
+					  Choose file
+					</button>
+	  			  </div>
+	  			  <div class="field">
+				    <label>Code of conduct</label>
+					  <a href = "#"><i class="file icon"></i>View document</a>
+	  			  </div>
+	     </form>
 
-				</div>
-				<div class="column ">
-					<h3 class="ui sub header">Merchant POC Name (Manager)</h3>
-					<div>Nishanth Pais</div>
+	  </div>
 
-					<h3 class="ui sub header">Contact number</h3>
-					<div>+91880000007</div>
-				</div>
-				<div class="column">
-					<h3 class="ui sub header">Contact email ID</h3>
-
-					<div>lifepais@zomato.com</div>
-
-					<h3 class="ui sub header">Uploaded MIF</h3>
-					<div><a href = "#">View contract details <i class = "external icon"></i></a></div>					
-				</div>
-			</div>		
-		</div>
-
-		<div class="ui segment attached">
+	  <div class="ui segment attached">
 			<h2>Contact numbers</h2>
 			<h3 class="ui sub header">Primary phone numbers</h3>
 				<div class="content">
@@ -254,52 +268,78 @@
 				</div>
 
 		</div>
+		
 
-
-		<div class="ui segment attached">
-			<h2>Fee Structure</h2>
-			<div class="ui equal width grid">
-				<div class="column ">
-					<h3 class="ui sub header">Start date</h3>
-							<div class="content">
-								<p>January 1, 2017</p>
-							</div>
-					</div>
-					<div class="column ">
-						<h3 class="ui sub header">Payment type</h3>
-						<div class="content">
-							<p>Prepaid</p>
+	  <div class = "ui segment attached">
+	  	<h2> Fee Structure 
+	  	<div class = "ui right floated red button">Stop current contract</div>
+	  	</h2>
+	  	<div class = "ui message">
+			<p><span style = "color:green"><i class = "checkmark icon"></i> Details are verified.</span>  Notifications regarding new bookings will be sent to the manager email and mobile provided.</p>
+			</div>
+	  	<form class="ui form">
+				  <div class="required field">
+				    <label>Start date</label>
+				    <div class = "ui disabled input">
+				    	<input type="text" name="first-name" placeholder="Enter start date.." value = "November 20, 2016">
+				    </div>
+				   </div> 
+				  <div class="required field">
+				    <label>Payment type</label>
+				    <div class="ui disabled selection dropdown">
+						  <input type="hidden">
+						  <i class="dropdown icon"></i>
+						  <div class="default text">Select type..</div>
+						  <div class="menu">
+						    <div class="active item" data-value="1">Prepaid</div>
+						    <div class="item" data-value="0">Postpaid</div>
+						  </div>
 						</div>
-					</div>
-					<div class="column ">
-						<h3 class="ui sub header">Uploaded MEF</h3>
-								<div><a href = "#">View details <i class = "external icon"></i></a></div>
-					</div>
-				</div>
-			<table class="ui very basic collapsing single line table">
-				<tr>
-					<td>Per cover charge</td>
-					<td>₹100</td>
-				</tr>
-				<tr>
-					<td>Maximum covers per booking</td>
-					<td>454</td>
-				</tr>
-				<tr>
-					<td>Maximum covers per month</td>
-					<td>4454</td>
-				</tr>
-				<tr class = "disabled">
-					<td>Fixed amount per month</td>
-					<td>₹0</td>
-				</tr>
-			</table>	
-		</div>
+				  </div>
+				  <div class="field">
+				    <label>Upload MIF</label>
+				    <button class="ui disabled basic button">
+					  <i class="upload icon"></i>
+					  Choose file
+					</button>
+	  			  </div>
+	  	</form>	
 
-		<div class="ui segment attached">
-			<h2>Past contracts</h2>
-		</div>
+		  	<div class = "ui top attached two item menu">
+		  		<a class="active item">Per cover pricing</a>
+	 			<a class="item">Fixed pricing</a>
+		  	</div>
 
+		  	<div class = "ui bottom attached segment">
+		  		<form class="ui form">
+				  <div class="required field">
+				    <label>Per cover charge </label>
+				    <div class = "ui disabled input">
+				    	<input type="text" name="first-name" placeholder="Enter start date.." value = "Rs. 30">
+				    </div>
+				  </div>
+				  <div class="required field">
+				    <label>Max covers per booking </label>
+				    	<div class = "ui disabled input">
+				   			 <input type="text" name="first-name" placeholder="Enter max covers per booking..." value = "300">
+				   		</div>
+				  </div>
+				  <div class="required field">
+				    <label>Max covers per month </label>
+				    <div class = "ui disabled input">
+				   		 <input type="text" name="first-name" placeholder="Enter max covers for the month.." value = "1000">
+				   	</div>
+				  </div>
+	  		</form>	
+
+		  	</div>
+
+
+	  </div>
+
+	  <div class = "ui segment attached">
+	      <h2> Past contracts </h2>
+	  </div>
 		<table class="ui celled structured striped table attached">
 		  <thead class>
 		    <tr>
