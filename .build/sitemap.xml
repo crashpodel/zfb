@@ -16,6 +16,31 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/booking-analytics.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/booking-details.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/booking-settings-edit.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/booking-settings-view.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/booking-soa.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/dailymenus.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -86,6 +111,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/performance-roi-calculator.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/performance-v1.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -152,11 +182,6 @@
     </url>
     <url>
         <loc>/subscriptions.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>/tablebookings.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
